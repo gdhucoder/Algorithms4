@@ -1,0 +1,15 @@
+Ex_2_2_1
+
+书中可能有勘误。我没有找到我手头的版本对应英文版是第几版。
+
+i和j不能同时增加。
+
+Ex_2_2_2
+
+Give traces, in the style of the trace given with Algorithm 2.4, showing how the keys E A S Y Q U E S T I O N are sorted with top-down mergesort.
+
+Ex_2_2_3
+2.2.3 Answer Exercise 2.2.2 for bottom-up mergesort.
+
+2.2.6
+Write a program to compute the exact value of the number of array accesses used by top-down mergesort and by bottom-up mergesort. Use your program to plot the values for N from 1 to 512, and to compare the exact values with the upper bound 6NlgN.

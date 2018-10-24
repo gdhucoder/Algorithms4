@@ -1,0 +1,103 @@
+Exercise
+
+2.1.1
+显示出数组的排序轨迹
+
+i min 0 1 2 3 4 5 6 7 8 9 10 11
+      E A S Y Q U E S T I  O  N
+0  1  A E S Y Q U E S T I  O  N
+1  1  A E S Y Q U E S T I  O  N
+2  6  A E E Y Q U S S T I  O  N
+3  9  A E E I Q U S S T Y  O  N
+4  11 A E E I N U S S T Y  O  Q
+5  10 A E E I N O S S T Y  U  Q
+6  11 A E E I N O Q S T Y  U  S
+7  7  A E E I N O Q S T Y  U  S
+8  11 A E E I N O Q S S Y  U  T
+9  11 A E E I N O Q S S T  U  Y
+10 10 A E E I N O Q S S T  U  Y
+11 11 A E E I N O Q S S T  U  Y
+
+2.1.2
+在选择排序中，一个元素最多可能会被交互多少次？ 平均可能会被交换多少次？
+答：最多会被交换N-1次，平均被交换1次。
+
+2.1.3
+构造出一个N个元素的数组，使选择排序算法2.1中 a[j] < a[min] 成功的次数最大。
+
+这样一个数组，数组的第一项最大，第二项至最后一项递增。
+例如 [10, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+最大数= N*(N-1) / 2
+
+2.1.4
+显示Insertion Sort排序EASYQUESTION的过程。
+
+略。
+
+2.1.5
+For each of the two conditions in the inner for loop in insertion sort (Algorithm 2.2), describe an array of N items where that condition is always false when the loop terminates.
+
+答：一个数组已经升序排列的话，在for循环中判断的条件始终为false。
+
+2.1.6
+Which method runs faster for an array with all keys identical, selection sort or insertion sort?
+如果数组中每个元素的key相等，选择排序还是插入排序更快？
+
+答：insertion sort 更快。因为第i项之前是有序的。j=i 第j项与第j-1项相比较是相等的。所依累计比较次数为N-1。
+selection sort 比较次数为N*(N-1)，和数组是否有序无关。
+
+我也通过实验证明了我的结论：
+edu.princeton.cs.myalg.u2.u2_1.Ex_2_1_6
+输入参数：Insertion Selection 10000 100
+For 10000 random ItemIdenticalKey
+ 	 Insertion is 315.28 times faster than Selection
+
+2.1.7
+Which method runs faster for an array in reverse order, selection sort or insertion sort?
+反序数组的话：选择排序快还是插入排序快？
+
+答：选择排序更快。因为最差情况（反序数组）选择排序要进行约N^2/2次比较和N次交换。
+而插入排序需要进行N^2/2次比较和N^2/2次交换。
+
+实验结果：
+edu.princeton.cs.myalg.u2.u2_1.Ex_2_1_7
+输入参数：Insertion Selection 10000 100
+For 10000 Reverser Order Array
+ 	 Insertion is 0.40 times faster than Selection
+
+2.1.8
+Suppose that we use insertion sort on a randomly ordered array where elements have only one of three values. Is the running time linear, quadratic, or something in between?
+假设元素只可能有三种值。使用插入排序处理这样一个数组运行时间是线性的还是平方级别的。或者介于二者之间？
+
+答：运行时间是平方级别的。
+输入参数
+Insertion 100 100
+Insertion 1000 100
+Insertion 10000 100
+
+2.1.9
+略
+
+2.1.10
+Why not use selection sort for h-sorting in shellsort?
+
+答：h-sorting 数组使用Insertion Sort更快。Selection Sort对于局部有序的数组排序没有优势。
+
+2.1.11
+Implement a version of shellsort that keeps the increment sequence in an array, rather than computing it.
+
+done
+
+2.1.12
+Instrument shellsort to print the number of compares divided by the array size for each increment. Write a test client that tests the hypothesis that this number is a small constant, by sorting arrays of random Double values, using array sizes that are increasing powers of 10, starting at 100.
+
+打印希尔排序中每个增量带来的比较次数和数组大小的比值。
+验证该值是一个小常数。
+Extensive experiments suggest that the average number of compares per increment might be N^(1/5)
+大量实验表明每个增量的比较次数约为N的1/5次方。
+
+这个结果，我觉得是有点怪的。题目中说是一个小常数，我理解是不变的常数。但是结果看下来，发现数值是变的。
+
+Creative Problems
+
+
