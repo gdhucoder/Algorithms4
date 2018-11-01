@@ -12,7 +12,7 @@ public class Ex_2_4_22 {
 
   public static void main(String[] args) {
     for(int i=0; i<3; i++){
-      _MaxMQ<Integer> pq = new _MaxMQ<>();
+      _MaxPQ<Integer> pq = new _MaxPQ<>();
       Integer[] a = ascIntArray(10*i);
       for(int j=0; j<a.length; j++){
         pq.insert(j);
