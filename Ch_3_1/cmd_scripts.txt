@@ -5,3 +5,20 @@ E:
 cd E:\gitspace\x1c\Alg4\algs4\target\classes
 
 java Ch_3_1._SequentialSearchST < E:\gitspace\x1c\Alg4\algs4\src\main\java\Ch_3_1\tinyST.txt
+
+S E A R C H E X A M  P  L  E
+0 1 2 3 4 5 6 7 8 9 10 11 12
+
+L 11
+P 10
+M 9
+X 7
+H 5
+C 4
+R 3
+A 8
+E 12
+S 0
+
+Leizig Corpora Collection: leipzig1M
+https://algs4.cs.princeton.edu/31elementary/leipzig1M.txt
