@@ -1,0 +1,7 @@
+_SequentialSearchST.java
+
+E:
+
+cd E:\gitspace\x1c\Alg4\algs4\target\classes
+
+java Ch_3_1._SequentialSearchST < E:\gitspace\x1c\Alg4\algs4\src\main\java\Ch_3_1\tinyST.txt
