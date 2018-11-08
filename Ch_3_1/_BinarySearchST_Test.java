@@ -57,6 +57,6 @@ public class _BinarySearchST_Test {
     Assert.assertEquals(st.size(4, 8), 2);
     Assert.assertEquals(st.size(3, 8), 3);
     Assert.assertEquals(st.size(3, 7), 3);
-    Assert.assertEquals("size() is wrong.",st.size(4, 7), 5);
+    Assert.assertEquals("size() is wrong.",st.size(4, 7), 2);
   }
 }
