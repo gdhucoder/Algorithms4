@@ -101,6 +101,18 @@ public class _SequentialSearchST<Key,Value> {
     return get(key)!=null;
   }
 
+  public int containsCounts(Key key){
+    int count = 0;
+    for(Node n = first; n!=null; n = n.next){
+      if(n.key.equals( key ) ){ // equals 表示等于， == 表示引用
+        return count;
+      }
+      count++;
+    }
+
+    return count;
+  }
+
   public boolean isEmpty(){
     return first == null;
   }
