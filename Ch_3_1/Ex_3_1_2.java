@@ -25,7 +25,7 @@ public class Ex_3_1_2 {
 
       @Override
       public String toString() {
-        return String.format("%s: %s", key.toString(), value.toString());
+        return String.format("{%s: %s}", key.toString(), value.toString());
       }
     }
 
@@ -162,7 +162,6 @@ public class Ex_3_1_2 {
 
     st.delete(2);
     StdOut.println(st);
-//
 //    {0: A}
 //    {1: C}
 //    {2: E}
@@ -197,6 +196,15 @@ public class Ex_3_1_2 {
 //    {6: P}
 //    {7: R}
 //    {8: new value}
+//
+//    {0: A}
+//    {1: C}
+//    {8: new value}
+//    {3: H}
+//    {4: L}
+//    {5: M}
+//    {6: P}
+//    {7: R}
 
   }
 
