@@ -1,6 +1,5 @@
 package Ch_3_1;
 
-import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import java.io.FileInputStream;
@@ -9,7 +8,7 @@ import java.io.FileInputStream;
  * Created by HuGuodong on 2018/11/13.
  */
 
-public class Ex_3_1_09 {
+public class Ex_3_1_9 {
 
 //  cmd:
 //  java Ch_3_1.Ex_3_1_09 1 < E:\gitspace\x1c\Alg4\algs4\src\main\java\Ch_3_1\tale.txt
