@@ -1,5 +1,6 @@
 package Ch_3_2;
 
+import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
@@ -130,6 +131,99 @@ public class _BST<Key extends Comparable<Key>, Value> {
     }
   }
 
+  public int rank(Key key){
+    return rank(root, key);
+  }
+
+  private int rank(Node x, Key key){
+    if(x==null) return 0;
+    int cmp = key.compareTo(x.key);
+    if(cmp<0){
+      return rank(x.left,key);
+    }else if(cmp>0){
+      return 1 + size(x.left) + rank(x.right, key); // 根结点 + 左子树 + 右子树中的rank
+    }else {
+      return size(x.left);
+    }
+  }
+
+  public void deleteMin(){
+    root = deleteMin(root);
+  }
+
+  private Node deleteMin(Node x){
+    if(x.left==null) return x.right;
+    x.left = deleteMin(x.left);
+    x.N = size(x.left) + size(x.right) + 1;
+    return x;
+  }
+
+  public void deleteMax(){
+    root = deleteMax(root);
+  }
+
+  private Node deleteMax(Node x){
+    if(x.right == null) return x.left;
+    x.right = deleteMax(x.right);
+    x.N = size(x.left) + size(x.right) + 1;
+    return x;
+  }
+
+  public void delete(Key key){
+    delete(root, key);
+  }
+
+  private Node delete(Node x, Key key){
+    if(x == null) return null;
+    int cmp = key.compareTo(x.key);
+    if(cmp<0) {
+      x.left = delete(x.left, key);
+    }else if(cmp>0){
+      x.right = delete(x.right, key);
+    }else{
+      if(x.right == null) return x.left;
+      if(x.left == null) return x.right;
+      Node t = x;
+      x = min(x.right);
+      x.right = deleteMin(t.right);
+      x.left = t.left;
+    }
+    x.N = size(x.left) + size(x.right) + 1; // 更新结点数目
+    return x;
+  }
+
+  public Iterable<Key> keys(){
+    return keys(min(), max());
+  }
+
+  public Iterable<Key> keys(Key lo, Key hi){
+    Queue<Key> queue = new Queue<>();
+    keys(root, queue, lo, hi);
+    return queue;
+  }
+
+  /**
+   * 中序遍历
+   * @param x
+   * @param queue
+   * @param lo
+   * @param hi
+   */
+  private void keys(Node x, Queue<Key> queue, Key lo, Key hi){
+    if(x == null) return;
+    int cmplo = lo.compareTo(x.key);
+    int cmphi = hi.compareTo(x.key);
+    if(cmplo<0){
+      keys(x.left, queue, lo, hi);
+    }
+    if(cmplo <=0 && cmphi >= 0){
+      queue.enqueue(x.key);
+    }
+    if(cmphi>0){
+      keys(x.right, queue, lo, hi);
+    }
+  }
+
 
 
 
@@ -145,7 +239,19 @@ public class _BST<Key extends Comparable<Key>, Value> {
     }
   }
 
-  private class Node {
+  public void print(){
+    print(root);
+  }
+
+  private void print(Node x){
+    if(x == null) return;
+    print(x.left);
+    StdOut.println(x.key);
+    print(x.right);
+
+  }
+
+  public class Node {
 
     private Key key;
     private Value val;
@@ -178,8 +284,22 @@ public class _BST<Key extends Comparable<Key>, Value> {
     }
     StdOut.println();
 
+    StdOut.println("===============================================");
+    StdOut.println("按顺序输出");
+
+    ST.print();
+
+    StdOut.println("===============================================");
+    StdOut.println("Keys:");
+
+    Iterable keys = ST.keys("B", "G");
+
+    for (Object key:keys){
+      StdOut.println(key);
+    }
+    StdOut.println("===============================================");
     // min
-    StdOut.println(ST.min());
+    StdOut.println("min: "+ST.min());
 
     // max
     StdOut.println(ST.max());
@@ -193,6 +313,51 @@ public class _BST<Key extends Comparable<Key>, Value> {
 
     // select(3)
     StdOut.println(ST.select(3));
+
+
+    StdOut.println(ST.rank("G")); // 3
+    StdOut.println(ST.rank("E")); // 2
+
+    for(int i=0; i<arr.length; i++){
+      StdOut.print(ST.get(arr[i]));
+    }
+    StdOut.println();
+
+    // min
+    StdOut.println("min:" + ST.min());
+    StdOut.println("max:" + ST.max());
+
+    ST.deleteMin();
+
+    ST.deleteMax();
+
+    // min
+    StdOut.println("min:" + ST.min());
+
+    // max
+    StdOut.println("max:" + ST.max());
+
+
+    StdOut.println("===============================================");
+    StdOut.println("按顺序输出");
+
+    ST.print();
+
+    StdOut.println("===============================================");
+
+
+    // 删除
+    ST.delete("C");
+    ST.delete("E");
+    ST.delete("R");
+    StdOut.println("删除后；");
+
+    StdOut.println("===============================================");
+    StdOut.println("按顺序输出");
+
+    ST.print();
+
+    StdOut.println("===============================================");
 
   }
 
