@@ -9,14 +9,18 @@ import edu.princeton.cs.algs4.StdOut;
  */
 
 public class Ex_3_1_22 {
+
   static class ArrayST<Key extends Comparable<Key>, Value> {
+
     Item<Key, Value>[] items;
     int N;
 
-    private class Item<Key, Value>{
+    private class Item<Key, Value> {
+
       Key key;
       Value value;
-      Item(Key key, Value val){
+
+      Item(Key key, Value val) {
         this.key = key;
         this.value = val;
       }
@@ -37,19 +41,19 @@ public class Ex_3_1_22 {
 
     public void put(Key key, Value val) {
 
-      if(val==null){
+      if (val == null) {
         delete(key);
       }
       // 检查是否在第一个位置
       Item<Key, Value> first = items[0];
 
-      if(isEmpty()){
+      if (isEmpty()) {
         items[0] = new Item<>(key, val);
         N++;
         return;
       }
 
-      if(!isEmpty() && key.compareTo(first.key) == 0){
+      if (!isEmpty() && key.compareTo(first.key) == 0) {
         first.value = val;
         return;
       }
@@ -63,7 +67,7 @@ public class Ex_3_1_22 {
           return;
         }
       }
-      if(i==N){
+      if (i == N) {
         items[i] = new Item<>(key, val);
         N++;
       }
@@ -74,7 +78,7 @@ public class Ex_3_1_22 {
 
       // 检查是否在第一个位置
       Item<Key, Value> first = items[0];
-      if(key.compareTo(first.key) == 0){
+      if (key.compareTo(first.key) == 0) {
         return first.value;
       }
 
@@ -88,11 +92,11 @@ public class Ex_3_1_22 {
       return null;
     }
 
-    private void move(Item<Key, Value> item, int pos){
+    private void move(Item<Key, Value> item, int pos) {
       Item<Key, Value> temp = items[0];
       items[0] = item;
-      for(int i=pos; i>1; i--){
-        items[i] = items[i-1];
+      for (int i = pos; i > 1; i--) {
+        items[i] = items[i - 1];
       }
       items[1] = temp;
     }
@@ -123,16 +127,15 @@ public class Ex_3_1_22 {
 
     /**
      * 时间复杂度N
-     * @param key
      */
-    public void delete(Key key){
-      if(key == null ){
+    public void delete(Key key) {
+      if (key == null) {
         return;
       }
 
       for (int i = 0; i < N; i++) {
         if (key.compareTo(items[i].key) == 0) {
-          items[i] = items[N-1];
+          items[i] = items[N - 1];
           items[--N] = null;
           return;
         }
@@ -154,7 +157,7 @@ public class Ex_3_1_22 {
 
     public Iterable keys() {
       Queue<Key> que = new Queue<>();
-      for (Item<Key,Value> item : items) {
+      for (Item<Key, Value> item : items) {
         que.enqueue(item.key);
       }
       return que;
@@ -164,13 +167,13 @@ public class Ex_3_1_22 {
     public String toString() {
       StringBuffer sb = new StringBuffer();
       for (int i = 0; i < N; i++) {
-        sb.append(items[i].toString()+"\n");
+        sb.append(items[i].toString() + "\n");
       }
 
       return sb.toString();
     }
 
-    public void showFirst(){
+    public void showFirst() {
       StdOut.println(items[0]);
     }
 
@@ -184,13 +187,12 @@ public class Ex_3_1_22 {
       st.put(i, arr[i]);
     }
 
-
-    for(int i=n-1; i>0; i--){
+    for (int i = n - 1; i > 0; i--) {
       StdOut.println(st.get(i));
       st.showFirst();
     }
 
-    for(int i=n-1; i>0; i--){
+    for (int i = n - 1; i > 0; i--) {
       st.put(i, arr[i]);
       st.showFirst();
     }
