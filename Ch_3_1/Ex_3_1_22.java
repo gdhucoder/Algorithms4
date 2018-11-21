@@ -1,6 +1,5 @@
 package Ch_3_1;
 
-import Ch_3_1.Ex_3_1_2.ArrayST;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -92,6 +91,11 @@ public class Ex_3_1_22 {
       return null;
     }
 
+    /**
+     * 将位置pos的元素移动到一个位置
+     * @param item
+     * @param pos
+     */
     private void move(Item<Key, Value> item, int pos) {
       Item<Key, Value> temp = items[0];
       items[0] = item;
