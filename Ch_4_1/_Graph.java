@@ -1,7 +1,6 @@
 package Ch_4_1;
 
 import edu.princeton.cs.algs4.In;
-import java.util.Iterator;
 
 /**
  * Created by HuGuodong on 2018/11/26.
