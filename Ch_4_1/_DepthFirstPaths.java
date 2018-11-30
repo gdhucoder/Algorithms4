@@ -38,7 +38,7 @@ public class _DepthFirstPaths {
     if(!hasPathTo(v)){
       return null;
     }
-    Stack<Integer> path = new Stack<>();
+    Stack<Integer> path = new Stack<>(); // 迭代时，最后入栈的最先出栈
     for(int x = v; x!=s; x = edgeTo[x]){
       path.push(x);
     }
@@ -48,7 +48,7 @@ public class _DepthFirstPaths {
 
   public static void main(String[] args) {
     _AdjListGraph g = new _AdjListGraph(new In("src/main/algs4-data/tinyCG.txt"));
-    int s = 5;
+    int s = 0;
     _DepthFirstPaths dfs = new _DepthFirstPaths(g, s);
     for (int v = 0; v < g.V(); v++) {
       StdOut.printf("%d to %d: ", s, v);
