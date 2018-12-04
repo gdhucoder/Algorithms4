@@ -5,6 +5,8 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
+ * Connected Components
+ * DFS to find connected components in a graph
  * Created by HuGuodong on 2018/12/3.
  */
 
@@ -51,6 +53,7 @@ public class _CC {
     return count;
   }
 
+  // 查找连通分量
   // read a input
   // and print all vertices in the same connected component
   public static void main(String[] args) {
