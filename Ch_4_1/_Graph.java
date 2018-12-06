@@ -6,7 +6,8 @@ import edu.princeton.cs.algs4.In;
  * Created by HuGuodong on 2018/11/26.
  */
 
-public class _Graph {
+public class _Graph
+{
 
   public _Graph(){
 

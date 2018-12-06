@@ -2,6 +2,8 @@ package Ch_4_1;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.ST;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  * Created by HuGuodong on 2018/12/6.
@@ -11,7 +13,7 @@ public class _SymbolGraph{
 
   private ST<String, Integer> st; // string -> index
   private  String[] keys; // index -> string
-  private _Graph G;
+  private _AdjListGraph G;
 
   public _SymbolGraph(String stream, String sp){
     st = new ST<>();
@@ -31,7 +33,7 @@ public class _SymbolGraph{
       keys[st.get(key)] = key;
     }
 
-    G = new _Graph(st.size());
+    G = new _AdjListGraph(st.size());
     // second pass
     in = new In(stream);
 
@@ -58,14 +60,26 @@ public class _SymbolGraph{
     return keys[v];
   }
 
-  public _Graph G(){
+  public _AdjListGraph G(){
     return G;
   }
 
 
 
   public static void main(String[] args) {
+    // java Ch_4_1._SymbolGraph E:\gitspace\x1c\Alg4\algs4\src\main\algs4-data\routes.txt " "
+    // java Ch_4_1._SymbolGraph E:\gitspace\x1c\Alg4\algs4\src\main\algs4-data\movies.txt "/"
+    String filename = args[0];
+    String delim = args[1];
+    _SymbolGraph sg = new _SymbolGraph(filename, delim);
+    _AdjListGraph G = sg.G();
 
+    while (StdIn.hasNextLine()){
+      String source = StdIn.readLine();
+      for(int w : G.adj(sg.index(source))){
+        StdOut.println(" "+sg.name(w));
+      }
+    }
   }
 
 }
