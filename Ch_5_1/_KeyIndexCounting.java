@@ -10,7 +10,7 @@ import java.util.List;
 
 public class _KeyIndexCounting {
 
-  public Object[] input(){
+  public _ItemKeyIndex[] input(){
     List<_ItemKeyIndex> list = new ArrayList<>();
 
     list.add(new _ItemKeyIndex("Anderson", 2));
@@ -36,17 +36,12 @@ public class _KeyIndexCounting {
 
 
 
-    return list.toArray();
+    return list.toArray(new _ItemKeyIndex[0]);
   }
 
   public static void main(String[] args) {
     _KeyIndexCounting kic = new _KeyIndexCounting();
-    Object[] ori = kic.input();
-    _ItemKeyIndex[] a = new _ItemKeyIndex[ori.length];
-
-    for (int i = 0; i < ori.length; i++) {
-      a[i] = (_ItemKeyIndex) ori[i];
-    }
+    _ItemKeyIndex[] a = kic.input();
 
     StdOut.println("排序之前：");
     for (_ItemKeyIndex item: a ) {
