@@ -1,6 +1,8 @@
 package Ch_5_1;
 
 import edu.princeton.cs.algs4.StdOut;
+import org.junit.Test;
+import tools.PrintUtil;
 
 /**
  * Created by HuGuodong on 2019/1/23.
@@ -24,6 +26,8 @@ public class _Quick3String {
     if (hi <= lo) {
       return;
     }
+    StdOut.printf("sort(%2d, %2d, %2d): ", lo, hi, d);
+    PrintUtil.show(a);
     int lt = lo, gt = hi;
     int v = charAt(a[lo], d);
     int i = lo + 1;
@@ -44,9 +48,18 @@ public class _Quick3String {
   }
 
   private static void exch(String[] a, int i, int j) {
+    StdOut.printf("exch(%2d, %2d)\n ", i, j);
     String temp = a[i];
     a[i] = a[j];
     a[j] = temp;
+  }
+
+  @Test
+  public void testDemo(){
+    String[] a = "she, shells, by, x".replaceAll(" ","").split(",");
+    sort(a);
+    PrintUtil.show(a);
+
   }
 
   public static void main(String[] args) {

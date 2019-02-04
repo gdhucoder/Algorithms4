@@ -1,6 +1,10 @@
 package Ch_5_1;
 
+import static Ch_5_1.Ex_5_1_04._Quick3String.show;
+
 import edu.princeton.cs.algs4.StdOut;
+import org.junit.Test;
+import tools.PrintUtil;
 
 /**
  * Created by HuGuodong on 2019/1/18.
@@ -30,6 +34,9 @@ public class _MSD {
       return;
     }
 
+    StdOut.printf("sort(%2d, %2d, %2d): ", lo, hi, d);
+    PrintUtil.show(a);
+
     int[] count = new int[R + 2];
     for (int i = lo; i <= hi; i++)
       count[charAt(a[i], d) + 2]++;
@@ -50,6 +57,14 @@ public class _MSD {
       sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1);
     }
 
+  }
+
+
+
+  @Test
+  public void test1(){
+    String[] a = "she, sells, seashells, seashore".replaceAll(" ","").split(",");
+    sort(a);
   }
 
   public static void main(String[] args) {

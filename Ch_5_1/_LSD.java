@@ -1,6 +1,7 @@
 package Ch_5_1;
 
 import static edu.princeton.cs.algs4.StdIn.*;
+
 import edu.princeton.cs.algs4.StdOut;
 import java.io.FileInputStream;
 
@@ -20,15 +21,12 @@ public class _LSD {
       for (int i = 0; i < N; i++) {
         count[a[i].charAt(d) + 1]++;
       }
-
       for (int r = 0; r < R; r++) {
         count[r + 1] += count[r];
       }
-
       for (int i = 0; i < N; i++) {
         aux[count[a[i].charAt(d)]++] = a[i];
       }
-
       for (int i = 0; i < N; i++) {
         a[i] = aux[i];
       }
