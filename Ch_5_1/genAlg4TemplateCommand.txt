@@ -1,0 +1,2 @@
+cd E:\gitspace\x1c\Alg4\algs4\src\main\java\Ch_5_1
+D:\ProgramData\Anaconda2\envs\py36\python.exe E:/gitspace/x1c/PythonProjects/oneshotplanner/tools/genAlg4Template.py
