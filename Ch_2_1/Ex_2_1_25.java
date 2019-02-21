@@ -2,7 +2,6 @@ package Ch_2_1;
 
 import static tools.ArrayGenerator.randomIntArray;
 
-import Ch_2_1.Ex_2_1_24.InsertionSortWithSentinel;
 import Ch_2_1.Ex_2_1_24.InsertionSortWithoutSentinel;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
@@ -69,7 +68,7 @@ public class Ex_2_1_25 {
     ordinary.sort(a);
 
 
-//    insert.show(a);
+//    insertAtFirst.show(a);
 //
 //    a = randomIntArray(N);
 //    InsertionSortWithSentinel sentinel = new InsertionSortWithSentinel();

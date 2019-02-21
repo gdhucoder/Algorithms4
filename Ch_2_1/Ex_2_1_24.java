@@ -57,7 +57,7 @@ public class Ex_2_1_24 {
     Integer[] a = randomIntArray(N);
     InsertionSortWithoutSentinel insert = new InsertionSortWithoutSentinel();
     insert.sort(a);
-//    insert.show(a);
+//    insertAtFirst.show(a);
 
     a = randomIntArray(N);
     InsertionSortWithSentinel sentinel = new InsertionSortWithSentinel();
