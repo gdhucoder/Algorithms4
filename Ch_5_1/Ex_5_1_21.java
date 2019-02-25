@@ -34,6 +34,16 @@ public class Ex_5_1_21 {
   public static void main(String[] args) {
     String[] a = randomItems(10000);
     PrintUtil.show(a, "\n");
+
+//    gmopglvwwtpcot0kuuakrmalrbhzi
+//    hskwxohmznmtcu1prsz
+//    wdtazgfuyrajwl0zzkswd
+//    vbikcqrzhsctng0cufeorvhpnrb
+//    hskwzgfuyrajwl1twbfnudukwecr
+//    lifhhzrgcsgtkh0ctmjuyssrqc
+//    aewkczvsarvyhk0jqmuqqdom
+//    aewkpmqwkytssl0rgroekupoak
+//    lifhuptxhhwpsa1hjfieknjjsquzwp
   }
 
 }
