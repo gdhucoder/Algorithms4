@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Created by HuGuodong on 2019/2/17.
  */
 
-public class Ex_1_09 {
+public class Ex_1_1_09 {
 
   public static void main(String[] args) {
 //    1.1.9 Write a code fragment that puts the binary representation of a positive integer N into a String s.
