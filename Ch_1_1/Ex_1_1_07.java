@@ -7,7 +7,7 @@ import org.junit.Test;
  * Created by HuGuodong on 2019/2/17.
  */
 
-public class Ex_1_07 {
+public class Ex_1_1_07 {
 
   public static void main(String[] args) {
 //    1.1.7 Give the value printed by each of the following code fragments:

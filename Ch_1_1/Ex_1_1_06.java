@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Created by HuGuodong on 2019/2/17.
  */
 
-public class Ex_1_06 {
+public class Ex_1_1_06 {
 
   public static void main(String[] args) {
 //    1.1.6 What does the following program print?

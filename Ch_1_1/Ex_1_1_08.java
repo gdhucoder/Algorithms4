@@ -6,7 +6,7 @@ import edu.princeton.cs.algs4.StdOut;
  * Created by HuGuodong on 2019/2/17.
  */
 
-public class Ex_1_08 {
+public class Ex_1_1_08 {
 
   public static void main(String[] args) {
 //    1.1.8 What do each of the following print?
