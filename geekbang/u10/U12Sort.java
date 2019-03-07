@@ -1,6 +1,8 @@
 package geekbang.u10;
 
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
+import org.junit.Test;
 import tools.ArrayGenerator;
 import tools.PrintUtil;
 
@@ -26,7 +28,6 @@ public class U12Sort {
           }
         }
         if (!flag) {
-          StdOut.println("提前退出");
           break; // 没有数据交换，提前退出。
         }
       }
@@ -50,6 +51,47 @@ public class U12Sort {
         a[j + 1] = temp; // 因为j--，位置差一
       }
     }
+  }
+
+
+  public static void InsertionSort(int[] a) {
+    if (a == null || a.length == 0) {
+      throw new IllegalArgumentException("array is null or no element!");
+    }
+    int n = a.length;
+    for (int i = 1; i < n; i++) { // 无序数组部分
+      int temp = a[i];
+      int j;
+      for (j = i - 1; j >= 0; j--) { // 有序数组部分
+        if (temp < a[j]) {
+          a[j + 1] = a[j];
+        } else {
+          break;
+        }
+      }
+      a[j + 1] = temp; // 因为j--，位置差一
+    }
+  }
+
+  @Test
+  public void testSortCompare(){
+    int[] a;
+    Stopwatch time = new Stopwatch();
+    int N = 10000;
+    for (int i = 0; i < N; i++) {
+      a = ArrayGenerator.randomIntsArray(200);
+      Sort.InsertionSort(a);
+//      PrintUtil.show(a);
+    }
+    StdOut.println(time.elapsedTime());
+
+    time = new Stopwatch();
+    for (int i = 0; i < N; i++) {
+      a = ArrayGenerator.randomIntsArray(200);
+      Sort.bubbleSort(a);
+//      PrintUtil.show(a);
+    }
+    StdOut.println(time.elapsedTime());
   }
 
   public static void exch(int[] a, int i, int j) {
