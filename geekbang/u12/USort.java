@@ -30,6 +30,7 @@ public class USort {
     }
 
     private static void merge(int[] a, int[] aux, int lo, int mid, int hi) {
+      // 输出标志
       StdOut.printf("%d, %d, %d\n", lo, mid, hi);
       // copy to aux
       for (int k = lo; k <= hi; k++) {
