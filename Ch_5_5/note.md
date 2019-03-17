@@ -73,5 +73,9 @@ java Ch_5_5._BinaryDump 40 < 4runs.bin
 
 java Ch_5_5._RunLength - < abra.txt | java Ch_5_5._HexDump 24
 
+java Ch_5_5._BinaryDump 40 < abra.txt
+
 java Ch_5_5._RunLength - < q32x48.bin  | java Ch_5_5._HexDump 24
+
+java Ch_5_5._RunLength - < 4runs.bin  | java Ch_5_5._HexDump 24
 ```

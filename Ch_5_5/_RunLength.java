@@ -38,7 +38,7 @@ public class _RunLength {
         if(run == R-1){
           BinaryStdOut.write(run, LG_R);
           run = 0;
-          BinaryStdOut.write(run, LG_R);
+          BinaryStdOut.write(run, LG_R); // 为什么要写0呢
         }
         run++;
       }
