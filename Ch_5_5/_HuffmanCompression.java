@@ -80,6 +80,9 @@ public class _HuffmanCompression {
     return pq.delMin();
   }
 
+  /**
+   * 展开
+   */
   public static void expand() {
     Node root = readTire(); // read in encoding tire
     int N = BinaryStdIn.readInt(); // read the number of chars
@@ -132,11 +135,11 @@ public class _HuffmanCompression {
     String[] st = new String[R];
     buildCode(st, root, "");
 
-//    for (int i = 0; i < st.length; i++) {
-//      if(st[i]!=null){
-//        System.err.println((char)i +" : " + st[i]);
-//      }
-//    }
+    for (int i = 0; i < st.length; i++) {
+      if(st[i]!=null){
+        System.err.println((char)i +" : " + st[i]);
+      }
+    }
 
     // Print trie for decoder(recursive)
     writeTrie(root);
