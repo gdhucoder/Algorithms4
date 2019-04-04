@@ -79,3 +79,21 @@ java Ch_5_5._RunLength - < q32x48.bin  | java Ch_5_5._HexDump 24
 
 java Ch_5_5._RunLength - < 4runs.bin  | java Ch_5_5._HexDump 24
 ```
+
+
+java Ch_5_5._HuffmanCompression - < abra.txt | java Ch_5_5._BinaryDump 60
+
+例如：ABRACADABRA
+
+
+
+java Ch_5_5._HuffmanCompression - < tinytinyTale.txt | java Ch_5_5._BinaryDump 64
+
+java Ch_5_5._HuffmanCompression - < tinytinyTale.txt | java Ch_5_5._HuffmanCompression  +
+
+使用LZW压缩d
+ABRACADABRABRABRA
+
+java Ch_5_5._LZWCompression - < abraLZW.txt | java Ch_5_5._HexDump 20
+
+04 10 42 05 20 41 04 30 41 04 41 01 10 31 02 10 80 41 10 00
