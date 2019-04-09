@@ -20,9 +20,9 @@ public class Ex_1_1_23 {
     while (!StdIn.isEmpty()) {
       int key = StdIn.readInt();
       int rank = Ex_1_1_22.rank(whitelist, key);
-      if (rank > 0 && op.equals("-")) { // in white list
+      if (rank > 0 && op.equals("-")) { // in white list, rank > 0
         StdOut.println(key);
-      } else if (rank == -1 && op.equals("+")) {//not in white list
+      } else if (rank == -1 && op.equals("+")) {//not in white list, rank == -1
         StdOut.println(key);
       }
     }
