@@ -37,8 +37,10 @@ public class Ex_1_1_24 {
     int gcd = gcd(p, q, 0);
     StdOut.printf("gcd = %d\n", gcd);
 
-    p = 1111111;
-    q = 1234567;
+//    p = 1111111;
+//    q = 1234567;
+    p = 6;
+    q = 9;
     gcd = gcd(p, q, 0);
     StdOut.printf("gcd = %d\n", gcd);
 
