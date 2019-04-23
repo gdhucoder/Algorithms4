@@ -5,6 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Random;
 import org.junit.Test;
 
 /**
@@ -12,6 +13,8 @@ import org.junit.Test;
  */
 
 public class ArrayGenerator {
+
+  public static Random random = new Random();
 
   public ArrayGenerator() {}
 
@@ -51,6 +54,13 @@ public class ArrayGenerator {
   }
 
   /**
+   * [0, end]
+   */
+  public static int[] ascInts(int hi) {
+    return ascInts(0, hi);
+  }
+
+  /**
    * [start, end]
    */
   public static int[] ascInts(int lo, int hi) {
@@ -60,6 +70,24 @@ public class ArrayGenerator {
       arr[i] = i + lo;
     }
     return arr;
+  }
+
+  public static int[] ascInts(int lo, int hi, int num) {
+
+    if(hi<lo){
+      throw new IllegalArgumentException("low must less than low");
+    }
+
+    int[] a = new int[num];
+    for (int i = 0; i < a.length; i++) {
+      if(hi==lo){
+        a[i] = lo;
+      }else{
+        a[i] = random.nextInt(hi-lo+1) + lo;
+      }
+    }
+    Arrays.sort(a);
+    return a;
   }
 
   public static int[] randomIntsArray(int hi) {
