@@ -14,15 +14,13 @@ public class BSearchVariant {
 
   /**
    * 查找第一个等于key的元素的位置
-   * @param a
-   * @param key
-   * @return
    */
   public static int bsearch(int[] a, int key) {
     int low = 0;
     int hi = a.length - 1;
     while (low <= hi) {
-      int mid = low + ((hi - low) >> 1);
+//      将mid = lo + (hi - lo) /2，将除法优化成移位运算时，得注意运算符的优先级，千万不能写成这样：mid = lo + (hi - lo) >> 1
+      int mid = low + ((hi - low) >> 1); // >> 的优先级小于 + - 号
       if (key > a[mid]) {
         low = mid + 1;
       } else if (key < a[mid]) {
@@ -43,7 +41,7 @@ public class BSearchVariant {
     int pos = bsearch(a, key);
     assert pos == 5;
     StdOut.printf("pos = %d\n", pos);
-    a = ArrayGenerator.ascInts(1,1, 10);
+    a = ArrayGenerator.ascInts(1, 1, 10);
 //    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     StdOut.println(Arrays.toString(a));
     key = 1;
@@ -53,11 +51,10 @@ public class BSearchVariant {
   }
 
   public static void main(String[] args) {
-    int[] a = {1, 3, 4, 5, 6, 8, 8, 8, 11, 18};
-    int key = 8;
-    int pos = bsearch(a, key);
-    assert pos == 5;
-    StdOut.printf("pos = %d\n", pos);
+    int a = 5 + (7) >> 1;
+    assert a == 6;
+    StdOut.println(a);
+
   }
 
 
