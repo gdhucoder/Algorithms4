@@ -74,16 +74,16 @@ public class ArrayGenerator {
 
   public static int[] ascInts(int lo, int hi, int num) {
 
-    if(hi<lo){
+    if (hi < lo) {
       throw new IllegalArgumentException("low must less than low");
     }
 
     int[] a = new int[num];
     for (int i = 0; i < a.length; i++) {
-      if(hi==lo){
+      if (hi == lo) {
         a[i] = lo;
-      }else{
-        a[i] = random.nextInt(hi-lo+1) + lo;
+      } else {
+        a[i] = random.nextInt(hi - lo + 1) + lo;
       }
     }
     Arrays.sort(a);
@@ -149,6 +149,28 @@ public class ArrayGenerator {
     }
 
     Integer[] arr = new Integer[size];
+
+    for (int i = 0; i < size; i++) {
+      arr[i] = StdRandom.uniform(lo, hi + 1);
+    }
+
+    return arr;
+
+  }
+
+  public static int[] intsArray(int size, int lo, int hi) {
+
+    if (size < 0) {
+      throw new IllegalArgumentException("size can not be less than 0");
+    }
+    if (lo > hi) {
+      throw new IllegalArgumentException("lo can not be larger than hi");
+    }
+    if (hi > Integer.MAX_VALUE) {
+      throw new IllegalArgumentException("hi can not be larger than Integer.MAX_VALUE");
+    }
+
+    int[] arr = new int[size];
 
     for (int i = 0; i < size; i++) {
       arr[i] = StdRandom.uniform(lo, hi + 1);
