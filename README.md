@@ -1,13 +1,15 @@
 
-[TOC]
+# Algorithms, 4th Edition SOLUTIONS
 
-# Algorithms4
+Algorithms, 4th Edition SOLUTION(Java) [book site](https://algs4.cs.princeton.edu/home/)
 
-Algorithms4 Java版分析与解答。
+essential information that every serious programmer needs to know about algorithms and data structures.
 
-记录自己的学习过程。
+![2019-05-01-010](https://gitee.com/gdhu/prvpic/raw/master/2019-05-01-010.jpg)
 
-## 1.1 Basic Programming Model
+## Chapter 1: Fundamentals
+
+###  1.1 Basic Programming Model
 
 | [E1~E10](./Ch_1_1/Ex_1_1.md)  | [E-11](./Ch_1_1/Ex_1_1_11.md)    | [E-12](./Ch_1_1/Ex_1_1_12.md)    | [E-13](./Ch_1_1/Ex_1_1_13.md)    | [E-14](./Ch_1_1/Ex_1_1_14.md)    |
 | :----: | :----: | :----: | :----: | :----: |
@@ -20,6 +22,22 @@ Algorithms4 Java版分析与解答。
 |      |      |      |      |      |
 |      |      |      |      |      |
 |      |      |      |      |      |
+
+### TODO :under developing
+
+### 1.2
+
+### 1.3
+
+## Chapter 2: Sorting
+
+## Chapter 3: Searching
+
+## Chapter 4: Graph
+
+## Chapter 5: Strings
+
+## Chapter 6: Context
 
 
 2018-05-01
