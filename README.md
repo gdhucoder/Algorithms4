@@ -5,8 +5,6 @@ Algorithms, 4th Edition SOLUTION(Java) [book site](https://algs4.cs.princeton.ed
 
 essential information that every serious programmer needs to know about algorithms and data structures.
 
-![2019-05-01-010](https://gitee.com/gdhu/prvpic/raw/master/2019-05-01-010.jpg)
-
 ## Chapter 1: Fundamentals
 
 ###  1.1 Basic Programming Model
@@ -23,7 +21,7 @@ essential information that every serious programmer needs to know about algorith
 |      |      |      |      |      |
 |      |      |      |      |      |
 
-### TODO :under developing
+### TODO
 
 ### 1.2
 
@@ -39,10 +37,11 @@ essential information that every serious programmer needs to know about algorith
 
 ## Chapter 6: Context
 
+![book-cover](https://gitee.com/gdhu/prvpic/raw/master/2019-05-01-010.jpg)
 
 2018-05-01
 
-2.4 优先队列
+2.4 Priority Queue
 
 | ~~1~~  | ~~2~~  | ~~3~~  | ~~4~~  | ~~5~~  |
 | :----: | :----: | :----: | :----: | :----: |
@@ -58,7 +57,7 @@ essential information that every serious programmer needs to know about algorith
 
 
 
-2.5 应用  （未完成）
+2.5 Application
 
 | 1    | 2    | 3    | 4    | 5    |
 | :----: | :----: | :----: | :----: | :----: |
@@ -73,7 +72,7 @@ essential information that every serious programmer needs to know about algorith
 |      |      |      |      |      |
 
 
-3.1 符号表 update 2018-11-13
+3.1 Symbol Table
 
 | ~~1~~  | ~~2~~    | ~~3~~    | ~~4~~    | ~~5~~    |
 | :----: | :----: | :----: | :----: | :----: |
@@ -88,7 +87,7 @@ essential information that every serious programmer needs to know about algorith
 |      |      |      |      |      |
 
 
-待补充：
+TEMPLATE
 
 | 1    | 2    | 3    | 4    | 5    |
 | :----: | :----: | :----: | :----: | :----: |
@@ -103,13 +102,11 @@ essential information that every serious programmer needs to know about algorith
 |      |      |      |      |      |
 
 
-## 感谢
+## Thanks
 
-学习过程中他们给了我很多帮助，特此感谢(排名不分先后)。
+[xiaohei](https://github.com/YangXiaoHei/Algorithms)
 
-感谢[xiaohei](https://github.com/YangXiaoHei/Algorithms)
-
-感谢[ikesonwy](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
+[ikesonwy](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
 
 
 
