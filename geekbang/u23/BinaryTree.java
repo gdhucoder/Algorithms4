@@ -122,6 +122,7 @@ public class BinaryTree {
     // levelOrder
     StdOut.println("LEVEL ORDER ===========================");
     leverOrder(root);
+
   }
 
 
