@@ -1,6 +1,7 @@
-# Algorithms4
 
-# 前言
+[TOC]
+
+# Algorithms4
 
 Algorithms4 Java版分析与解答。
 
