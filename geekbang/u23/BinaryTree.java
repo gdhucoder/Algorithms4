@@ -80,7 +80,7 @@ public class BinaryTree {
     StdOut.println(n);
   }
 
-//  先将树的根节点入队，
+  //  先将树的根节点入队，
 //
 //  如果队列不空，则进入循环
 //
@@ -108,6 +108,36 @@ public class BinaryTree {
     }
   }
 
+  public static Node tree1() {
+    Node node_A = new Node("A");
+    Node node_B = new Node("B");
+    Node node_C = new Node("C");
+    Node node_D = new Node("D");
+    Node node_E = new Node("E");
+    Node node_F = new Node("F");
+    Node node_G = new Node("G");
+    node_A.left = node_B;
+    node_B.left = node_C;
+    node_C.left = node_D;
+    node_D.left = node_E;
+    node_E.left = node_F;
+    node_F.left = node_G;
+    return node_A;
+  }
+
+
+  /**
+   * get the height of a binary tree
+   * @param n
+   * @return
+   */
+  public static int height(Node n) {
+    if (n == null) {
+      return -1;
+    }
+    return Math.max(height(n.left), height(n.right)) + 1;
+  }
+
   public static void main(String[] args) {
     Node root = initTree();
     // preOrder
@@ -122,6 +152,9 @@ public class BinaryTree {
     // levelOrder
     StdOut.println("LEVEL ORDER ===========================");
     leverOrder(root);
+
+    int height = height(tree1());
+    StdOut.println(height);
 
   }
 
