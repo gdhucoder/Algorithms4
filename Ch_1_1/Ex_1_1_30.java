@@ -1,7 +1,6 @@
 package Ch_1_1;
 
 import edu.princeton.cs.algs4.StdOut;
-import java.util.Arrays;
 
 /**
  * Created by HuGuodong on 2019/5/5.

@@ -4,7 +4,6 @@ import static tools.ArrayGenerator.intsArray;
 
 import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
-import tools.ArrayGenerator;
 
 /**
  * Created by HuGuodong on 2019/5/1.

@@ -1,7 +1,6 @@
 package Ch_1_1;
 
 import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
 
 /**
  * Created by HuGuodong on 2019/4/13.
