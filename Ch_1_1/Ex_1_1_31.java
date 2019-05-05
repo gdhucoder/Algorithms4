@@ -21,7 +21,7 @@ public class Ex_1_1_31 {
     StdDraw.setScale(-1.2, 1.2);
 
     // draw a circle at (0,0) and radius = 1
-    StdDraw.circle(0,0,1);
+    StdDraw.circle(0, 0, 1);
 
     // pen radius
     StdDraw.setPenRadius(0.05);
@@ -42,16 +42,16 @@ public class Ex_1_1_31 {
     StdDraw.setPenColor(StdDraw.GRAY);
     StdDraw.setPenRadius(); // default line width
     for (int i = 0; i < N; i++)
-      for (int j = i+1; j < N; j++)
-        if(StdRandom.bernoulli(p))
+      for (int j = i + 1; j < N; j++)
+        if (StdRandom.bernoulli(p))
           // x_form, y_from -> x_to, y_to
           StdDraw.line(points[i][0], points[i][1], points[j][0], points[j][1]);
 
   }
 
   public static void main(String[] args) {
-    int N = 10; // N points
-    double p = 0.4; // prob of connection between 2 points
-    drawCircleConnection(N,p);
+    int N = 20; // N points
+    double p = 0.1; // prob of connection between 2 points
+    drawCircleConnection(N, p);
   }
 }
