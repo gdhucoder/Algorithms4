@@ -1,7 +1,5 @@
 package Ch_1_1;
 
-import edu.princeton.cs.algs4.StdOut;
-
 /**
  * Created by HuGuodong on 2019/2/17.
  */
