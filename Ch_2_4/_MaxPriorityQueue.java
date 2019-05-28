@@ -105,6 +105,6 @@ public class _MaxPriorityQueue<Key extends Comparable<Key>> {
       System.out.println(pq.delMax());
     }
 
-
+    pq.delMax();
   }
 }
