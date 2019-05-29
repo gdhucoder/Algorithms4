@@ -16,3 +16,10 @@ tree, represented in level order in an array (not using the first entry)
 Operation: insert and remove the maximum
 
 ![operation](https://gitee.com/gdhu/prvpic/raw/master/2019-05-19-004.jpg)
+
+多叉堆：multiway heaps 树的高度和子节点找到最大值的折中。
+
+1-based indexing: 数组以1开头访问
+
+0-based indexing：数组以0开头访问
+
