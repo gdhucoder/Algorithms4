@@ -23,3 +23,7 @@ Operation: insert and remove the maximum
 
 0-based indexing：数组以0开头访问
 
+使用索引优先队列可以解决多路归并问题。
+
+it merges together sorted input streams into one sorted output stream.
+
