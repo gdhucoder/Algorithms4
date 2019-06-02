@@ -27,3 +27,43 @@ Operation: insert and remove the maximum
 
 it merges together sorted input streams into one sorted output stream.
 
+`
+
+E:\gitspace\x1c\Alg4\algs4\target\classes>more m1.txt
+A B C F G I I Z
+
+E:\gitspace\x1c\Alg4\algs4\target\classes>more m2.txt
+B D H P Q Q
+
+E:\gitspace\x1c\Alg4\algs4\target\classes>more m3.txt
+A B E F J N
+
+
+//    E:\gitspace\x1c\Alg4\algs4>cd .\target\classes
+//
+//    E:\gitspace\x1c\Alg4\algs4\target\classes>java Ch_2_4._Multiway m1.txt m2.txt m3.txt
+
+A
+A
+B
+B
+B
+C
+D
+E
+F
+F
+G
+H
+I
+I
+J
+N
+P
+Q
+Q
+Z
+
+`
+
+

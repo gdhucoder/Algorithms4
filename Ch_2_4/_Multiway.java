@@ -26,4 +26,21 @@ public class _Multiway {
       }
     }
   }
+
+  public static void main(String[] args) {
+    int N = args.length;
+    In[] streams = new In[N];
+    for (int i = 0; i < N; i++) {
+      streams[i] = new In(args[i]);
+    }
+    merge(streams);
+
+//    E:\gitspace\x1c\Alg4\algs4>cd .\target\classes
+//
+//    E:\gitspace\x1c\Alg4\algs4\target\classes>java Ch_2_4._Multiway m1.txt m2.txt m3.txt
+
+
+
+  }
+
 }
