@@ -34,6 +34,9 @@ public class Ex_1_1_33 {
 
     // matrix-matrix product
     public static double[][] mult(double[][] a, double[][] b) {
+      if (a == null || b == null) {
+        throw new IllegalArgumentException("null array!");
+      }
       if (a[0].length != b.length) {
         throw new IllegalArgumentException();
       }
@@ -54,6 +57,9 @@ public class Ex_1_1_33 {
 
     // transpose
     public static double[][] transpose(double[][] a) {
+      if (a == null) {
+        throw new IllegalArgumentException("null array!");
+      }
       int Nx = a.length;
       int Ny = a[0].length;
       double[][] b = new double[Ny][Nx];
@@ -67,6 +73,9 @@ public class Ex_1_1_33 {
 
     // matrix-vector product
     public static double[] mult(double[][] a, double[] x) {
+      if (a == null || x == null) {
+        throw new IllegalArgumentException("null array!");
+      }
       if (a[0].length != x.length) {
         throw new IllegalArgumentException("wrong dimension");
       }
@@ -80,6 +89,9 @@ public class Ex_1_1_33 {
 
     // vector-matrix product
     public static double[] mult(double[] y, double[][] a) {
+      if (y == null || a == null) {
+        throw new IllegalArgumentException("null array!");
+      }
       if (y.length != a.length) {
         throw new IllegalArgumentException();
       }
@@ -94,8 +106,6 @@ public class Ex_1_1_33 {
       }
       return ret;
     }
-
-
   }
 
   @Test
@@ -119,8 +129,8 @@ public class Ex_1_1_33 {
   }
 
   @Test
-  public void testMult3(){
-    double[]y = {2, 3};
+  public void testMult3() {
+    double[] y = {2, 3};
     double[][] a = {{1, 0, 1}, {1, 1, 1}};
     double[] c = mult(y, a);
     PrintUtil.show(c);
