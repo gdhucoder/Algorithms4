@@ -1,8 +1,6 @@
 package Ch_1_1;
 
-import static Ch_1_1.Ex_1_1_33.Matrix.dot;
-import static Ch_1_1.Ex_1_1_33.Matrix.mult;
-import static Ch_1_1.Ex_1_1_33.Matrix.transpose;
+import static Ch_1_1.Ex_1_1_33.Matrix.*;
 
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
@@ -36,7 +34,22 @@ public class Ex_1_1_33 {
 
     // matrix-matrix product
     public static double[][] mult(double[][] a, double[][] b) {
-      return null;
+      if (a[0].length != b.length) {
+        throw new IllegalArgumentException();
+      }
+      int Nx = a.length;
+      int Ny = b[0].length;
+      double[][] c = new double[Nx][Ny];
+      for (int i = 0; i < Nx; i++) {
+        for (int j = 0; j < Ny; j++) {
+          double ele = 0.0;
+          for (int k = 0; k < a[0].length; k++) {
+            ele += a[i][k] * b[k][j];
+          }
+          c[i][j] = ele;
+        }
+      }
+      return c;
     }
 
     // transpose
@@ -54,36 +67,65 @@ public class Ex_1_1_33 {
 
     // matrix-vector product
     public static double[] mult(double[][] a, double[] x) {
-      if(a[0].length!=x.length){
+      if (a[0].length != x.length) {
         throw new IllegalArgumentException("wrong dimension");
       }
       int N = a.length;
       double[] ret = new double[N];
       for (int i = 0; i < N; i++) {
-        ret[i] = dot(a[i],x);
+        ret[i] = dot(a[i], x);
       }
       return ret;
     }
 
     // vector-matrix product
     public static double[] mult(double[] y, double[][] a) {
-      return null;
+      if (y.length != a.length) {
+        throw new IllegalArgumentException();
+      }
+      int N = a[0].length;
+      double[] ret = new double[a[0].length];
+      for (int i = 0; i < N; i++) {
+        double ele = 0.0;
+        for (int j = 0; j < y.length; j++) {
+          ele += y[j] * a[j][i];
+        }
+        ret[i] = ele;
+      }
+      return ret;
     }
 
 
   }
 
   @Test
-  public void testMult1(){
+  public void testMult1() {
 
     // test mult
-    double[][] x1 = {{4,3,1}, {1,-2,3}, {5,7,0}};
-    double[] y = {7,2,1};
+    double[][] x1 = {{4, 3, 1}, {1, -2, 3}, {5, 7, 0}};
+    double[] y = {7, 2, 1};
 
-    double[] ret = mult(x1,y);
+    double[] ret = mult(x1, y);
     PrintUtil.show(ret);
 //    [35.0, 6.0, 49.0]
   }
+
+  @Test
+  public void testMult2() {
+    double[][] a = {{1, 1}};
+    double[][] b = {{1, 1, 1}, {1, 1, 1}};
+    double[][] c = mult(a, b);
+    PrintUtil.show(c);
+  }
+
+  @Test
+  public void testMult3(){
+    double[]y = {2, 3};
+    double[][] a = {{1, 0, 1}, {1, 1, 1}};
+    double[] c = mult(y, a);
+    PrintUtil.show(c);
+  }
+
 
   public static void main(String[] args) {
 
