@@ -18,6 +18,22 @@ public class ArrayGenerator {
 
   public ArrayGenerator() {}
 
+
+  /**
+   * [a, b)
+   * @param N
+   * @param lower
+   * @param upper
+   * @return
+   */
+  public static double[] genRandomDoules(int N, double lower, double upper){
+    double[] vals = new double[N];
+    for (int i = 0; i < N; i++) {
+      vals[i] = StdRandom.uniform(lower, upper);
+    }
+    return vals;
+  }
+
   /**
    *
    * @param hi

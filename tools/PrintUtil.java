@@ -15,12 +15,28 @@ public class PrintUtil {
     StdOut.println(Arrays.toString(a));
   }
 
+  public static void show(double[] a){
+    StdOut.println(Arrays.toString(a));
+  }
+
   public static void show(Object[] a){
     for (Object o : a){
       StdOut.print(o.toString() + "\t");
     }
     StdOut.println();
   }
+
+  public static void show(double[][] a){
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[0].length; j++) {
+        StdOut.print(a[i][j] + "\t");
+      }
+      StdOut.println();
+    }
+    StdOut.println();
+  }
+
+
 
   public static void show(Object[] a, String sep){
     for (Object o : a){
