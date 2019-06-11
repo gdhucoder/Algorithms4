@@ -1,6 +1,7 @@
 package Ch_1_1;
 
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 import org.junit.Test;
 import tools.ArrayGenerator;
@@ -59,8 +60,8 @@ public class Ex_1_1_34 {
   }
 
   //  Print the k th smallest value, for k less than 100.
-  public void printKthSmallestVal(double[] a){
-
+  public void printKthSmallestVal(double[] a, int k){
+    // 见Ex_1_1_34_1
   }
 
   //  Print the sum of the squares of the numbers.
@@ -70,6 +71,31 @@ public class Ex_1_1_34 {
       sum += Math.pow(a[i],2);
     }
     StdOut.printf("sum = %f\n", sum);
+  }
+
+  /**
+   * Print the N numbers in random order
+   */
+  public void printNNumbersRandomOrder(double[] a){
+    int n = a.length;
+
+    // 每次从剩余的数组位置中随机选择一个，放到已经乱序的位置上。
+    for (int i = 0; i < n; i++) {
+      int r = i + StdRandom.uniform(n-i);
+      StdOut.println(r);
+      double temp = a[i];
+      a[i] = a[r];
+      a[r] = temp;
+    }
+    StdOut.println(Arrays.toString(a));
+  }
+
+  @Test
+  public void testPrintNNumbersRandomOrder(){
+    double[] a = ArrayGenerator.genRandomDoules(9, 0, 1);
+    Arrays.sort(a);
+    StdOut.println(Arrays.toString(a));
+    printNNumbersRandomOrder(a);
   }
 
 
@@ -82,6 +108,8 @@ public class Ex_1_1_34 {
 //    median is 0.332290
 
   }
+
+
 
   public static void main(String[] args) {
 
