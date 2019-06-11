@@ -9,6 +9,8 @@ essential information that every serious programmer needs to know about algorith
 
 ###  1.1 Basic Programming Model
 
+Problems solved:
+
 | [E1~E10](./Ch_1_1/Ex_1_1.md)  | [E-11](./Ch_1_1/Ex_1_1_11.md)    | [E-12](./Ch_1_1/Ex_1_1_12.md)    | [E-13](./Ch_1_1/Ex_1_1_13.md)    | [E-14](./Ch_1_1/Ex_1_1_14.md)    |
 | :----: | :----: | :----: | :----: | :----: |
 | [E-15](./Ch_1_1/Ex_1_1_15.md) | [E-16](./Ch_1_1/Ex_1_1_16.md)    | [E-18](./Ch_1_1/Ex_1_1_18.md)    | [E-19](./Ch_1_1/Ex_1_1_19.md)    | [E-20](./Ch_1_1/Ex_1_1_20.md)   |
