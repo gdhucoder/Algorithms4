@@ -10,7 +10,7 @@ import edu.princeton.cs.algs4.StdRandom;
 public class _Flips {
 
   public static void main(String[] args) {
-    int trials = 100;
+    int trials = 1000000;
     _Counter heads = new _Counter("heads");
     _Counter tails = new _Counter("tails");
     for (int i = 0; i < trials; i++) {
@@ -24,5 +24,8 @@ public class _Flips {
     StdOut.println(tails);
     int delta = heads.tally() - tails.tally();
     StdOut.println("delta: " + Math.abs(delta));
+//    499677 heads
+//    500323 tails
+//    delta: 646
   }
 }
