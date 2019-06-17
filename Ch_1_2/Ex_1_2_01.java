@@ -47,7 +47,6 @@ public class Ex_1_2_01 {
   public static void main(String[] args) {
     int N = 5; // generates 5 pts
     minDist(N);
-//    0 1 0.407
 //    0 2 0.838
 //    0 3 0.936
 //    0 4 0.423
@@ -58,7 +57,6 @@ public class Ex_1_2_01 {
 //    2 4 0.453
 //    3 4 0.740
 //    Min distance is 0.109
-
   }
 
 }
