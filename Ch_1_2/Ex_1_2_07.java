@@ -1,26 +1,13 @@
----
-title: "算法4 Java解答 1.2.07"
-date: 2019-02-22T07:35:22+08:00
-draft: false
-tags:
-   - JAVA
-categories:
-  - 技术
-  - 归档
----
+package Ch_1_2;
 
+import edu.princeton.cs.algs4.StdOut;
 
-# 1.2.07
+/**
+ * Created by HuGuodong on 2019/6/19.
+ */
 
-## 问题：
+public class Ex_1_2_07 {
 
-What does the following recursive function return?
-
-## 分析：
-
-reverse sequence of string.
-
-```
   public static String mystery(String s) {
     int N = s.length();
     if (N <= 1)
@@ -34,8 +21,4 @@ reverse sequence of string.
   public static void main(String[] args) {
     StdOut.println(mystery("abcde")); // edcba
   }
-```
-
-## 参考：
-
-
+}
