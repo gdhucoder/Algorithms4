@@ -21,5 +21,9 @@ public class Ex_1_2_06 {
     StdOut.println(isCircular(s, t));
 //    true
 //    true
+
+    s = "1234567891";
+    t = "912345678";
+    StdOut.println(isCircular(s, t));
   }
 }

@@ -30,8 +30,8 @@ public class Ex_1_2_09 {
 
   public static void main(String[] args) {
     _Counter cnt = new _Counter("binary search");
-    int[] a = ArrayGenerator.ascInts(100);
-    int[] keys = ArrayGenerator.randomIntsArray(150);
+    int[] a = ArrayGenerator.ascInts(100); // 100 个有序int数组
+    int[] keys = ArrayGenerator.randomIntsArray(150); // 150 ints randomly
     PrintUtil.show(keys);
     for (int key : keys){
       if(rank(key, a, cnt)<0){
