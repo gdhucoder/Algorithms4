@@ -98,6 +98,8 @@ public class Ex_1_2_12 {
     _SmartDate date = new _SmartDate(2019,6,22);
     int d  = dayOfTheWeek(2019,6,22);
     StdOut.println(d); // 6 表示Saturday
-
+//    7
+//    星期六 22-06-2019 公元
+//    6
   }
 }
