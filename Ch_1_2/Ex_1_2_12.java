@@ -67,11 +67,11 @@ public class Ex_1_2_12 {
       this.day = day;
     }
 
-    public static int dayOfTheWeek(int y, int m, int d){
+    public static int dayOfTheWeek(int y, int m, int d) {
       int y0 = y - (14 - m) / 12;
-      int x = y0 + y0/4 - y0/100 + y0/400;
+      int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
       int m0 = m + 12 * ((14 - m) / 12) - 2;
-      int d0 = (d + x + (31*m0)/12) % 7;
+      int d0 = (d + x + (31 * m0) / 12) % 7;
       return d0;
     }
 
@@ -93,10 +93,10 @@ public class Ex_1_2_12 {
 //    c.set(1,Calendar.JANUARY,1);
     System.out.println(c.get(Calendar.DAY_OF_WEEK)); // 7 表示 Saturday
     StringBuffer buf = new StringBuffer();
-    sdf.format(c.getTime(),buf, new FieldPosition(0));
+    sdf.format(c.getTime(), buf, new FieldPosition(0));
     System.out.println(buf);
-    _SmartDate date = new _SmartDate(2019,6,22);
-    int d  = dayOfTheWeek(2019,6,22);
+    _SmartDate date = new _SmartDate(2019, 6, 22);
+    int d = dayOfTheWeek(2019, 6, 22);
     StdOut.println(d); // 6 表示Saturday
 //    7
 //    星期六 22-06-2019 公元
