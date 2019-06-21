@@ -90,7 +90,7 @@ public class Ex_1_2_12 {
     String format = "MM/dd/yyyy";
     SimpleDateFormat sdf = new SimpleDateFormat("E dd-MM-yyyy G");
     Calendar c = Calendar.getInstance();
-//    c.set(1,Calendar.JANUARY,1);
+    c.set(1, Calendar.JANUARY, 1);
     System.out.println(c.get(Calendar.DAY_OF_WEEK)); // 7 表示 Saturday
     StringBuffer buf = new StringBuffer();
     sdf.format(c.getTime(), buf, new FieldPosition(0));
@@ -98,6 +98,8 @@ public class Ex_1_2_12 {
     _SmartDate date = new _SmartDate(2019, 6, 22);
     int d = dayOfTheWeek(2019, 6, 22);
     StdOut.println(d); // 6 表示Saturday
+    d = dayOfTheWeek(1, 1, 1); // 是星期1？ 这个不准了
+    StdOut.println(d);
 //    7
 //    星期六 22-06-2019 公元
 //    6
