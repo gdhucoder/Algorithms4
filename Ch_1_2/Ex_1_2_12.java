@@ -60,6 +60,11 @@ public class Ex_1_2_12 {
       this.day = day;
     }
 
+    public String dayOfTheWeek(){
+      return "";
+    }
+
+
     @Override
     public String toString() {
       return "_SmartDate{" +
