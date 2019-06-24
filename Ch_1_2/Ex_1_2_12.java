@@ -84,6 +84,24 @@ public class Ex_1_2_12 {
           ", day=" + day +
           '}';
     }
+
+    @Override
+    public boolean equals(Object x) {
+      if (this == x)
+        return true;
+      if (x == null)
+        return false;
+      if (this.getClass() != x.getClass())
+        return false;
+      _SmartDate that = (_SmartDate) x;
+      if (this.year != that.year)
+        return false;
+      if (this.month != that.month)
+        return false;
+      if (this.day != that.day)
+        return false;
+      return true;
+    }
   }
 
   public static void main(String[] args) {

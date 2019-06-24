@@ -15,6 +15,8 @@ public class Ex_1_2_13 {
     private _SmartDate when;
     private double amount;
 
+    public _Transaction() {}
+
     public _Transaction(String who, _SmartDate when, double amount) {
       this.who = who;
       this.when = when;
@@ -56,6 +58,24 @@ public class Ex_1_2_13 {
       return 0;
     }
 
+
+    public boolean equals(Object x) {
+      if (this == x)
+        return true;
+      if (x == null)
+        return false;
+      if (this.getClass() != x.getClass())
+        return false;
+      _Transaction that = (_Transaction) x;
+      if (!this.who.equals(that.who))
+        return false;
+      if (!this.when.equals(that.when))
+        return false;
+      if (this.amount != that.amount)
+        return false;
+      return true;
+    }
+
     @Override
     public String toString() {
       return "_Transaction{" +
@@ -73,5 +93,11 @@ public class Ex_1_2_13 {
     StdOut.println(t2);
 //    _Transaction{who='huguodong', when=_SmartDate{year=2019, month=6, day=22}, amount=100.12}
 //    _Transaction{who='tw', when=_SmartDate{year=2020, month=10, day=10}, amount=99999.0}
+    StdOut.println(t2.who());
+    StdOut.println(t2.when());
+    StdOut.println(t2.amount());
+
+
+
   }
 }
