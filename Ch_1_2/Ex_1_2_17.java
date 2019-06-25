@@ -1,5 +1,7 @@
 package Ch_1_2;
 
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  * Created by HuGuodong on 2019/6/25.
  */
@@ -16,10 +18,12 @@ public class Ex_1_2_17 {
         throw new IllegalArgumentException("denominator can not be zero.");
       }
 
-      assert numerator >= Long.MIN_VALUE && numerator <= Long.MAX_VALUE : "overflow: " + numerator;
+      assert
+          numerator >= Long.MIN_VALUE && numerator <= Long.MAX_VALUE :
+          "numerator overflow: " + numerator;
       assert
           denominator >= Long.MIN_VALUE && denominator <= Long.MAX_VALUE :
-          "overflow: " + denominator;
+          "denominator overflow: " + denominator;
       long gcd = gcd(numerator, denominator);
       this.numerator = numerator / gcd;
       this.denominator = denominator / gcd;
@@ -86,6 +90,11 @@ public class Ex_1_2_17 {
   }
 
   public static void main(String[] args) {
-
+    StdOut.println(Long.MAX_VALUE);
+    StdOut.println(Long.MIN_VALUE);
+    // -ea
+    _Rational r1 = new _Rational(Long.MAX_VALUE, 1);
+    _Rational r2 = new _Rational(9223372036854775807L, 1);
+    StdOut.println(r1.plus(r2));
   }
 }
