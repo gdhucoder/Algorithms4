@@ -35,7 +35,7 @@ public class _Counter {
   }
 
   public String toString() {
-    return count + " " + name;
+    return name + " " + count;
   }
 
 
