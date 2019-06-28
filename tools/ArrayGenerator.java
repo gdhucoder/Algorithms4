@@ -21,12 +21,8 @@ public class ArrayGenerator {
 
   /**
    * [a, b)
-   * @param N
-   * @param lower
-   * @param upper
-   * @return
    */
-  public static double[] genRandomDoules(int N, double lower, double upper){
+  public static double[] genRandomDoules(int N, double lower, double upper) {
     double[] vals = new double[N];
     for (int i = 0; i < N; i++) {
       vals[i] = StdRandom.uniform(lower, upper);
@@ -103,6 +99,14 @@ public class ArrayGenerator {
       }
     }
     Arrays.sort(a);
+    return a;
+  }
+
+  public static double[] randomDoubleArray(int hi, int size) {
+    double[] a = new double[size];
+    for (int i = 0; i < size; i++) {
+      a[i] = StdRandom.uniform(0d, hi);
+    }
     return a;
   }
 
