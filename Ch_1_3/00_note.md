@@ -10,4 +10,4 @@
 
 ![2019-06-29-006](https://gitee.com/gdhu/prvpic/raw/master/2019-06-29-006.jpg)
 
-![2019-06-29-006](https://gitee.com/gdhu/prvpic/raw/master/2019-06-29-007.jpg)
+![2019-06-29-007](https://gitee.com/gdhu/prvpic/raw/master/2019-06-29-007.jpg)
