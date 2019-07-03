@@ -20,7 +20,8 @@ public class Ex_1_3_03 {
     StdOut.printf("%d ", stack.pop()); // first element
 
     for (int i = 1; i < seq.length; i++) {
-      if ((!stack.isEmpty() && stack.peek() <= seq[i]) || (stack.isEmpty())) {
+      if ((!stack.isEmpty() && stack.peek() <= seq[i])
+          || (stack.isEmpty())) {
         for (int j = 0; j <= seq[i]; j++) {
           if (mark[j] == false) {
             stack.push(j);
