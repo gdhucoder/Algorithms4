@@ -56,6 +56,11 @@ public class _VarySizedCapacityStack<Item> implements Iterable<Item> {
     return itm;
   }
 
+
+  public Item peek() {
+    return a[N - 1];
+  }
+
   public int size() {
     return N;
   }
