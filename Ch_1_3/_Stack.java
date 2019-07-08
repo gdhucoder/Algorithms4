@@ -42,6 +42,10 @@ public class _Stack<Item> implements Iterable<Item> {
     return item;
   }
 
+  public Item peek() {
+    return first.item;
+  }
+
   public int size() {
     return N;
   }
