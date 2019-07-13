@@ -150,7 +150,52 @@ public class Ex_1_3_14_2 {
     while (!q.isEmpty()) {
       StdOut.printf("dequeue -> %s \n", q.dequeue());
     }
-
+//    array is resized to capacity: 2
+//    1 null
+//
+//    array is resized to capacity: 4
+//    1 2 null null
+//
+//    array is resized to capacity: 8
+//    1 2 3 4 null null null null
+//    1 2 3 4 5 6 7
+//    dequeue -> 1
+//    dequeue -> 2
+//    dequeue -> 3
+//    dequeue -> 4
+//    dequeue -> 5
+//
+//    array is resized to capacity: 4
+//    6 7 null null
+//    dequeue -> 6
+//
+//    array is resized to capacity: 2
+//    7 null
+//    dequeue -> 7
+//
+//    array is resized to capacity: 4
+//    1 2 null null
+//
+//    array is resized to capacity: 8
+//    1 2 3 4 null null null null
+//    dequeue -> 1
+//    dequeue -> 2
+//    dequeue -> 3
+//    dequeue -> 4
+//    dequeue -> 5
+//
+//    array is resized to capacity: 4
+//    6 7 null null
+//    dequeue -> 6
+//    dequeue -> 7
+//    dequeue -> 1
+//    dequeue -> 2
+//
+//    array is resized to capacity: 2
+//    3 null
+//    dequeue -> 3
+//
+//    Process finished with exit code 0
 
   }
 }
