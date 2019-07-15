@@ -1,5 +1,8 @@
 package Ch_1_3;
 
+
+import static tools.Constant.getCurDir;
+
 import Ch_1_2.Ex_1_2_12._SmartDate;
 import edu.princeton.cs.algs4.In;
 import tools.PrintUtil;
@@ -25,8 +28,7 @@ public class Ex_1_3_16 {
   }
 
   public static void main(String[] args) {
-    _SmartDate[] dates = readDates(
-        "E:\\gitspace\\x1c\\Alg4\\algs4\\src\\main\\java\\Ch_1_3\\Ex_1_3_16.txt");
+    _SmartDate[] dates = readDates(getCurDir("Ch_1_3/Ex_1_3_16.txt"));
     PrintUtil.show(dates);
   }
 }
