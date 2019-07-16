@@ -30,5 +30,6 @@ public class Ex_1_3_16 {
   public static void main(String[] args) {
     _SmartDate[] dates = readDates(getCurDir("Ch_1_3/Ex_1_3_16.txt"));
     PrintUtil.show(dates);
+//    _SmartDate{year=2019, month=7, day=16} _SmartDate{year=2019, month=8, day=9}
   }
 }
