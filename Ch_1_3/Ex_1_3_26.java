@@ -92,11 +92,15 @@ public class Ex_1_3_26 {
     l.insertAtFirst("a");
     l.insertAtFirst("a");
     l.insertAtFirst("c");
+    StdOut.printf("original list: ");
     l.print();
+    StdOut.println("after remove b");
     remove(l, "b");
     l.print();
+    StdOut.println("after remove a");
     remove(l, "a");
     l.print();
+    StdOut.println("after remove c");
     remove(l, "c");
     l.print();
 
