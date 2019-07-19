@@ -31,7 +31,6 @@ public class Ex_1_3_24 {
       return n;
     }
 
-
   }
 
   public static void print(Node n) {
@@ -43,7 +42,14 @@ public class Ex_1_3_24 {
     print(n.next);
   }
 
-  public static <Item> void removesAfter(Node<Item> n) {
+//  public static <Item> void removesAfter(Node<Item> n) {
+//    if (n == null || n.next == null) {
+//      return;
+//    }
+//    n.next = n.next.next;
+//  }
+
+  public static void removesAfter(Node n) {
     if (n == null || n.next == null) {
       return;
     }
