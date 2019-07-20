@@ -58,5 +58,7 @@ public class Ex_1_3_27 {
         .append(1);
     print(first);
     StdOut.println(max(first));
+//    1 2 3 3 3 3 4 10 12 30 1
+//    30
   }
 }
