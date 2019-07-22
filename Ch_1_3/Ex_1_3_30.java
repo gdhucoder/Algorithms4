@@ -75,5 +75,11 @@ public class Ex_1_3_30 {
     print(rev);
     StdOut.println("non-recursive reverse");
     print(reverse(rev));
+//    1 2 3 4
+//    recursive reverse
+//    4 3 2 1
+//    non-recursive reverse
+//    1 2 3 4
+
   }
 }
