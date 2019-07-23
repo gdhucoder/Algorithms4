@@ -118,9 +118,7 @@ public class Ex_1_3_31 {
   public void testRemoveAtEnd() {
     _DoubleNode<String> db = initDB();
     while (!db.isEmpty()) {
-      while (!db.isEmpty()) {
         StdOut.printf("%s ", db.removeAtEnd());
-      }
     }
     StdOut.println();
 //    init DB
