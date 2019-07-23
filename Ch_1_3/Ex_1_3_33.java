@@ -18,40 +18,39 @@ public class Ex_1_3_33 {
 
     public void pushLeft(Item item) {
       Node n = new Node(item);
-      if (isEmpty()) {
-        first = n;
+      n.next = first;
+      if (last == null) {
         last = n;
       } else {
         first.prev = n;
-        n.next = first;
-        first = n;
       }
+      first = n;
       N++;
     }
 
     public void pushRight(Item item) {
       Node n = new Node(item);
-      if (isEmpty()) {
+      n.prev = last;
+      if (first == null) {
         first = n;
-        last = n;
       } else {
         last.next = n;
-        n.prev = last;
-        last = n;
       }
+      last = n;
       N++;
     }
 
     public Item popLeft() {
       Node oldfirst = first;
       Item item = oldfirst.item;
-      if (size() == 1) {
-        first = null;
+      Node n = first.next;
+      oldfirst.item = null;
+      oldfirst.next = oldfirst;
+      first = n;
+      if (n == null) {
         last = null;
       } else {
-        first = first.next;
-        first.prev = null;
-        oldfirst.next = null;
+        n.prev = null;
       }
       N--;
       return item;
@@ -60,13 +59,14 @@ public class Ex_1_3_33 {
     public Item popRight() {
       Node oldlast = last;
       Item item = oldlast.item;
-      if (size() == 1) {
+      Node n = last.prev;
+      oldlast.item = null;
+      oldlast.prev = oldlast;
+      last = n;
+      if (n == null) {
         first = null;
-        last = null;
       } else {
-        last = last.prev;
-        last.next = null;
-        oldlast.prev = null;
+        n.next = null;
       }
       N--;
       return item;
