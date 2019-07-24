@@ -5,10 +5,11 @@ import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 
 /**
+ * This is a Bridge Client using RandomQueue
  * Created by HuGuodong on 2019/7/24.
  */
 
-public class Ex_1_3_35_BridgeClt {
+public class Ex_1_3_35_BridgeClient {
 
   public static final int CARDS_PER_PERSON = 13;
 
