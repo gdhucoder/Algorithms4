@@ -19,8 +19,8 @@ public class Ex_1_3_42 {
       }
       while (!temp.isEmpty()) {
         Item item = temp.pop();
-        this.push(item);
-        another.push(item);
+        this.push(item); // new node
+        another.push(item); // new node
       }
     }
 
