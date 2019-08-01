@@ -1,4 +1,19 @@
 
+Table of Contents
+=================
+
+   * [Algorithms, 4th Edition SOLUTIONS]()
+      * [Chapter 1: Fundamentals]()
+         * [1.1 Basic Programming Model]()
+         * [1.2 Data Abstraction]()
+         * [1.3 Bags, Queues and Stacks]()
+      * [Chapter 2: Sorting]()
+      * [Chapter 3: Searching]()
+      * [Chapter 4: Graph]()
+      * [Chapter 5: Strings]()
+      * [Chapter 6: Context]()
+      * [Thanks]()
+
 # Algorithms, 4th Edition SOLUTIONS
 
 Algorithms, 4th Edition SOLUTION(Java) [book site](https://algs4.cs.princeton.edu/home/)
