@@ -139,5 +139,8 @@ I followed their code style and some implements.
 
 [ikesonwy](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
 
+## How to use gh-md-toc
 
+./gh-md-toc README.md
 
+[gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
