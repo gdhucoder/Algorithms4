@@ -1,18 +1,17 @@
-
 Table of Contents
 =================
 
-   * [Algorithms, 4th Edition SOLUTIONS]()
-      * [Chapter 1: Fundamentals]()
-         * [1.1 Basic Programming Model]()
-         * [1.2 Data Abstraction]()
-         * [1.3 Bags, Queues and Stacks]()
-      * [Chapter 2: Sorting]()
-      * [Chapter 3: Searching]()
-      * [Chapter 4: Graph]()
-      * [Chapter 5: Strings]()
-      * [Chapter 6: Context]()
-      * [Thanks]()
+* [Algorithms, 4th Edition SOLUTIONS](#algorithms-4th-edition-solutions)
+  * [Chapter 1: Fundamentals](#chapter-1-fundamentals)
+    * [1\.1 Basic Programming Model](#11-basic-programming-model)
+    * [1\.2 Data Abstraction](#12-data-abstraction)
+    * [1\.3 Bags, Queues and Stacks](#13-bags-queues-and-stacks)
+  * [Chapter 2: Sorting](#chapter-2-sorting)
+  * [Chapter 3: Searching](#chapter-3-searching)
+  * [Chapter 4: Graph](#chapter-4-graph)
+  * [Chapter 5: Strings](#chapter-5-strings)
+  * [Chapter 6: Context](#chapter-6-context)
+  * [Thanks](#thanks)
 
 # Algorithms, 4th Edition SOLUTIONS
 
