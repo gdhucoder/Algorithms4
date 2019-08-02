@@ -17,7 +17,7 @@ public class Ex_1_3_47 {
   public void testQ() {
     _Queue<Integer> q1 = new _Queue<>();
     _Queue<Integer> q2 = new _Queue<>();
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 5; i++) {
       q1.enqueue(i);
     }
     for (int i = 10; i < 20; i++) {
@@ -26,6 +26,11 @@ public class Ex_1_3_47 {
     q1.concat(q2);
     PrintUtil.show(q1);
 //    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+    while (!q1.isEmpty()) {
+      StdOut.printf("%d->", q1.dequeue());
+    }
+    StdOut.println();
+//    0->1->2->3->4->10->11->12->13->14->15->16->17->18->19->
   }
 
 
@@ -50,11 +55,12 @@ public class Ex_1_3_47 {
 
     public Item dequeue() {
       Item item = last.next.item;
-      last.next = last.next.next;
-      // only one element in the list
-      if (last.next == last) {
+      if (last.next == last) {// there is only one node in the link list
         last = null;
+      } else {
+        last.next = last.next.next;
       }
+      // only one element in the list
       N--;
       return item;
     }
