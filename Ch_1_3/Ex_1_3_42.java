@@ -12,15 +12,21 @@ public class Ex_1_3_42 {
 
   public static class _Stack<Item> implements Iterable<Item> {
 
-    public _Stack(_Stack<Item> another) {
-      _Stack<Item> temp = new _Stack<>();
-      while (!another.isEmpty()) {
-        temp.push(another.pop());
-      }
-      while (!temp.isEmpty()) {
-        Item item = temp.pop();
-        this.push(item); // new node
-        another.push(item); // new node
+//    public _Stack(_Stack<Item> another) {
+//      _Stack<Item> temp = new _Stack<>();
+//      while (!another.isEmpty()) {
+//        temp.push(another.pop());
+//      }
+//      while (!temp.isEmpty()) {
+//        Item item = temp.pop();
+//        this.push(item); // new node
+//        another.push(item); // new node
+//      }
+//    }
+
+    public _Stack(_Stack<Item> s) {
+      if (s.first != null) {
+        this.first = new Node(s.first);
       }
     }
 
@@ -33,6 +39,18 @@ public class Ex_1_3_42 {
     private int N;
 
     private class Node {
+
+      private Node(Node x) {
+        this.item = x.item;
+        if (x.next != null) {
+          this.next = new Node(x.next); // recursive solution
+        }
+        N++;
+      }
+
+      private Node() {
+
+      }
 
       Item item;
       Node next;

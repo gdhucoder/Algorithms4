@@ -127,6 +127,10 @@ public class Ex_1_3_47 {
     private Node last;
     private int N;
 
+
+    /**
+     * e.g.
+     */
     public void push(Item item) {
       Node n = new Node(item);
       if (last == null) {
