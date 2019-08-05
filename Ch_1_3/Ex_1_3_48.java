@@ -89,5 +89,14 @@ public class Ex_1_3_48 {
     while (!rightStack.isEmpty()) {
       StdOut.println(rightStack.pop());
     }
+//    4
+//    3
+//    2
+//    1
+//    0
+//    9
+//    8
+//    7
+//    6
   }
 }
