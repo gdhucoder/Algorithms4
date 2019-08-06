@@ -31,6 +31,8 @@ public class _ThreeSumDoublingTest {
 //    2000   3.9
 //    4000  22.8
 //    8000 184.8
+//    16000 1609.8
+
 
   }
 }
