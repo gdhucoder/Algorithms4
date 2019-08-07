@@ -10,4 +10,8 @@ use cost model and tilde notation to simplify counts.
 
 ## order-of-growth classifications
 
+![2019-08-07-001](https://gitee.com/gdhu/prvpic/raw/master/2019-08-07-001.jpg)
+
+
+
 
