@@ -16,7 +16,8 @@ public class _ThreeSumDoublingTest {
       a[i] = StdRandom.uniform(-MAX, MAX);
     }
     _Stopwatch timer = new _Stopwatch();
-    int cnt = _ThreeSum.count(a);
+//    int cnt = _ThreeSum.count(a);
+    int cnt = _ThreeSumFast.count(a);
     return timer.elapsedTime();
   }
 
@@ -25,6 +26,8 @@ public class _ThreeSumDoublingTest {
       double time = timeTrial(N);
       StdOut.printf("%7d %5.1f\n", N, time);
     }
+
+    // N^3
 //    250   0.0
 //    500   0.1
 //    1000   0.6
@@ -33,6 +36,15 @@ public class _ThreeSumDoublingTest {
 //    8000 184.8
 //    16000 1609.8
 
+    // N^2logN
+//    250   0.0
+//    500   0.0
+//    1000   0.0
+//    2000   0.1
+//    4000   0.6
+//    8000   2.5
+//    16000   8.6
+//    32000  36.0
 
   }
 }
