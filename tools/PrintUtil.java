@@ -3,6 +3,7 @@ package tools;
 import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Stack;
 
 /**
  * Created by HuGuodong on 2019/1/31.
@@ -15,9 +16,18 @@ public class PrintUtil {
   public static void show(Iterable iterable) {
     for (Object o :
         iterable) {
-      StdOut.printf("%s \t", o);
+      StdOut.printf("%s ", o);
     }
     StdOut.println();
+  }
+
+  public static void show(Iterable iterable, boolean reverse) {
+    Stack<Object> s = new Stack<>();
+    for (Object o :
+        iterable) {
+      s.push(o);
+    }
+    show(s);
   }
 
   public static void show(int[] a) {
@@ -33,7 +43,15 @@ public class PrintUtil {
 
   public static void show(Object[] a) {
     for (Object o : a) {
-      StdOut.print(o.toString() + "\t");
+
+      StdOut.print(o == null ? "null " : o.toString() + " ");
+    }
+    StdOut.println();
+  }
+
+  public static void show(Object[] a, char sep) {
+    for (Object o : a) {
+      StdOut.print((o == null ? "null" : o.toString()) + sep);
     }
     StdOut.println();
   }
@@ -59,7 +77,7 @@ public class PrintUtil {
   public static void show(Collection c) {
     for (Object o :
         c) {
-      StdOut.println(o.toString());
+      StdOut.printf("%s \t", o);
     }
   }
 
