@@ -32,11 +32,9 @@ public class Ex_1_4_02 {
   }
 
   public static void main(String[] args) {
+//    /Users/gdhu/projects/Algorithms4/algdata/1Kints.txt
     // input 1Kints.txt
-    String file = "";
-    while (!StdIn.isEmpty()) {
-      file = StdIn.readString();
-    }
+    String file = "algdata/1Kints.txt";
     int[] a = new In(file).readAllInts();
     StdOut.println(count(a));
 //    2147483647 -2147483647 0
