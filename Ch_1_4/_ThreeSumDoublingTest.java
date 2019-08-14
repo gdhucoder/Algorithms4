@@ -16,8 +16,8 @@ public class _ThreeSumDoublingTest {
       a[i] = StdRandom.uniform(-MAX, MAX);
     }
     _Stopwatch timer = new _Stopwatch();
-//    int cnt = _ThreeSum.count(a);
-    int cnt = _ThreeSumFast.count(a);
+    int cnt = _TowSumFast.count(a);
+//    int cnt = _ThreeSumFast.count(a);
     return timer.elapsedTime();
   }
 

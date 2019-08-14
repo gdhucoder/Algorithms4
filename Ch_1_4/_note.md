@@ -16,5 +16,7 @@ use cost model and tilde notation to simplify counts.
 
 faster algorithms enables us to address larger problems.
 
+## Doubling Ratio Test
 
+![2019-08-12-001](https://gitee.com/gdhu/prvpic/raw/master/2019-08-12-001.jpg)
 
