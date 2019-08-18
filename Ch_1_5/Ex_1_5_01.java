@@ -10,22 +10,26 @@ import tools.PrintUtil;
  * Created by HuGuodong on 2019-08-19.
  */
 public class Ex_1_5_01 {
-  public static class _QuickFindUFCost{
-    private int[]id;
+
+  public static class _QuickFindUFCost {
+
+    private int[] id;
     private int count;
     private int arrayAccess;
-    public _QuickFindUFCost(int N){
+
+    public _QuickFindUFCost(int N) {
       id = new int[N];
       for (int i = 0; i < N; i++) {
         id[i] = i;
-        count=N;
+        count = N;
       }
     }
-    public void union(int p, int q){
+
+    public void union(int p, int q) {
       int pId = find(p);
       int qId = find(q);
       for (int i = 0; i < id.length; i++) {
-        if(id[i] == pId){
+        if (id[i] == pId) {
           id[i] = qId;
           arrayAccess++;
         }
@@ -37,14 +41,17 @@ public class Ex_1_5_01 {
       PrintUtil.show(id, '\t');
       StdOut.printf("array access count: %4d\n", arrayAccess);
     }
-    public int find(int p){
+
+    public int find(int p) {
       arrayAccess++;
       return id[p];
     }
-    public boolean connected(int p, int q){
+
+    public boolean connected(int p, int q) {
       return find(p) == find(q);
     }
-    public int count(){
+
+    public int count() {
       return count;
     }
   }
@@ -53,10 +60,10 @@ public class Ex_1_5_01 {
     System.setIn(new FileInputStream("Ch_1_5/Ex_1_5_01.txt"));
     int N = StdIn.readInt();
     _QuickFindUFCost uf = new _QuickFindUFCost(10);
-    while (!StdIn.isEmpty()){
+    while (!StdIn.isEmpty()) {
       int p = StdIn.readInt();
       int q = StdIn.readInt();
-      uf.union(p,q);
+      uf.union(p, q);
     }
 //    union(9,0):	0 1 2 3 4 5 6 7 8 0 	array access count:   13
 //    union(3,4):	0 1 2 4 4 5 6 7 8 0 	array access count:   26
