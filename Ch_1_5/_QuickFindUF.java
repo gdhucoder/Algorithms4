@@ -1,13 +1,14 @@
 package Ch_1_5;
 
+import Ch_1_4._Stopwatch;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-import tools.PrintUtil;
+import java.io.FileInputStream;
 
 /**
  * Created by HuGuodong on 2019-08-16.
  */
-public class _UF {
+public class _QuickFindUF {
 
   private int[] id; // access to component id (site indexed)
   private int count; // number of components
@@ -17,7 +18,7 @@ public class _UF {
    *
    * @param N
    */
-  public _UF(int N) {
+  public _QuickFindUF(int N) {
     count = N;
     id = new int[N];
     for (int i = 0; i < N; i++) {
@@ -41,7 +42,7 @@ public class _UF {
         id[i] = qID;
     }
     count--;
-    PrintUtil.show(id);
+//    PrintUtil.show(id);
   }
 
   /**
@@ -74,9 +75,11 @@ public class _UF {
     return count;
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception{
+    System.setIn(new FileInputStream("algdata/mediumUF.txt"));
     int N = StdIn.readInt();
-    _UF uf = new _UF(N);
+    _QuickFindUF uf = new _QuickFindUF(N);
+    _Stopwatch time = new _Stopwatch();
     while (!StdIn.isEmpty()) {
       int p = StdIn.readInt();
       int q = StdIn.readInt();
@@ -85,6 +88,6 @@ public class _UF {
       uf.union(p, q);
       StdOut.printf("%d %d\n", p, q);
     }
-    StdOut.println(uf.count() + " components");
+    StdOut.println(uf.count() + " components, elapsed time :" + time.elapsedTime() +"s");
   }
 }
