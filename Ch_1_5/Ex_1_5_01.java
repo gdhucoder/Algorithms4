@@ -19,9 +19,9 @@ public class Ex_1_5_01 {
 
     public _QuickFindUFCost(int N) {
       id = new int[N];
+      count = N;
       for (int i = 0; i < N; i++) {
         id[i] = i;
-        count = N;
       }
     }
 
@@ -59,7 +59,7 @@ public class Ex_1_5_01 {
   public static void main(String[] args) throws FileNotFoundException {
     System.setIn(new FileInputStream("Ch_1_5/Ex_1_5_01.txt"));
     int N = StdIn.readInt();
-    _QuickFindUFCost uf = new _QuickFindUFCost(10);
+    _QuickFindUFCost uf = new _QuickFindUFCost(N);
     while (!StdIn.isEmpty()) {
       int p = StdIn.readInt();
       int q = StdIn.readInt();
@@ -73,6 +73,6 @@ public class Ex_1_5_01 {
 //    union(5,7):	0 1 1 4 4 1 6 1 1 0 	array access count:   80
 //    union(0,3):	4 1 1 4 4 1 6 1 1 4 	array access count:   94
 //    union(4,2):	1 1 1 1 1 1 6 1 1 1 	array access count:  110
-
+      StdOut.println(uf.count());
   }
 }
