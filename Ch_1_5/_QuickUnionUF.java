@@ -10,8 +10,8 @@ import java.io.FileNotFoundException;
  */
 public class _QuickUnionUF {
 
-  private int[] id;
-  private int count;
+  int[] id;
+  int count;
 
   public _QuickUnionUF(int N) {
     id = new int[N];
@@ -20,6 +20,7 @@ public class _QuickUnionUF {
       id[i] = i;
     }
   }
+
 
   private int root(int i) {
     while (i != id[i]) {

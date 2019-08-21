@@ -10,8 +10,8 @@ import java.io.FileInputStream;
  */
 public class _QuickFindUF {
 
-  private int[] id; // access to component id (site indexed)
-  private int count; // number of components
+  int[] id; // access to component id (site indexed)
+  int count; // number of components
 
   /**
    * initialize N sites with integer names(0 to N-1)

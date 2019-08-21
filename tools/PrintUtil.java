@@ -36,6 +36,13 @@ public class PrintUtil {
     }
     StdOut.println();
   }
+  public static void show(int[] a, char sep) {
+    for (int i = 0; i < a.length; i++) {
+      StdOut.printf("%d ", a[i]);
+    }
+    StdOut.print(sep);
+  }
+
 
   public static void show(double[] a) {
     StdOut.println(Arrays.toString(a));
