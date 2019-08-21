@@ -1,17 +1,22 @@
 Table of Contents
 =================
 
+* [Table of Contents](#table-of-contents)
 * [Algorithms, 4th Edition SOLUTIONS](#algorithms-4th-edition-solutions)
   * [Chapter 1: Fundamentals](#chapter-1-fundamentals)
     * [1\.1 Basic Programming Model](#11-basic-programming-model)
     * [1\.2 Data Abstraction](#12-data-abstraction)
     * [1\.3 Bags, Queues and Stacks](#13-bags-queues-and-stacks)
+    * [1\.4 ANALYSIS OF ALGORITHMS](#14-analysis-of-algorithms)
+    * [1\.5 CASE STUDY: UNION\-FIND](#15-case-study-union-find)
   * [Chapter 2: Sorting](#chapter-2-sorting)
   * [Chapter 3: Searching](#chapter-3-searching)
   * [Chapter 4: Graph](#chapter-4-graph)
   * [Chapter 5: Strings](#chapter-5-strings)
   * [Chapter 6: Context](#chapter-6-context)
   * [Thanks](#thanks)
+  * [How to use gh\-md\-toc](#how-to-use-gh-md-toc)
+
 
 # Algorithms, 4th Edition SOLUTIONS
 
@@ -54,7 +59,16 @@ Problems solved:
 |[E41](./Ch_1_3/Ex_1_3_41.md)|[E42](./Ch_1_3/Ex_1_3_42.md)|[E43](./Ch_1_3/Ex_1_3_43.md)|[E44](./Ch_1_3/Ex_1_3_44.md)|[E45](./Ch_1_3/Ex_1_3_45.md)|
 |[E46](./Ch_1_3/Ex_1_3_46.md)|[E47](./Ch_1_3/Ex_1_3_47.md)|[E48](./Ch_1_3/Ex_1_3_48.md)|[E49](./Ch_1_3/Ex_1_3_49.md)|[E50](./Ch_1_3/Ex_1_3_50.md)|
 
+### 1.4 ANALYSIS OF ALGORITHMS
 
+|[E1](./Ch_1_4/Ex_1_4_01.md)|[E2](./Ch_1_4/Ex_1_4_02.md)|[E3](./Ch_1_4/Ex_1_4_03.md)|[E4](./Ch_1_4/Ex_1_43_04.md)|[E5](./Ch_1_4/Ex_1_4_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_1_4/Ex_1_4_06.md)|[E7](./Ch_1_4/Ex_1_4_07.md)|[E8](./Ch_1_4/Ex_1_4_08.md)|[E9](./Ch_1_4/Ex_1_4_09.md)|[E10](./Ch_1_4/Ex_1_4_10.md)|
+|[E11](./Ch_1_4/Ex_1_4_11.md)|[E12](./Ch_1_4/Ex_1_4_12.md)|TODO|TODO|
+
+### 1.5 CASE STUDY: UNION-FIND
+
+TODO
 
 ## Chapter 2: Sorting
 
