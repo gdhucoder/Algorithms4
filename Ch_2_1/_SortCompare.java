@@ -15,6 +15,8 @@ public class _SortCompare {
       _InsertionSort.sort(a);
     if (alg.equals("selection"))
       _SelectionSort.sort(a);
+    if (alg.equals("shell"))
+      _ShellSort.sort(a);
     return timer.elapsedTime();
   }
 
