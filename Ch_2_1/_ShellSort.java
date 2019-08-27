@@ -24,6 +24,11 @@ public class _ShellSort extends _Example {
     }
   }
 
+  /**
+   * easy and fast enough
+   *
+   * @param args
+   */
   public static void main(String[] args) {
     Integer[] a = ArrayGenerator.randomIntArray(10);
     PrintUtil.show(a);
