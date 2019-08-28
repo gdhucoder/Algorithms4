@@ -1,0 +1,3 @@
+why use tiny helper methods `less()` `exch()`
+
+for primitive types, implement less() with code `v < w`
