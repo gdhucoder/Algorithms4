@@ -30,5 +30,7 @@ public class Ex_2_1_11 extends _Example {
     PrintUtil.show(a);
     sort(a);
     PrintUtil.show(a);
+//    4 10 8 0 7 2 6 9 1 3 5
+//    0 1 2 3 4 5 6 7 8 9 10
   }
 }
