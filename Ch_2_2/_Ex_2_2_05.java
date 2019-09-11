@@ -49,10 +49,51 @@ public class _Ex_2_2_05 {
     }
   }
 
+  public static class MergeBU extends _Example {
+
+    private static Comparable[] aux;
+
+    public static void sort(Comparable[] a) {
+      int N = a.length;
+      aux = new Comparable[N];
+      for (int sz = 1; sz < N; sz += sz) {
+        for (int lo = 0; lo < N - sz; lo += sz + sz) {
+          merge(a, lo, lo + sz - 1, Math.min(lo + sz + sz - 1, N - 1));
+        }
+      }
+      assert isSorted(a);
+    }
+
+    public static void merge(Comparable[] a, int lo, int mid, int hi) {
+      StdOut.printf("subarray size: %2d\n", hi - lo + 1);
+      int i = lo, j = mid + 1;
+      for (int k = lo; k <= hi; k++) {
+        aux[k] = a[k];
+      }
+      for (int k = lo; k <= hi; k++) {
+        if (i > mid)
+          a[k] = aux[j++];
+        else if (j > hi)
+          a[k] = aux[i++];
+        else if (less(aux[j], aux[i]))
+          a[k] = aux[j++];
+        else
+          a[k] = aux[i++];
+      }
+    }
+  }
+
   public static void main(String[] args) {
     Integer[] a = ArrayGenerator.randomIntArray(39);
     MergeTopDown.sort(a);
     PrintUtil.show(a);
+
+    a = ArrayGenerator.randomIntArray(39);
+    MergeBU.sort(a);
+    PrintUtil.show(a);
+
+
+
 //    subarray size:  2
 //    subarray size:  3
 //    subarray size:  2

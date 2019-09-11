@@ -44,6 +44,10 @@ public class _MergeSort extends _Example {
     }
   }
 
+  public static class MergeBU extends _Example {
+
+  }
+
   public static void main(String[] args) {
     Integer[] a = ArrayGenerator.randomIntArray(100);
     sort(a);
