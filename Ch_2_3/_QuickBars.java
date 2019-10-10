@@ -49,7 +49,8 @@ public class _QuickBars {
     // StdRandom.shuffle(a);
     show(a, 0, 0, -1, a.length - 1);
     sort(a, 0, a.length - 1);
-    insertionSort(a, 0, a.length - 1);
+    // insertion sort at last
+//    insertionSort(a, 0, a.length - 1);
     show(a, 0, 0, -1, a.length - 1);
   }
 
@@ -58,7 +59,8 @@ public class _QuickBars {
     // cutoff to insertion sort
     int n = hi - lo + 1;
     if (n <= CUTOFF) {
-//      insertionSort(a, lo, hi);
+      // insertion sort during sort
+      insertionSort(a, lo, hi);
       // show(a, lo, -1, -1, hi);
       return;
     }
