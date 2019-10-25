@@ -2,7 +2,6 @@ package Ch_1_3;
 
 import static Ch_1_3.Ex_1_3_31._DoubleNode.*;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 import edu.princeton.cs.algs4.StdOut;
 import org.junit.Test;
 

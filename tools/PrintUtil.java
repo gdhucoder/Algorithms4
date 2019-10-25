@@ -36,6 +36,7 @@ public class PrintUtil {
     }
     StdOut.println();
   }
+
   public static void show(int[] a, char sep) {
     for (int i = 0; i < a.length; i++) {
       StdOut.printf("%d ", a[i]);
@@ -52,6 +53,16 @@ public class PrintUtil {
     for (Object o : a) {
 
       StdOut.print(o == null ? "null " : o.toString() + " ");
+    }
+    StdOut.println();
+  }
+
+  public static void show(int[][] a) {
+    for (int i = 0; i < a.length; i++) {
+      for (int j = 0; j < a[0].length; j++) {
+        StdOut.print(a[i][j] + "\t");
+      }
+      StdOut.println();
     }
     StdOut.println();
   }

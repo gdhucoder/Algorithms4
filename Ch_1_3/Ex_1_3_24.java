@@ -1,8 +1,6 @@
 package Ch_1_3;
 
 
-import static sun.misc.Version.print;
-
 import edu.princeton.cs.algs4.StdOut;
 
 /**

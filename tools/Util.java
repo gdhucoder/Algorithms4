@@ -1,6 +1,5 @@
 package tools;
 
-import com.sun.corba.se.impl.ior.OldJIDLObjectKeyTemplate;
 import edu.princeton.cs.algs4.StdOut;
 
 /**

@@ -1,7 +1,6 @@
 package Ch_2_2;
 
 import Ch_2_1._Example;
-import sun.jvm.hotspot.debugger.win32.coff.COMDATSelectionTypes;
 import tools.ArrayGenerator;
 import tools.PrintUtil;
 

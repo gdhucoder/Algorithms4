@@ -16,20 +16,20 @@ public class Ex_3_1_32 {
     Integer[] desc = descIntArray(N);
     Integer[] allSame = intsToInteger(allSameInts(N, 1));
     Integer[] towKeyInts = intsToInteger(intsWithNkeys(N, 1, 2));
-    _BinarySearchST<Integer, String> st = new _BinarySearchST<>();
+//    _BinarySearchST<Integer, String> st = new _BinarySearchST<>();
 
-    for(Integer key : asc){
-      st.put(key, "A");
-    }
-    for(Integer key : desc){
-      st.put(key, "A");
-    }
-    for(Integer key : allSame){
-      st.put(key, "A");
-    }
-    for(Integer key : towKeyInts){
-      st.put(key, "A");
-    }
+//    for(Integer key : asc){
+//      st.put(key, "A");
+//    }
+//    for(Integer key : desc){
+//      st.put(key, "A");
+//    }
+//    for(Integer key : allSame){
+//      st.put(key, "A");
+//    }
+//    for(Integer key : towKeyInts){
+//      st.put(key, "A");
+//    }
   }
 
 

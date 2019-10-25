@@ -50,7 +50,7 @@ public class Ex_3_1_26 {
     Stopwatch stopwatch = new Stopwatch();
 
     int minlen = Integer.parseInt(args[0]); // key-length cutoff
-    _BinarySearchST<String, Integer> st = new _BinarySearchST<>();
+    _BinarySearchST<String, Integer> st = new _BinarySearchST<>(100);
     int words = 0;
     while (!StdIn.isEmpty()){
       String word = StdIn.readString();
@@ -71,13 +71,13 @@ public class Ex_3_1_26 {
 
     Dictionary[] dictionaries = new Dictionary[st.size()];
     int i = 0;
-    for(String word : st.keys()){
-//      if(st.get(word) > st.get(max)){ // get 2D 次
-//        max = word;
-//      }
-      dictionaries[i++] = (new Dictionary(word, st.get(word)));
-//      StdOut.printf( "%20s, %3d\n", word,st.get(word)); //
-    }
+//    for(String word : st.keys()){
+////      if(st.get(word) > st.get(max)){ // get 2D 次
+////        max = word;
+////      }
+//      dictionaries[i++] = (new Dictionary(word, st.get(word)));
+////      StdOut.printf( "%20s, %3d\n", word,st.get(word)); //
+//    }
 
     Arrays.sort(dictionaries);
 

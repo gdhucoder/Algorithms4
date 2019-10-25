@@ -30,8 +30,18 @@ public class ArrayGenerator {
     return vals;
   }
 
+  public static Integer[] duplicateKeysIntArray(int size, int keys) {
+    Integer[] a = new Integer[size];
+    for (int i = 0; i < a.length; i++) {
+      // [0,n)
+      a[i] = StdRandom.uniform(keys);
+    }
+    return a;
+
+  }
+
+
   /**
-   *
    * @param hi
    * @return
    */
@@ -42,7 +52,6 @@ public class ArrayGenerator {
   }
 
   /**
-   *
    * @param lo
    * @param hi
    * @return

@@ -1,6 +1,5 @@
 package Ch_2_1;
 
-import javax.swing.JFormattedTextFieldBeanInfo;
 import tools.ArrayGenerator;
 import tools.PrintUtil;
 

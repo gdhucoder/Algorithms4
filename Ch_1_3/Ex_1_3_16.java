@@ -22,7 +22,7 @@ public class Ex_1_3_16 {
     int N = q.size();
     _SmartDate[] dates = new _SmartDate[N];
     for (int i = 0; i < N; i++) {
-      dates[i] = new _SmartDate(q.dequeue());
+//      dates[i] = new _SmartDate(q.dequeue());
     }
     return dates;
   }

@@ -2,8 +2,6 @@ package Ch_2_1;
 
 import Ch_1_4._Stopwatch;
 import edu.princeton.cs.algs4.StdOut;
-import javafx.scene.paint.Stop;
-import javax.swing.JFormattedTextFieldBeanInfo;
 import tools.ArrayGenerator;
 
 /**

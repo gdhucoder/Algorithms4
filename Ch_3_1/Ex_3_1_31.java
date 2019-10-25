@@ -1,5 +1,6 @@
 package Ch_3_1;
 
+import edu.princeton.cs.algs4.BinarySearchST;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.Stopwatch;
