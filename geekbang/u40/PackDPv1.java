@@ -5,6 +5,12 @@ package geekbang.u40;
  */
 public class PackDPv1 {
 
+  /**
+   * DP: O(n*w), Space n*w
+   *
+   * @param p
+   * @return
+   */
   public static int knapack(PackProblem p) {
     boolean[][] states = new boolean[p.n][p.maxWeight + 1];
     states[0][0] = true;
