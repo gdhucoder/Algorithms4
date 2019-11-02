@@ -1,32 +1,37 @@
 package geekbang.u41;
 
-import java.util.Arrays;
-
 /**
  * Created by HuGuodong on 2019/11/2.
  */
 public class Coin {
 
-  private int[] coinTypes = {1, 3, 5};
+  private int[] coins = {1, 3, 5};
+  private int[] mem = new int[20 + 1];
 
-  public int countCoins(int amount, int cnt, int limit) {
-    if (amount == limit) {
-      return cnt;
+
+  public int backTracking(int max) {
+    if (max == 0) {
+      return 0;
     }
-    if (amount > limit) {
+    if (max < 0) {
+      System.out.println(max);
       return Integer.MAX_VALUE;
     }
+    if (mem[max] > 0) {
+      System.out.println("hit mem: " + max + "->" + mem[max]);
+      return mem[max];
 
-    int cnt1 = countCoins(amount + coinTypes[0], cnt + 1, limit);
-    int cnt2 = countCoins(amount + coinTypes[1], cnt + 1, limit);
-    int cnt3 = countCoins(amount + coinTypes[2], cnt + 1, limit);
-    int c = Math.min(Math.min(cnt1, cnt2), cnt3);
-
-    return c;
+    }
+    int cnt0 = backTracking(max - coins[0]);// possible = Integer.MAX_VALUE
+    int cnt1 = backTracking(max - coins[1]);
+    int cnt2 = backTracking(max - coins[2]);
+    int count = Math.min(Math.min(cnt0, cnt1), cnt2) + 1;
+    mem[max] = count;
+    return Math.min(Math.min(cnt0, cnt1), cnt2) + 1;
   }
 
   public static void main(String[] args) {
     Coin c = new Coin();
-    System.out.println(c.countCoins(0, 0, 20));
+    System.out.println(c.backTracking(10));
   }
 }
