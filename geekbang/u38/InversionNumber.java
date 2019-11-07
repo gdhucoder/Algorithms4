@@ -1,6 +1,5 @@
 package geekbang.u38;
 
-import tools.ArrayGenerator;
 import tools.PrintUtil;
 
 /**
@@ -41,7 +40,7 @@ public class InversionNumber {
       } else if (aux[i] <= aux[j]) {
         a[k] = aux[i++];// aux!!!
       } else {
-        a[k] = aux[j++];
+        a[k] = aux[j++]; // 逆序数统计
         cnt += mid - i + 1; // mid 与 i之间 大于 a[j]的个数
       }
     }
