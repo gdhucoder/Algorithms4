@@ -57,6 +57,16 @@ public class PrintUtil {
     StdOut.println();
   }
 
+  public static void show(Integer[][] a) {
+    for (Object[] o : a) {
+      for (Object oo : a) {
+        StdOut.print(oo == null ? "null " : o.toString() + " ");
+      }
+      System.out.println();
+    }
+    StdOut.println();
+  }
+
   public static void show(int[][] a) {
     for (int i = 0; i < a.length; i++) {
       for (int j = 0; j < a[0].length; j++) {
