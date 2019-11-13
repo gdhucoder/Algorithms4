@@ -1,4 +1,4 @@
-package geekbang.u41;
+package geekbang.ALGO.u41;
 
 import tools._Math;
 

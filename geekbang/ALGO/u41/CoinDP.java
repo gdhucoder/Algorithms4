@@ -1,6 +1,4 @@
-package geekbang.u41;
-
-import java.util.Arrays;
+package geekbang.ALGO.u41;
 
 /**
  * Created by HuGuodong on 2019/11/2.
