@@ -1,3 +1,11 @@
 v1 的问题是：如果新增其他服饰、装扮，需要修改person类，违反了 "开放-封闭原则"。
 v2 的问题是：做到了 服饰类 与 Person类分离，但没有在内部组装完毕 并且 穿衣没有先后
 v3：装饰器模式。
+
+装饰器模式不改变原有的类的基础上添加新的功能。
+1、不改变类的签名，是原有类签名保持完整。
+教程：https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm
+例如/Users/gdhu/projects/Algorithms4/designpattern/u6/another/v1
+中的例子，包装了shape，装饰器调用draw，并添加了新的功能。
+2、装饰器的添加的功能也可以有顺序。 1，2，3 之类的逻辑顺序。例如穿衣服有先后。
+
