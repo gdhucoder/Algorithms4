@@ -17,6 +17,7 @@ class PrivateImageStore implements ImageStore {
   @Override
   public String upload(Image image, String bucketName) {
     createBucketInfNotExisting(bucketName);
+    System.out.println("PrivateImageStore upload");
     return null;
   }
 
@@ -36,6 +37,7 @@ class AliyunImageStore implements ImageStore {
   public String upload(Image image, String bucketName) {
     createBucketInfNotExisting(bucketName);
     String accessToken = generateAccessToken();
+    System.out.println("AliyunImageStore upload");
     return null;
   }
 
