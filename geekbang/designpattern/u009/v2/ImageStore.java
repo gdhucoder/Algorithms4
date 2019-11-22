@@ -12,45 +12,5 @@ public interface ImageStore {
   Image download(String url);
 }
 
-class PrivateImageStore implements ImageStore {
 
-  @Override
-  public String upload(Image image, String bucketName) {
-    createBucketInfNotExisting(bucketName);
-    System.out.println("PrivateImageStore upload");
-    return null;
-  }
 
-  @Override
-  public Image download(String url) {
-    return null;
-  }
-
-  public void createBucketInfNotExisting(String bucketName) {
-
-  }
-}
-
-class AliyunImageStore implements ImageStore {
-
-  @Override
-  public String upload(Image image, String bucketName) {
-    createBucketInfNotExisting(bucketName);
-    String accessToken = generateAccessToken();
-    System.out.println("AliyunImageStore upload");
-    return null;
-  }
-
-  @Override
-  public Image download(String url) {
-    return null;
-  }
-
-  private void createBucketInfNotExisting(String bucketName) {
-
-  }
-
-  private String generateAccessToken() {
-    return null;
-  }
-}
