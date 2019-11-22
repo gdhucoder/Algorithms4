@@ -12,10 +12,12 @@ public class TestSpeed {
     int NUM = 1000000;
     _Stopwatch time = new _Stopwatch();
     for (int i = 0; i < NUM; i++) {
+      // new Instance
       ImageStore store = new ImageStore();
     }
     System.out.println(time.elapsedTime() + " s");
     for (int i = 0; i < NUM; i++) {
+      // reflection
       ImageStore store = (ImageStore) Class.forName("geekbang.designpattern.u009.v3.ImageStore")
           .newInstance();
     }
