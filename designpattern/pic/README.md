@@ -3,6 +3,9 @@
 Hi! If you guys are still curious about the detail description of UML. Under this directory there are also other pdf files you can look up to.
 So enjoy! Happy Learning!
 
+I am currently study <大话设计模式>, here is my [summary](https://github.com/gdhucoder/DesignPattern). 
+You can have a quick overview of all kinds of design patterns implemented in Java.
+
 References:
 
 * [One Page UML Cheat Sheet](./umlcheatsheet.jpg)
