@@ -3,7 +3,8 @@ package ALeetCode;
 import java.util.Arrays;
 
 /**
- * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/ Created by HuGuodong on 11/27/19.
+ * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/
+ * Created by HuGuodong on 11/27/19.
  */
 public class P0004_2 {
 
