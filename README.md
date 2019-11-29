@@ -10,12 +10,14 @@ Table of Contents
     * [1\.4 ANALYSIS OF ALGORITHMS](#14-analysis-of-algorithms)
     * [1\.5 CASE STUDY: UNION\-FIND](#15-case-study-union-find)
   * [Chapter 2: Sorting](#chapter-2-sorting)
+    * [2\.1 ELEMENTARY SORTS](#21-elementary-sorts)
   * [Chapter 3: Searching](#chapter-3-searching)
   * [Chapter 4: Graph](#chapter-4-graph)
   * [Chapter 5: Strings](#chapter-5-strings)
   * [Chapter 6: Context](#chapter-6-context)
   * [Thanks](#thanks)
   * [How to use gh\-md\-toc](#how-to-use-gh-md-toc)
+
 
 
 # Algorithms, 4th Edition SOLUTIONS
@@ -74,6 +76,8 @@ Problems solved:
 |[E11](./Ch_1_5/Ex_1_5_11.md)|TODO|TODO|TODO|
 
 ## Chapter 2: Sorting
+
+### 2.1 ELEMENTARY SORTS
 
 |[E1](./Ch_2_1/Ex_2_1_01.md)|[E2](./Ch_2_1/Ex_2_1_02.md)|[E3](./Ch_2_1/Ex_2_1_03.md)|[E4](./Ch_2_1/Ex_2_1_04.md)|[E5](./Ch_2_1/Ex_2_1_05.md)|
 | :----: | :----: | :----: | :----: | :----: |
