@@ -75,6 +75,11 @@ Problems solved:
 
 ## Chapter 2: Sorting
 
+|[E1](./Ch_2_1/Ex_2_1_01.md)|[E2](./Ch_2_1/Ex_2_1_02.md)|[E3](./Ch_2_1/Ex_2_1_03.md)|[E4](./Ch_2_1/Ex_2_1_04.md)|[E5](./Ch_2_1/Ex_2_1_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_2_1/Ex_2_1_06.md)|[E7](./Ch_2_1/Ex_2_1_07.md)|[E8](./Ch_2_1/Ex_2_1_08.md)|[E9](./Ch_2_1/Ex_2_1_09.md)|[E10](./Ch_2_1/Ex_2_1_10.md)|
+|[E11](./Ch_2_1/Ex_2_1_11.md)|TODO|TODO|TODO|
+
 ## Chapter 3: Searching
 
 ## Chapter 4: Graph
