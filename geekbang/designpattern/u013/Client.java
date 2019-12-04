@@ -15,5 +15,7 @@ public class Client {
 
     DefaultApiAuthencatorImpl authencator = new DefaultApiAuthencatorImpl();
     authencator.auth(req);
+//    buildAuthToken: IXIGIpJ9hdOBCyjStaDJ5Nom07g=
+//    pass auth!
   }
 }
