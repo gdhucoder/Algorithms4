@@ -1,6 +1,6 @@
-package geekbang.designpattern.u013;
+package geekbang.designpattern.u014;
 
-import geekbang.designpattern.u013.auth.DefaultApiAuthencatorImpl;
+import geekbang.designpattern.u014.auth.DefaultApiAuthencatorImpl;
 
 /**
  * Created by HuGuodong on 12/4/19.

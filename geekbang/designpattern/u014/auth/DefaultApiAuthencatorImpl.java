@@ -1,15 +1,21 @@
-package geekbang.designpattern.u013.auth;
+package geekbang.designpattern.u014.auth;
 
-import geekbang.designpattern.u013.token.AuthToken;
-import geekbang.designpattern.u013.apirequest.ApiRequest;
-import geekbang.designpattern.u013.storage.MySqlCredentialStorage;
+import geekbang.designpattern.u014.storage.CredentialStorage;
+import geekbang.designpattern.u014.token.AuthToken;
+import geekbang.designpattern.u014.apirequest.ApiRequest;
+import geekbang.designpattern.u014.storage.MySqlCredentialStorage;
 
 /**
  * Created by HuGuodong on 12/4/19.
  */
 public class DefaultApiAuthencatorImpl implements ApiAuthencator {
 
-  private MySqlCredentialStorage storage = new MySqlCredentialStorage();
+  private CredentialStorage storage;
+
+  public DefaultApiAuthencatorImpl() {
+    storage = new MySqlCredentialStorage();
+  }
+
 
   @Override
   public void auth(String url) {

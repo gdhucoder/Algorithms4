@@ -1,6 +1,6 @@
-package geekbang.designpattern.u013.token;
+package geekbang.designpattern.u014.token;
 
-import geekbang.designpattern.u013.apirequest.ApiRequest;
+import geekbang.designpattern.u014.apirequest.ApiRequest;
 import java.util.Base64;
 import java.util.Date;
 import javax.crypto.Mac;
