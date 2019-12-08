@@ -94,6 +94,12 @@ Problems solved:
 
 ![book-cover](https://gitee.com/gdhu/prvpic/raw/master/2019-05-01-010.jpg)
 
+## Important
+
+I highly recommend you guys to upgrade your jdk version upto 11 or higher.
+Or, you maybe encounter some problems when running my code, because I sometimes 
+tried some new features on JDK11 or JDK13.
+
 ## Thanks
 
 I followed their code style and some implements.
