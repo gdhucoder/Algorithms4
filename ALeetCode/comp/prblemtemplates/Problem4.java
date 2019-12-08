@@ -1,4 +1,4 @@
-package ALeetCode.comp.problemtemplate;
+package ALeetCode.comp.prblemtemplates;
 
 /**
  * Created by HuGuodong on 12/8/19.

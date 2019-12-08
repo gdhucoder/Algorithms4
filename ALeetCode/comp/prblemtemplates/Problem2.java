@@ -1,16 +1,16 @@
-package ALeetCode.comp.problemtemplate;
+package ALeetCode.comp.prblemtemplates;
 
 /**
  * Created by HuGuodong on 12/8/19.
  */
-public class Problem3 {
+public class Problem2 {
 
   static class Solution {
 
   }
 
   public static void main(String[] args) {
-    System.out.println();
     Solution s = new Solution();
+    System.out.println();
   }
 }
