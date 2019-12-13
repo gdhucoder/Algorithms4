@@ -22,11 +22,10 @@ public class TestAtomic {
       Runnable r = new Runnable() {
         @Override
         public void run() {
-          cnt.incrementAndGet();
+          long i = cnt.incrementAndGet();
         }
       };
       service.execute(r);
-      System.out.println(cnt.get());
     }
 
     service.shutdown();
