@@ -26,6 +26,7 @@ public class TestAtomic {
         }
       };
       service.execute(r);
+      System.out.println(cnt.get());
     }
 
     service.shutdown();
