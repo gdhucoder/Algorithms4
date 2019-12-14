@@ -8,6 +8,7 @@ import edu.princeton.cs.algs4.In;
 public class Client {
 
   public static void main(String[] args) {
+    // build graph from file
     Graph g = new Graph(new In("geekbang/ALGO/u31/data.txt"));
     g.bfs(0, 6);
 //    0 1 4 6
