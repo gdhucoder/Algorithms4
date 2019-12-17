@@ -36,6 +36,9 @@ public class ThreeSum {
       List<List<Integer>> res = new ArrayList<>();
 
       for (int i = 0; i < num.length; i++) {
+        if (num[i] > 0) { // improve
+          break;
+        }
         if (i > 0 && num[i] == num[i - 1]) {
           continue;
         }
@@ -45,9 +48,9 @@ public class ThreeSum {
         while (L < R) {
           if (num[i] + num[L] + num[R] == 0) {
             res.add(Arrays.asList(num[i], num[L], num[R]));
-            while (L < R && num[L] == num[L + 1])
+            while (L < R && num[L] == num[L + 1]) // remove duplicates
               L++;
-            while (L < R && num[R] == num[R - 1])
+            while (L < R && num[R] == num[R - 1]) // remove duplicates
               R--;
             L++;
             R--;
