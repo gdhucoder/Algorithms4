@@ -1,0 +1,22 @@
+
+
+res
+q
+q.add(start)
+
+l = list
+while(q.isEmpty()){
+  int size = q.size();
+  while
+    String cur = q.poll
+    if(cur=end){
+      res.add l
+    }
+    for
+      for
+        if(v!contains next && set.contains next)
+          q.add(next)
+          v.add(next)
+          l.add(next)
+
+}
