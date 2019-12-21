@@ -24,9 +24,9 @@ public class MergeSortedArray {
 
   public static void main(String[] args) {
     Solution solution = new MergeSortedArray().new Solution();
-    int[] a = {2, 5, 6, 0, 0,};
-    int[] b = {4, 8};
-    solution.merge(a, 3, b, 2);
+    int[] a = {0};
+    int[] b = {1};
+    solution.merge(a, 0, b, 1);
     PrintUtil.show(a);
   }
 
@@ -35,23 +35,12 @@ public class MergeSortedArray {
   class Solution {
 
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-
       int pos = nums1.length - 1;
-      m--;
-      n--;
-      while (pos >= 0 && m >= 0 && n >= 0) {
-        if (nums1[m] > nums2[n]) {
-          nums1[pos] = nums1[m];
-          m--;
-        } else {
-          nums1[pos] = nums2[n];
-          n--;
-        }
-        pos--;
-      }
-      while (n >= 0) {
-        nums1[pos--] = nums2[n--];
-      }
+      while (m > 0 && n > 0)
+        nums1[pos--] = (nums1[m - 1] < nums2[n - 1]) ?
+            nums2[n-- - 1] : nums1[m-- - 1];
+      if (n > 0)
+        System.arraycopy(nums2, 0, nums1, 0, n);
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
