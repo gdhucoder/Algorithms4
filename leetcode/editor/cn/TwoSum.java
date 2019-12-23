@@ -14,11 +14,14 @@
 package leetcode.editor.cn;
 
 import java.util.HashMap;
+import tools.PrintUtil;
 
 public class TwoSum {
 
   public static void main(String[] args) {
     Solution solution = new TwoSum().new Solution();
+    int[] a = {2, 7, 11, 15};
+    PrintUtil.show(solution.twoSum(a, 9));
   }
 
 
@@ -26,16 +29,19 @@ public class TwoSum {
   class Solution {
 
     public int[] twoSum(int[] nums, int target) {
-      HashMap<Integer, Integer> numMap = new HashMap<>();
+      if (nums.length < 2)
+        return null;
+      HashMap<Integer, Integer> map = new HashMap<>();
       for (int i = 0; i < nums.length; i++) {
-        if (numMap.containsKey(target - nums[i])) {
-          return new int[]{i, numMap.get(target - nums[i])};
-        } else {
-          numMap.put(nums[i], i);
-        }
+        if (map.containsKey(target - nums[i]))
+//          if(map.get(target - nums[i])!= i)
+          return new int[]{map.get(target - nums[i]), i};
+        map.put(nums[i], i);
       }
       return null;
     }
+
+
   }
 //leetcode submit region end(Prohibit modification and deletion)
 
