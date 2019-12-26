@@ -14,8 +14,8 @@
 
 package leetcode.editor.cn;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ThreeSum {
@@ -33,31 +33,25 @@ public class ThreeSum {
 
     public List<List<Integer>> threeSum(int[] num) {
       Arrays.sort(num);
-      List<List<Integer>> res = new ArrayList<>();
-
-      for (int i = 0; i < num.length; i++) {
-        if (num[i] > 0) { // improve
-          break;
-        }
-        if (i > 0 && num[i] == num[i - 1]) {
-          continue;
-        }
-        int L = i + 1;
-        int R = num.length - 1;
-
-        while (L < R) {
-          if (num[i] + num[L] + num[R] == 0) {
-            res.add(Arrays.asList(num[i], num[L], num[R]));
-            while (L < R && num[L] == num[L + 1]) // remove duplicates
-              L++;
-            while (L < R && num[R] == num[R - 1]) // remove duplicates
-              R--;
-            L++;
-            R--;
-          } else if (num[i] + num[L] + num[R] < 0) {
-            L++;
-          } else {
-            R--;
+      List<List<Integer>> res = new LinkedList<>(); // 不需要动态扩容，速度更快
+      for (int i = 0; i < num.length - 2; i++) {
+        if (num[i] > 0)// 利用题目已知，排除
+          return res;
+        if (i == 0 || (i > 0 && num[i] != num[i - 1])) { // 判断重复
+          int lo = i + 1, hi = num.length - 1, sum = 0 - num[i];
+          while (lo < hi) {
+            if (num[lo] + num[hi] == sum) {
+              res.add(Arrays.asList(num[i], num[lo], num[hi]));
+              while (lo < hi && num[lo] == num[lo + 1]) // 判断重复
+                lo++;
+              while (lo < hi && num[hi] == num[hi - 1]) // 判断重复
+                hi--;
+              lo++;
+              hi--;
+            } else if (num[lo] + num[hi] < sum)
+              lo++;
+            else
+              hi--;
           }
         }
       }

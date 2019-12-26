@@ -160,7 +160,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "15",
-    "status": "",
+    "status": "ac",
     "title": "3Sum",
     "titleSlug": "3sum"
   },
@@ -215,7 +215,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "20",
-    "status": "",
+    "status": "ac",
     "title": "Valid Parentheses",
     "titleSlug": "valid-parentheses"
   },
@@ -226,7 +226,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "21",
-    "status": "",
+    "status": "ac",
     "title": "Merge Two Sorted Lists",
     "titleSlug": "merge-two-sorted-lists"
   },
@@ -237,7 +237,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "22",
-    "status": "",
+    "status": "ac",
     "title": "Generate Parentheses",
     "titleSlug": "generate-parentheses"
   },
@@ -281,7 +281,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "26",
-    "status": "",
+    "status": "ac",
     "title": "Remove Duplicates from Sorted Array",
     "titleSlug": "remove-duplicates-from-sorted-array"
   },
@@ -721,7 +721,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "66",
-    "status": "",
+    "status": "ac",
     "title": "Plus One",
     "titleSlug": "plus-one"
   },
@@ -963,7 +963,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "88",
-    "status": "",
+    "status": "ac",
     "title": "Merge Sorted Array",
     "titleSlug": "merge-sorted-array"
   },
@@ -1029,7 +1029,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "94",
-    "status": "",
+    "status": "ac",
     "title": "Binary Tree Inorder Traversal",
     "titleSlug": "binary-tree-inorder-traversal"
   },
@@ -1117,7 +1117,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "102",
-    "status": "",
+    "status": "ac",
     "title": "Binary Tree Level Order Traversal",
     "titleSlug": "binary-tree-level-order-traversal"
   },
@@ -1381,7 +1381,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "126",
-    "status": "",
+    "status": "ac",
     "title": "Word Ladder II",
     "titleSlug": "word-ladder-ii"
   },
@@ -1392,7 +1392,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "127",
-    "status": "",
+    "status": "ac",
     "title": "Word Ladder",
     "titleSlug": "word-ladder"
   },
@@ -1546,7 +1546,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "141",
-    "status": "",
+    "status": "ac",
     "title": "Linked List Cycle",
     "titleSlug": "linked-list-cycle"
   },
@@ -1700,7 +1700,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "155",
-    "status": "",
+    "status": "ac",
     "title": "Min Stack",
     "titleSlug": "min-stack"
   },
@@ -2074,7 +2074,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "189",
-    "status": "",
+    "status": "ac",
     "title": "Rotate Array",
     "titleSlug": "rotate-array"
   },
@@ -2261,7 +2261,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "206",
-    "status": "",
+    "status": "ac",
     "title": "Reverse Linked List",
     "titleSlug": "reverse-linked-list"
   },
@@ -2657,7 +2657,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "242",
-    "status": "",
+    "status": "ac",
     "title": "Valid Anagram",
     "titleSlug": "valid-anagram"
   },
@@ -3108,7 +3108,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "283",
-    "status": "",
+    "status": "ac",
     "title": "Move Zeroes",
     "titleSlug": "move-zeroes"
   },
@@ -3152,7 +3152,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "287",
-    "status": "",
+    "status": "ac",
     "title": "Find the Duplicate Number",
     "titleSlug": "find-the-duplicate-number"
   },
@@ -4758,7 +4758,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "433",
-    "status": "",
+    "status": "ac",
     "title": "Minimum Genetic Mutation",
     "titleSlug": "minimum-genetic-mutation"
   },
@@ -5660,7 +5660,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "515",
-    "status": "",
+    "status": "ac",
     "title": "Find Largest Value in Each Tree Row",
     "titleSlug": "find-largest-value-in-each-tree-row"
   },
@@ -7046,7 +7046,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "859",
-    "status": "",
+    "status": "ac",
     "title": "Design Circular Deque",
     "titleSlug": "design-circular-deque"
   },
@@ -14135,8 +14135,8 @@
     "titleSlug": "find-the-start-and-end-number-of-continuous-ranges"
   },
   {
-    "formTitle": "[5123]Iterator for Combination",
-    "frontendQuestionId": "5123",
+    "formTitle": "[1286]Iterator for Combination",
+    "frontendQuestionId": "1286",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -14146,19 +14146,8 @@
     "titleSlug": "iterator-for-combination"
   },
   {
-    "formTitle": "[5124]Sequential Digits",
-    "frontendQuestionId": "5124",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "1212",
-    "status": "notac",
-    "title": "Sequential Digits",
-    "titleSlug": "sequential-digits"
-  },
-  {
-    "formTitle": "[5126]Element Appearing More Than 25% In Sorted Array",
-    "frontendQuestionId": "5126",
+    "formTitle": "[1287]Element Appearing More Than 25% In Sorted Array",
+    "frontendQuestionId": "1287",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
@@ -14168,8 +14157,8 @@
     "titleSlug": "element-appearing-more-than-25-in-sorted-array"
   },
   {
-    "formTitle": "[5127]Remove Covered Intervals",
-    "frontendQuestionId": "5127",
+    "formTitle": "[1288]Remove Covered Intervals",
+    "frontendQuestionId": "1288",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -14179,8 +14168,8 @@
     "titleSlug": "remove-covered-intervals"
   },
   {
-    "formTitle": "[5129]Minimum Falling Path Sum II",
-    "frontendQuestionId": "5129",
+    "formTitle": "[1289]Minimum Falling Path Sum II",
+    "frontendQuestionId": "1289",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
@@ -14190,8 +14179,8 @@
     "titleSlug": "minimum-falling-path-sum-ii"
   },
   {
-    "formTitle": "[5283]Convert Binary Number in a Linked List to Integer",
-    "frontendQuestionId": "5283",
+    "formTitle": "[1290]Convert Binary Number in a Linked List to Integer",
+    "frontendQuestionId": "1290",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
@@ -14201,8 +14190,19 @@
     "titleSlug": "convert-binary-number-in-a-linked-list-to-integer"
   },
   {
-    "formTitle": "[5285]Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
-    "frontendQuestionId": "5285",
+    "formTitle": "[1291]Sequential Digits",
+    "frontendQuestionId": "1291",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1212",
+    "status": "notac",
+    "title": "Sequential Digits",
+    "titleSlug": "sequential-digits"
+  },
+  {
+    "formTitle": "[1292]Maximum Side Length of a Square with Sum Less than or Equal to Threshold",
+    "frontendQuestionId": "1292",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -14212,8 +14212,8 @@
     "titleSlug": "maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold"
   },
   {
-    "formTitle": "[5286]Shortest Path in a Grid with Obstacles Elimination",
-    "frontendQuestionId": "5286",
+    "formTitle": "[1293]Shortest Path in a Grid with Obstacles Elimination",
+    "frontendQuestionId": "1293",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
@@ -14221,6 +14221,61 @@
     "status": "",
     "title": "Shortest Path in a Grid with Obstacles Elimination",
     "titleSlug": "shortest-path-in-a-grid-with-obstacles-elimination"
+  },
+  {
+    "formTitle": "[1294]Weather Type in Each Country",
+    "frontendQuestionId": "1294",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1425",
+    "status": "lock",
+    "title": "Weather Type in Each Country",
+    "titleSlug": "weather-type-in-each-country"
+  },
+  {
+    "formTitle": "[1295]Find Numbers with Even Number of Digits",
+    "frontendQuestionId": "1295",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1421",
+    "status": "",
+    "title": "Find Numbers with Even Number of Digits",
+    "titleSlug": "find-numbers-with-even-number-of-digits"
+  },
+  {
+    "formTitle": "[1296]Divide Array in Sets of K Consecutive Numbers",
+    "frontendQuestionId": "1296",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1422",
+    "status": "",
+    "title": "Divide Array in Sets of K Consecutive Numbers",
+    "titleSlug": "divide-array-in-sets-of-k-consecutive-numbers"
+  },
+  {
+    "formTitle": "[1297]Maximum Number of Occurrences of a Substring",
+    "frontendQuestionId": "1297",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1423",
+    "status": "",
+    "title": "Maximum Number of Occurrences of a Substring",
+    "titleSlug": "maximum-number-of-occurrences-of-a-substring"
+  },
+  {
+    "formTitle": "[1298]Maximum Candies You Can Get from Boxes",
+    "frontendQuestionId": "1298",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1424",
+    "status": "",
+    "title": "Maximum Candies You Can Get from Boxes",
+    "titleSlug": "maximum-candies-you-can-get-from-boxes"
   },
   {
     "formTitle": "[LCP 1]Guess Numbers",
