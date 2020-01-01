@@ -34,6 +34,13 @@
 
 package leetcode.editor.cn;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class LowestCommonAncestorOfABinaryTree {
 
   public static void main(String[] args) {
@@ -49,14 +56,36 @@ public class LowestCommonAncestorOfABinaryTree {
   class Solution {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-      if (root == null)
-        return null;
-      if (root == p || root == q)
-        return root;
-      TreeNode left = lowestCommonAncestor(root.left, p, q);
-      TreeNode right = lowestCommonAncestor(root.right, p, q);
-      return left == null ? right :
-          right == null ? left : root;
+      Map<TreeNode, TreeNode> parents = new HashMap<>();
+      Deque<TreeNode> stack = new ArrayDeque<>();
+      parents.put(root, null);
+      stack.push(root);
+      while (!(parents.containsKey(p) && parents.containsKey(q))) {
+        TreeNode node = stack.pop();
+        if (node.left != null) {
+          parents.put(node.left, node);
+          stack.push(node.left);
+        }
+        if (node.right != null) {
+          parents.put(node.right, node);
+          stack.push(node.right);
+        }
+      }
+      // all p's ancestor
+      Set<TreeNode> ancestor = new HashSet<>();
+      while (p != null) {
+        ancestor.add(p);
+        p = parents.get(p);
+      }
+
+      // q's ancestor, the first in p's ancestor is the answer.
+      while (!ancestor.contains(q)) {
+        q = parents.get(q);
+      }
+
+      return q;
+
+
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
