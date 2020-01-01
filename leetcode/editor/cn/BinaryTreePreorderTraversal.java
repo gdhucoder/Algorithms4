@@ -18,8 +18,6 @@
 package leetcode.editor.cn;
 
 import edu.princeton.cs.algs4.Stack;
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,17 +41,7 @@ public class BinaryTreePreorderTraversal {
 
     public List<Integer> preorderTraversal(TreeNode node) {
       List<Integer> list = new LinkedList<Integer>();
-      Deque<TreeNode> rights = new ArrayDeque<>();
-      while (node != null) {
-        list.add(node.val);
-        if (node.right != null) {
-          rights.push(node.right);
-        }
-        node = node.left;
-        if (node == null && !rights.isEmpty()) {
-          node = rights.pop();
-        }
-      }
+
       return list;
     }
 
