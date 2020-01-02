@@ -48,16 +48,16 @@ public class NQueens {
 
     public List<List<String>> solveNQueens(int n) {
       List<List<String>> res = new ArrayList<>();
-      String[] board = new String[n];
+      List<String> board = new ArrayList<>();
       helper(n, 0, new HashSet<Integer>(), new HashSet<Integer>(), new HashSet<Integer>(),
           board, res);
       return res;
     }
 
     private void helper(int n, int row, Set<Integer> cols, Set<Integer> xySum, Set<Integer> xyDiff,
-        String[] board, List<List<String>> res) {
+        List<String> board, List<List<String>> res) {
       if (row == n) {
-        res.add(Arrays.asList(board.clone()));
+        res.add(new ArrayList<>(board));
         return;
       }
 
@@ -68,7 +68,7 @@ public class NQueens {
         char[] rows = new char[n];
         Arrays.fill(rows, '.');
         rows[col] = 'Q';
-        board[row] = new String(rows);
+        board.add(new String(rows));
         cols.add(col);
         xySum.add(row + col);
         xyDiff.add(row - col);
@@ -76,6 +76,7 @@ public class NQueens {
         cols.remove(col);
         xySum.remove(row + col);
         xyDiff.remove(row - col);
+        board.remove(board.size() - 1);
       }
     }
 
