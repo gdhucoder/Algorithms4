@@ -60,5 +60,12 @@ public class TestFindFirstGreaterEqualEleInOrderedArray {
     assertEquals(res, 1);
   }
 
+  @Test
+  public void testInputUnOrderedArray() {
+    expectedEx.expect(IllegalArgumentException.class);
+    int[] a = {1, -1, 1, 1, 1, 1, 1};
+    f.find(a, -1);
+  }
+
 
 }
