@@ -5,6 +5,7 @@ package designpattern.u28;
  */
 public class FindFirstGreaterEqualEleInOrderedArray {
 
+
   public static void main(String[] args) {
     FindFirstGreaterEqualEleInOrderedArray f = new FindFirstGreaterEqualEleInOrderedArray();
     // normal case
