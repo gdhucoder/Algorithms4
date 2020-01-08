@@ -1,4 +1,4 @@
-package designpattern.u025;
+package designpattern.u25;
 
 import Ch_1_4._Stopwatch;
 import java.util.concurrent.TimeUnit;

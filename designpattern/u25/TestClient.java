@@ -1,4 +1,4 @@
-package designpattern.u025;
+package designpattern.u25;
 
 /**
  * Created by HuGuodong on 12/30/19.

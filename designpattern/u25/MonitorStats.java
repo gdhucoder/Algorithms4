@@ -1,4 +1,4 @@
-package designpattern.u025;
+package designpattern.u25;
 
 import java.util.HashMap;
 import java.util.List;
