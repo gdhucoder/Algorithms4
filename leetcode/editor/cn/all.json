@@ -380,7 +380,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "35",
-    "status": "",
+    "status": "ac",
     "title": "Search Insert Position",
     "titleSlug": "search-insert-position"
   },
@@ -567,7 +567,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "52",
-    "status": "",
+    "status": "ac",
     "title": "N-Queens II",
     "titleSlug": "n-queens-ii"
   },
@@ -754,7 +754,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "69",
-    "status": "",
+    "status": "ac",
     "title": "Sqrt(x)",
     "titleSlug": "sqrtx"
   },
@@ -1315,7 +1315,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "120",
-    "status": "",
+    "status": "ac",
     "title": "Triangle",
     "titleSlug": "triangle"
   },
@@ -1326,7 +1326,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "121",
-    "status": "",
+    "status": "ac",
     "title": "Best Time to Buy and Sell Stock",
     "titleSlug": "best-time-to-buy-and-sell-stock"
   },
@@ -2096,7 +2096,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "191",
-    "status": "",
+    "status": "ac",
     "title": "Number of 1 Bits",
     "titleSlug": "number-of-1-bits"
   },
@@ -2360,7 +2360,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "215",
-    "status": "",
+    "status": "ac",
     "title": "Kth Largest Element in an Array",
     "titleSlug": "kth-largest-element-in-an-array"
   },
@@ -2536,7 +2536,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "231",
-    "status": "",
+    "status": "ac",
     "title": "Power of Two",
     "titleSlug": "power-of-two"
   },
@@ -3713,7 +3713,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "338",
-    "status": "",
+    "status": "ac",
     "title": "Counting Bits",
     "titleSlug": "counting-bits"
   },
@@ -7739,7 +7739,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "792",
-    "status": "",
+    "status": "ac",
     "title": "Binary Search",
     "titleSlug": "binary-search"
   },
@@ -14377,8 +14377,8 @@
     "titleSlug": "verbal-arithmetic-puzzle"
   },
   {
-    "formTitle": "[5303]Decrypt String from Alphabet to Integer Mapping",
-    "frontendQuestionId": "5303",
+    "formTitle": "[1309]Decrypt String from Alphabet to Integer Mapping",
+    "frontendQuestionId": "1309",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
@@ -14388,8 +14388,8 @@
     "titleSlug": "decrypt-string-from-alphabet-to-integer-mapping"
   },
   {
-    "formTitle": "[5304]XOR Queries of a Subarray",
-    "frontendQuestionId": "5304",
+    "formTitle": "[1310]XOR Queries of a Subarray",
+    "frontendQuestionId": "1310",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -14399,8 +14399,8 @@
     "titleSlug": "xor-queries-of-a-subarray"
   },
   {
-    "formTitle": "[5305]Get Watched Videos by Your Friends",
-    "frontendQuestionId": "5305",
+    "formTitle": "[1311]Get Watched Videos by Your Friends",
+    "frontendQuestionId": "1311",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
@@ -14410,8 +14410,8 @@
     "titleSlug": "get-watched-videos-by-your-friends"
   },
   {
-    "formTitle": "[5306]Minimum Insertion Steps to Make a String Palindrome",
-    "frontendQuestionId": "5306",
+    "formTitle": "[1312]Minimum Insertion Steps to Make a String Palindrome",
+    "frontendQuestionId": "1312",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
