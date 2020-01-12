@@ -22,13 +22,6 @@
 
 package leetcode.editor.cn;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
-import java.util.List;
-
 public class BestTimeToBuyAndSellStock {
 
   public static void main(String[] args) {
@@ -40,7 +33,7 @@ public class BestTimeToBuyAndSellStock {
   class Solution {
 
     public int maxProfit(int[] prices) {
-
+      return 0;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -23,6 +23,7 @@
 package leetcode.editor.cn;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -42,27 +43,25 @@ public class BinaryTreeLevelOrderTraversal {
   class Solution {
 
     public List<List<Integer>> levelOrder(TreeNode root) {
+      if (root == null)
+        return Collections.emptyList();
+      List<List<Integer>> res = new LinkedList<>();
       Queue<TreeNode> que = new LinkedList<>();
-      List<List<Integer>> ret = new ArrayList<>();
-      if (root == null) {
-        return ret;
-      }
-      que.offer(root);
+      que.add(root);
       while (!que.isEmpty()) {
-        int levelNum = que.size();
-        List<Integer> levelNodes = new ArrayList<>();
-        for (int i = 0; i < levelNum; i++) {
-          if (que.peek().left != null) {
-            que.offer(que.peek().left);
-          }
-          if (que.peek().right != null) {
-            que.offer(que.peek().right);
-          }
-          levelNodes.add(que.poll().val);
+        int size = que.size();
+        List<Integer> lvl = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+          TreeNode node = que.poll();
+          lvl.add(que.poll().val);
+          if (node.right != null)
+            que.add(node.right);
+          if (node.left != null)
+            que.add(node.left);
         }
-        ret.add(levelNodes);
+        res.add(lvl);
       }
-      return ret;
+      return res;
     }
   }
 
