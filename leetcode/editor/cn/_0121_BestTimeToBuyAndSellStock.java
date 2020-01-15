@@ -22,10 +22,10 @@
 
 package leetcode.editor.cn;
 
-public class BestTimeToBuyAndSellStock {
+public class _0121_BestTimeToBuyAndSellStock {
 
   public static void main(String[] args) {
-    Solution solution = new BestTimeToBuyAndSellStock().new Solution();
+    Solution solution = new _0121_BestTimeToBuyAndSellStock().new Solution();
   }
 
 
@@ -33,7 +33,20 @@ public class BestTimeToBuyAndSellStock {
   class Solution {
 
     public int maxProfit(int[] prices) {
-      return 0;
+      if (prices == null || prices.length == 0)
+        return 0;
+      //int[][] dp = new int[prices.length][2];
+      //dp[0][0] = 0;
+      //dp[0][1] = -prices[0];
+      int dp_i_0 = 0;
+      int dp_i_1 = -prices[0];
+      for (int i = 1; i < prices.length; i++) {
+        // dp[i][0] = Math.max (dp[i-1][0], dp[i-1][1]+prices[i]);
+        dp_i_0 = Math.max(dp_i_0, dp_i_1 + prices[i]);
+        // dp[i][1] = Math.max(dp[i-1][1], -prices[i]);
+        dp_i_1 = Math.max(dp_i_1, -prices[i]);
+      }
+      return dp_i_0;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
