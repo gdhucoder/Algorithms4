@@ -17,10 +17,10 @@ package leetcode.editor.cn;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerateParentheses {
+public class _0022_GenerateParentheses_V1 {
 
   public static void main(String[] args) {
-    Solution solution = new GenerateParentheses().new Solution();
+    Solution solution = new _0022_GenerateParentheses_V1().new Solution();
     System.out.println(solution.generateParenthesis(3));
   }
 
