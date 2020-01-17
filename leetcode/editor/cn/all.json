@@ -1216,7 +1216,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "111",
-    "status": "",
+    "status": "ac",
     "title": "Minimum Depth of Binary Tree",
     "titleSlug": "minimum-depth-of-binary-tree"
   },
@@ -1667,7 +1667,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "152",
-    "status": "",
+    "status": "ac",
     "title": "Maximum Product Subarray",
     "titleSlug": "maximum-product-subarray"
   },
@@ -3295,7 +3295,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "300",
-    "status": "",
+    "status": "ac",
     "title": "Longest Increasing Subsequence",
     "titleSlug": "longest-increasing-subsequence"
   },
@@ -14419,6 +14419,94 @@
     "status": "",
     "title": "Minimum Insertion Steps to Make a String Palindrome",
     "titleSlug": "minimum-insertion-steps-to-make-a-string-palindrome"
+  },
+  {
+    "formTitle": "[1313]Decompress Run-Length Encoded List",
+    "frontendQuestionId": "1313",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1241",
+    "status": "",
+    "title": "Decompress Run-Length Encoded List",
+    "titleSlug": "decompress-run-length-encoded-list"
+  },
+  {
+    "formTitle": "[1314]Matrix Block Sum",
+    "frontendQuestionId": "1314",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1242",
+    "status": "",
+    "title": "Matrix Block Sum",
+    "titleSlug": "matrix-block-sum"
+  },
+  {
+    "formTitle": "[1315]Sum of Nodes with Even-Valued Grandparent",
+    "frontendQuestionId": "1315",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1243",
+    "status": "",
+    "title": "Sum of Nodes with Even-Valued Grandparent",
+    "titleSlug": "sum-of-nodes-with-even-valued-grandparent"
+  },
+  {
+    "formTitle": "[1316]Distinct Echo Substrings",
+    "frontendQuestionId": "1316",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1244",
+    "status": "",
+    "title": "Distinct Echo Substrings",
+    "titleSlug": "distinct-echo-substrings"
+  },
+  {
+    "formTitle": "[1317]Convert Integer to the Sum of Two No-Zero Integers",
+    "frontendQuestionId": "1317",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1440",
+    "status": "ac",
+    "title": "Convert Integer to the Sum of Two No-Zero Integers",
+    "titleSlug": "convert-integer-to-the-sum-of-two-no-zero-integers"
+  },
+  {
+    "formTitle": "[1318]Minimum Flips to Make a OR b Equal to c",
+    "frontendQuestionId": "1318",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1441",
+    "status": "ac",
+    "title": "Minimum Flips to Make a OR b Equal to c",
+    "titleSlug": "minimum-flips-to-make-a-or-b-equal-to-c"
+  },
+  {
+    "formTitle": "[1319]Number of Operations to Make Network Connected",
+    "frontendQuestionId": "1319",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1442",
+    "status": "notac",
+    "title": "Number of Operations to Make Network Connected",
+    "titleSlug": "number-of-operations-to-make-network-connected"
+  },
+  {
+    "formTitle": "[1320]Minimum Distance to Type a Word Using Two Fingers",
+    "frontendQuestionId": "1320",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1443",
+    "status": "",
+    "title": "Minimum Distance to Type a Word Using Two Fingers",
+    "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers"
   },
   {
     "formTitle": "[LCP 1]Guess Numbers",
