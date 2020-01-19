@@ -391,7 +391,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "36",
-    "status": "",
+    "status": "ac",
     "title": "Valid Sudoku",
     "titleSlug": "valid-sudoku"
   },
@@ -402,7 +402,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "37",
-    "status": "",
+    "status": "notac",
     "title": "Sudoku Solver",
     "titleSlug": "sudoku-solver"
   },
@@ -787,7 +787,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "72",
-    "status": "",
+    "status": "ac",
     "title": "Edit Distance",
     "titleSlug": "edit-distance"
   },
@@ -1139,7 +1139,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "104",
-    "status": "",
+    "status": "ac",
     "title": "Maximum Depth of Binary Tree",
     "titleSlug": "maximum-depth-of-binary-tree"
   },
@@ -1205,7 +1205,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "110",
-    "status": "",
+    "status": "ac",
     "title": "Balanced Binary Tree",
     "titleSlug": "balanced-binary-tree"
   },
@@ -2063,7 +2063,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "188",
-    "status": "",
+    "status": "ac",
     "title": "Best Time to Buy and Sell Stock IV",
     "titleSlug": "best-time-to-buy-and-sell-stock-iv"
   },
@@ -3537,7 +3537,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "322",
-    "status": "",
+    "status": "ac",
     "title": "Coin Change",
     "titleSlug": "coin-change"
   },
@@ -14377,6 +14377,17 @@
     "titleSlug": "verbal-arithmetic-puzzle"
   },
   {
+    "formTitle": "[1308]Running Total for Different Genders",
+    "frontendQuestionId": "1308",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1439",
+    "status": "",
+    "title": "Running Total for Different Genders",
+    "titleSlug": "running-total-for-different-genders"
+  },
+  {
     "formTitle": "[1309]Decrypt String from Alphabet to Integer Mapping",
     "frontendQuestionId": "1309",
     "leaf": true,
@@ -14507,6 +14518,72 @@
     "status": "",
     "title": "Minimum Distance to Type a Word Using Two Fingers",
     "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers"
+  },
+  {
+    "formTitle": "[1321]Restaurant Growth",
+    "frontendQuestionId": "1321",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1452",
+    "status": "",
+    "title": "Restaurant Growth",
+    "titleSlug": "restaurant-growth"
+  },
+  {
+    "formTitle": "[1322]Ads Performance",
+    "frontendQuestionId": "1322",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1453",
+    "status": "",
+    "title": "Ads Performance",
+    "titleSlug": "ads-performance"
+  },
+  {
+    "formTitle": "[1325]Delete Leaves With a Given Value",
+    "frontendQuestionId": "1325",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1450",
+    "status": "ac",
+    "title": "Delete Leaves With a Given Value",
+    "titleSlug": "delete-leaves-with-a-given-value"
+  },
+  {
+    "formTitle": "[1326]Minimum Number of Taps to Open to Water a Garden",
+    "frontendQuestionId": "1326",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1451",
+    "status": "notac",
+    "title": "Minimum Number of Taps to Open to Water a Garden",
+    "titleSlug": "minimum-number-of-taps-to-open-to-water-a-garden"
+  },
+  {
+    "formTitle": "[5315]Maximum 69 Number",
+    "frontendQuestionId": "5315",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1448",
+    "status": "ac",
+    "title": "Maximum 69 Number",
+    "titleSlug": "maximum-69-number"
+  },
+  {
+    "formTitle": "[5316]Print Words Vertically",
+    "frontendQuestionId": "5316",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1449",
+    "status": "ac",
+    "title": "Print Words Vertically",
+    "titleSlug": "print-words-vertically"
   },
   {
     "formTitle": "[LCP 1]Guess Numbers",
