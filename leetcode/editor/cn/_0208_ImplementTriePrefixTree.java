@@ -21,7 +21,7 @@
 
 package leetcode.editor.cn;
 
-public class ImplementTriePrefixTree {
+public class _0208_ImplementTriePrefixTree {
 
   public static void main(String[] args) {
 //         Solution solution = new ImplementTriePrefixTree().new Solution();
