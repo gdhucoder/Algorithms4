@@ -15,9 +15,9 @@ public class IdGenerator {
   private static final char[] CHAR_SET = BASE62.toCharArray();
 
   public static String generate() {
-    String hostName = null;
 
     // get host name
+    String hostName = null;
     try {
       hostName = InetAddress.getLocalHost().getHostName();
       String[] tokens = hostName.split("\\.");
