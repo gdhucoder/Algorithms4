@@ -12,7 +12,7 @@ public class TestIDGenerate {
 
   @Test
   public void testGenerateID() {
-    RandomLogTraceGenerator gen = new RandomLogTraceGenerator();
+    RandomLogTraceIDGenerator gen = new RandomLogTraceIDGenerator();
 
     String id = gen.generate();
     String[] parts = id.split("-");

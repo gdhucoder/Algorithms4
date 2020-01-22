@@ -8,7 +8,7 @@ import java.util.Random;
  * Created by HuGuodong on 1/22/20.
  */
 
-public class RandomLogTraceGenerator implements LogTraceIDGenerator {
+public class RandomLogTraceIDGenerator implements LogTraceIDGenerator {
 
   public static final String BASE62 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   private static final char[] CHAR_SET = BASE62.toCharArray();
