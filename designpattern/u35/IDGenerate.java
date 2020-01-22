@@ -13,11 +13,7 @@ public class IDGenerate {
   public String generate() {
     String id = "";
     try {
-      String hostName = InetAddress.getLocalHost().getHostName();
-      String[] tokens = hostName.split("\\.");
-      if (tokens.length > 0) {
-        hostName = tokens[tokens.length - 1];
-      }
+      String hostName = getLastHostName();
       char[] randomChars = new char[8];
       int count = 0;
       Random random = new Random();
@@ -34,12 +30,26 @@ public class IDGenerate {
           count++;
         }
       }
-      id = String.format("%s-%d-%s", hostName,
-          System.currentTimeMillis(), new String(randomChars));
+      id = formatID(hostName, randomChars);
     } catch (UnknownHostException e) {
       System.out.println(e);
     }
 
     return id;
+  }
+
+  private String getLastHostName() throws UnknownHostException {
+    String hostName = InetAddress.getLocalHost().getHostName();
+    String[] tokens = hostName.split("\\.");
+    if (tokens.length > 0) {
+      hostName = tokens[tokens.length - 1];
+    }
+    return hostName;
+  }
+
+  private String formatID(String hostName, char[] randomChars) {
+    String result = String.format("%s-%d-%s", hostName,
+        System.currentTimeMillis(), new String(randomChars));
+    return result;
   }
 }
