@@ -10,7 +10,7 @@ public class TestIDGenerate {
 
   @Test
   public void testGenerateID() {
-    IDGenerate gen = new IDGenerate();
+    RandomLogTraceGenerator gen = new RandomLogTraceGenerator();
 
     String id = gen.generate();
     String[] parts = id.split("-");
@@ -18,9 +18,6 @@ public class TestIDGenerate {
     String lastHostName = parts[0];
     String time = parts[1];
     String randChars = parts[2];
-
-    // randChars length
-    Assert.assertEquals(randChars.length(), 8);
 
     // randChars match A-Za-z\d length = 8
     Assert.assertTrue(randChars.matches("^[A-Za-z\\d]{8}$"));
