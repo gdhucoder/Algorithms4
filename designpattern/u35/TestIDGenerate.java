@@ -1,5 +1,7 @@
 package designpattern.u35;
 
+import Ch_1_4._Stopwatch;
+import java.util.Random;
 import junit.framework.Assert;
 import org.junit.Test;
 
@@ -23,5 +25,16 @@ public class TestIDGenerate {
     Assert.assertTrue(randChars.matches("^[A-Za-z\\d]{8}$"));
 
     System.out.println(id);
+  }
+
+  @Test
+  public void testNewRandom() {
+    _Stopwatch stopwatch = new _Stopwatch();
+    int NUM = 10000;
+    for (int i = 0; i < NUM; i++) {
+      Random r = new Random();
+      System.out.println(r.nextInt(1000));
+    }
+    System.out.println(stopwatch.elapsedTime());
   }
 }
