@@ -22,49 +22,55 @@ public class _0079_WordSearch_backtrack {
 
   public static void main(String[] args) {
     Solution solution = new _0079_WordSearch_backtrack().new Solution();
+    char[][] board =
+        {
+            {'A', 'B', 'C', 'E'},
+            {'S', 'F', 'C', 'S'},
+            {'A', 'D', 'E', 'E'}
+        };
+
+    String word = "ABCCED";
+    System.out.println(solution.exist(board, word));
+
+
   }
 
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
 
-
-    private int[][] direction = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     private int m;
     private int n;
+    private char[][] board;
+    private boolean[][] mark;
     private String word;
+    private int[][] dir = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     public boolean exist(char[][] board, String word) {
-      if (board == null && board.length == 0)
+      if (board == null || board.length == 0)
         return false;
-
-      m = board.length;
-      n = board[0].length;
-      this.word = word;
-      boolean[][] mark = new boolean[m][n];
-
+      init(board, word);
       for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-          if (_dfs(i, j, 0, board, mark)) {
+          if (_dfs(i, j, 0)) {
             return true;
           }
         }
       }
-
       return false;
     }
 
-    private boolean _dfs(int i, int j, int pos, char[][] board, boolean[][] mark) {
-      if (pos == word.length() - 1 && board[i][j] == word.charAt(pos))
+    private boolean _dfs(int i, int j, int pos) {
+      if (pos == word.length() - 1 && board[i][j] == word.charAt(pos)) {
         return true;
-
+      }
       if (board[i][j] == word.charAt(pos)) {
         mark[i][j] = true;
         for (int k = 0; k < 4; k++) {
-          int nextI = i + direction[k][0];
-          int nextJ = j + direction[k][1];
-          if (isValidArea(nextI, nextJ) && !mark[nextI][nextJ]) {
-            if ((_dfs(nextI, nextJ, pos + 1, board, mark))) {
+          int nextI = i + dir[k][0];
+          int nextJ = j + dir[k][1];
+          if (isValid(nextI, nextJ) && !mark[nextI][nextJ]) {
+            if (_dfs(nextI, nextJ, pos + 1)) {
               return true;
             }
           }
@@ -72,11 +78,18 @@ public class _0079_WordSearch_backtrack {
         mark[i][j] = false;
       }
       return false;
-
     }
 
-    private boolean isValidArea(int i, int j) {
-      return i < m && j < n && i >= 0 && j >= 0;
+    private boolean isValid(int i, int j) {
+      return 0 <= i && i < m && 0 <= j && j < n;
+    }
+
+    private void init(char[][] board, String word) {
+      this.m = board.length;
+      this.n = board[0].length;
+      this.board = board;
+      this.word = word;
+      this.mark = new boolean[m][n];
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
