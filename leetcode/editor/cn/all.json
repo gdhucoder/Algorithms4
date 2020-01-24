@@ -402,7 +402,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "37",
-    "status": "notac",
+    "status": "ac",
     "title": "Sudoku Solver",
     "titleSlug": "sudoku-solver"
   },
@@ -864,7 +864,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "79",
-    "status": "",
+    "status": "ac",
     "title": "Word Search",
     "titleSlug": "word-search"
   },
@@ -14542,6 +14542,28 @@
     "titleSlug": "ads-performance"
   },
   {
+    "formTitle": "[1323]Maximum 69 Number",
+    "frontendQuestionId": "1323",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1448",
+    "status": "ac",
+    "title": "Maximum 69 Number",
+    "titleSlug": "maximum-69-number"
+  },
+  {
+    "formTitle": "[1324]Print Words Vertically",
+    "frontendQuestionId": "1324",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1449",
+    "status": "ac",
+    "title": "Print Words Vertically",
+    "titleSlug": "print-words-vertically"
+  },
+  {
     "formTitle": "[1325]Delete Leaves With a Given Value",
     "frontendQuestionId": "1325",
     "leaf": true,
@@ -14562,28 +14584,6 @@
     "status": "notac",
     "title": "Minimum Number of Taps to Open to Water a Garden",
     "titleSlug": "minimum-number-of-taps-to-open-to-water-a-garden"
-  },
-  {
-    "formTitle": "[5315]Maximum 69 Number",
-    "frontendQuestionId": "5315",
-    "leaf": true,
-    "level": 1,
-    "nodeType": "def",
-    "questionId": "1448",
-    "status": "ac",
-    "title": "Maximum 69 Number",
-    "titleSlug": "maximum-69-number"
-  },
-  {
-    "formTitle": "[5316]Print Words Vertically",
-    "frontendQuestionId": "5316",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "1449",
-    "status": "ac",
-    "title": "Print Words Vertically",
-    "titleSlug": "print-words-vertically"
   },
   {
     "formTitle": "[LCP 1]Guess Numbers",
