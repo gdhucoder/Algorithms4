@@ -19,6 +19,8 @@ public class RandomLogTraceIDGenerator implements LogTraceIDGenerator {
     try {
       lastField = getLastFieldOfHostName();
     } catch (UnknownHostException e) {
+
+      //
       e.printStackTrace();
     }
     char[] chars = genRandomChars(8);
