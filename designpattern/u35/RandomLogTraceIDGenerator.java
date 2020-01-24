@@ -15,13 +15,21 @@ public class RandomLogTraceIDGenerator implements LogTraceIDGenerator {
 
   @Override
   public String generate() {
-    String lastField = getLastFieldOfHostName();
+    String lastField = null;
+    try {
+      lastField = getLastFieldOfHostName();
+    } catch (UnknownHostException e) {
+      e.printStackTrace();
+    }
     char[] chars = genRandomChars(8);
     String result = formatID(lastField, chars);
     return result;
   }
 
   private char[] genRandomChars(int length) {
+    if (length <= 0) {
+      return null;
+    }
     char[] result = new char[length];
     Random random = new Random();
     for (int i = 0; i < length; i++) {
@@ -30,16 +38,11 @@ public class RandomLogTraceIDGenerator implements LogTraceIDGenerator {
     return result;
   }
 
-  private String getLastFieldOfHostName() {
-    try {
-      String hostName = InetAddress.getLocalHost().getHostName();
-      String[] tokens = hostName.split("\\.");
-      String result = tokens[tokens.length - 1];
-      return result;
-    } catch (UnknownHostException e) {
-      System.out.println(e);
-    }
-    return "NULL";
+  private String getLastFieldOfHostName() throws UnknownHostException {
+    String hostName = InetAddress.getLocalHost().getHostName();
+    String[] tokens = hostName.split("\\.");
+    String result = tokens[tokens.length - 1];
+    return result;
   }
 
   private String formatID(String hostName, char[] randomChars) {
