@@ -21,10 +21,10 @@ package leetcode.editor.cn;
 
 import java.util.List;
 
-public class _0120_Triangle {
+public class _0120_Triangle_DP {
 
   public static void main(String[] args) {
-    Solution solution = new _0120_Triangle().new Solution();
+    Solution solution = new _0120_Triangle_DP().new Solution();
   }
 
 
