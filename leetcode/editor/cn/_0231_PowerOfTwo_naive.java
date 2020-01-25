@@ -20,10 +20,10 @@
 
 package leetcode.editor.cn;
 
-public class PowerOfTwo {
+public class _0231_PowerOfTwo_naive {
 
   public static void main(String[] args) {
-    Solution solution = new PowerOfTwo().new Solution();
+    Solution solution = new _0231_PowerOfTwo_naive().new Solution();
   }
 
 
