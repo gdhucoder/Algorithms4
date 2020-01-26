@@ -23,17 +23,25 @@ package leetcode.editor.cn;
 
 import tools.PrintUtil;
 
-public class CountingBits {
+public class _0338_CountingBits_dp {
 
+  /**
+   * 0 = (0000) 1 = (0001) 2 = (0010) 3 = (0011) 4 = (0100) 5 = (0101) 6 = (0110) 7 = (0111) 8 =
+   * (1000) 9 = (1001) 10 = (1010)
+   *
+   * @param args
+   */
   public static void main(String[] args) {
-    Solution solution = new CountingBits().new Solution();
+    Solution solution = new _0338_CountingBits_dp().new Solution();
 //        solution.countBits(10);
+    System.out.println(7 & (7 - 1));
     PrintUtil.show(solution.countBits(10));
   }
 
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
+
 
     public int[] countBits(int num) {
       int[] res = new int[num + 1];
