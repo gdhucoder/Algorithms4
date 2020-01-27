@@ -25,10 +25,10 @@
 
 package leetcode.editor.cn;
 
-public class ClimbingStairs {
+public class _0070_ClimbingStairs_recursive_memo {
 
   public static void main(String[] args) {
-    Solution solution = new ClimbingStairs().new Solution();
+    Solution solution = new _0070_ClimbingStairs_recursive_memo().new Solution();
   }
 
 
