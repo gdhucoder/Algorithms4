@@ -55,7 +55,7 @@ public class _BreadthFirstPaths {
   }
 
   public static void main(String[] args) {
-    _AdjListGraph g = new _AdjListGraph(new In("src/main/algs4-data/tinyCG.txt"));
+    _AdjListGraph g = new _AdjListGraph(new In("algdata/tinyCG.txt"));
     int s = 0;
     _BreadthFirstPaths bfs = new _BreadthFirstPaths(g, s);
     for (int v = 0; v < g.V(); v++) {
