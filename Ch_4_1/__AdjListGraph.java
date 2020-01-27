@@ -10,6 +10,7 @@ public class __AdjListGraph {
 
   private final int V;
   private int E;
+  // insert before head
   private Bag<Integer>[] adj;
 
   public __AdjListGraph(int V) {
@@ -51,9 +52,9 @@ public class __AdjListGraph {
 
   @Override
   public String toString() {
-    String s = V + " vertices, " + E + " edge\n";
+    String s = V + " vertices, " + E + " edges\n";
     for (int v = 0; v < V; v++) {
-      s += v + " :";
+      s += v + ":";
       for (Integer w : adj[v])
         s += w + " ";
       s += "\n";
