@@ -35,7 +35,7 @@ public class _DepthFirstPaths {
   public Iterable<Integer> pathTo(int v) {
     if (!hashPathTo(v))
       return null;
-    Stack<Integer> path = new Stack<>();
+    Stack<Integer> path = new Stack<>(); // reverse order
     for (int x = v; x != s; x = edgeTo[x]) {
       path.push(x);
     }

@@ -25,5 +25,11 @@ public class _DepthFirstPathsClient {
         StdOut.println();
       }
     }
+//    0 to 0: 0
+//    0 to 1: 0-2-1
+//    0 to 2: 0-2
+//    0 to 3: 0-2-3
+//    0 to 4: 0-2-3-4
+//    0 to 5: 0-2-3-5
   }
 }
