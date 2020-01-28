@@ -4,53 +4,61 @@ import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;
 
 /**
- * Created by HuGuodong on 2018/11/26.
+ * Created by HuGuodong on 1/28/20.
  */
+public class _AdjListGraph {
 
-public class _AdjListGraph extends _Graph {
-
-  private int V; // 顶点数目
-  private int E; //边的数目
-  private Bag<Integer>[] adj; // 邻接表
+  private final int V;
+  private int E;
+  // insert before head
+  private Bag<Integer>[] adj;
 
   public _AdjListGraph(int V) {
     this.V = V;
     this.E = 0;
-    adj = (Bag<Integer>[]) new Bag[V]; // 创建邻接表
-    for(int v=0; v<V; v++){
-      adj[v] = new Bag<Integer>();
+    this.adj = (Bag<Integer>[]) new Bag[V];
+    for (int i = 0; i < V; i++) {
+      adj[i] = new Bag<>();// initialize all lists
     }
   }
 
   public _AdjListGraph(In in) {
-    this(in.readInt()); // 读取V并将图初始化
-    int E = in.readInt(); // 读取E
+    this(in.readInt());
+    int E = in.readInt();
     for (int i = 0; i < E; i++) {
-      int v = in.readInt(); // 读取一个顶点
-      int w = in.readInt(); // 读取另一个顶点
-      addEdge(v,w); // 增加一条连接它们的边
+      int v = in.readInt();
+      int w = in.readInt();
+      addEdge(v, w);
     }
   }
 
-  @Override
   public int V() {
     return V;
   }
 
-  @Override
   public int E() {
     return E;
   }
 
-  @Override
   public void addEdge(int v, int w) {
     adj[v].add(w);
     adj[w].add(v);
     E++;
   }
 
-  @Override
   public Iterable<Integer> adj(int v) {
     return adj[v];
+  }
+
+  @Override
+  public String toString() {
+    String s = V + " vertices, " + E + " edges\n";
+    for (int v = 0; v < V; v++) {
+      s += v + ":";
+      for (Integer w : adj[v])
+        s += w + " ";
+      s += "\n";
+    }
+    return s;
   }
 }

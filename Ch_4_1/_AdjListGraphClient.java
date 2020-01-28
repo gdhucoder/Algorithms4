@@ -5,10 +5,10 @@ import edu.princeton.cs.algs4.In;
 /**
  * Created by HuGuodong on 1/28/20.
  */
-public class __AdjListGraphClient {
+public class _AdjListGraphClient {
 
   public static void main(String[] args) {
-    __AdjListGraph g = new __AdjListGraph(new In("algdata/tinyG.txt"));
+    _AdjListGraph g = new _AdjListGraph(new In("algdata/tinyG.txt"));
     System.out.println(g);
 //    13 vertices, 13 edges
 //    0:6 2 1 5

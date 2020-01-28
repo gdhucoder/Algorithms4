@@ -4,28 +4,26 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Created by HuGuodong on 2018/11/27.
+ * Created by HuGuodong on 1/29/20.
  */
-
 public class _TestSearch {
 
   public static void main(String[] args) {
-    _Graph G = new _Graph(new In((args[0])));
-    int s = Integer.parseInt(args[1]);
-    _Search search = new _Search(G, s);
+    _AdjListGraph G = new _AdjListGraph(new In("algdata/tinyCG.txt"));
+    int s = 0;
+    _DepthFirstSearch search = new _DepthFirstSearch(G, s);
 
     for (int v = 0; v < G.V(); v++) {
       if(search.marked(v)){
-        StdOut.print(v+"\t");
+        StdOut.print(v + " ");
       }
     }
     StdOut.println();
-
-    if(search.count() != G.V()){
-      StdOut.print("NOT");
-    }
+    if (search.count() != G.V())
+      StdOut.print("NOT ");
     StdOut.println("connected");
+//    0 1 2 3 4 5 6
+//    NOT connected
 
   }
-
 }
