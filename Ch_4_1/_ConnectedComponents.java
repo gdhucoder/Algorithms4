@@ -22,8 +22,10 @@ public class _ConnectedComponents {
   }
 
   private void dfs(_AdjListGraph G, int v) {
+    // process
     marked[v] = true;
     id[v] = count;
+    // drill down
     for (int w : G.adj(v)) {
       if (!marked[w]) {
         dfs(G, w);
@@ -31,6 +33,11 @@ public class _ConnectedComponents {
     }
   }
 
+  /**
+   * how many components
+   *
+   * @return
+   */
   public int count() {
     return count;
   }
