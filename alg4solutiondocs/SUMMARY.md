@@ -6,4 +6,5 @@
 ## 4.1 Undirected Graphs
 
 * [Ex4.1.1](4.1-undirected-graphs/untitled.md)
+* [Ex4.1.2](4.1-undirected-graphs/ex4.1.2.md)
 
