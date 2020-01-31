@@ -1,11 +1,10 @@
 package designpattern.u39.reporter;
 
-import com.google.gson.Gson;
 import designpattern.u39.Aggregator;
-import designpattern.u39.storage.MetricsStorage;
 import designpattern.u39.RequestInfo;
 import designpattern.u39.RequestStat;
-import java.util.HashMap;
+import designpattern.u39.storage.MetricsStorage;
+import designpattern.u39.viewer.StatViewer;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executors;
@@ -19,9 +18,13 @@ public class ConsoleReporter {
 
   private MetricsStorage metricsStorage;
   private ScheduledExecutorService executor;
+  private StatViewer viewer;
+  private Aggregator aggregator;
 
-  public ConsoleReporter(MetricsStorage metricsStorage) {
+  public ConsoleReporter(MetricsStorage metricsStorage, Aggregator aggregator, StatViewer viewer) {
     this.metricsStorage = metricsStorage;
+    this.aggregator = aggregator;
+    this.viewer = viewer;
     this.executor = Executors.newSingleThreadScheduledExecutor();
   }
 
@@ -36,18 +39,10 @@ public class ConsoleReporter {
         long startTimeInMillis = endTimeInMillis - durationInMillis;
         Map<String, List<RequestInfo>> requestInfos =
             metricsStorage.getRequestInfos(startTimeInMillis, endTimeInMillis);
-        Map<String, RequestStat> stats = new HashMap<>();
-        for (Map.Entry<String, List<RequestInfo>> entry : requestInfos.entrySet()) {
-          String apiName = entry.getKey();
-          List<RequestInfo> requestInfosPerApi = entry.getValue();
-          // 第2个代码逻辑：根据原始数据，计算得到统计数据；
-          RequestStat requestStat = Aggregator.aggregate(requestInfosPerApi, durationInMillis);
-          stats.put(apiName, requestStat);
-        }
-        // 第3个代码逻辑：将统计数据显示到终端（命令行或邮件）；
-        System.out.println("Time Span: [" + startTimeInMillis + ", " + endTimeInMillis + "]");
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(stats));
+        Map<String, RequestStat> stats = aggregator
+            .aggregate(requestInfos, durationInMillis);
+        // console output
+        viewer.output(stats, startTimeInMillis, endTimeInMillis);
       }
     }, 0, periodInSeconds, TimeUnit.SECONDS);
   }

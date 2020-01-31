@@ -1348,7 +1348,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "123",
-    "status": "",
+    "status": "ac",
     "title": "Best Time to Buy and Sell Stock III",
     "titleSlug": "best-time-to-buy-and-sell-stock-iii"
   },
@@ -14683,6 +14683,17 @@
     "status": "",
     "title": "Minimum Difficulty of a Job Schedule",
     "titleSlug": "minimum-difficulty-of-a-job-schedule"
+  },
+  {
+    "formTitle": "[1336]Number of Transactions per Visit",
+    "frontendQuestionId": "1336",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1467",
+    "status": "lock",
+    "title": "Number of Transactions per Visit",
+    "titleSlug": "number-of-transactions-per-visit"
   },
   {
     "formTitle": "[LCP 1]Guess Numbers",

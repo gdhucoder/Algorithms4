@@ -1,5 +1,6 @@
 package designpattern.u39;
 
+import designpattern.u39.factory.ReporterFactory;
 import designpattern.u39.reporter.ConsoleReporter;
 import designpattern.u39.storage.MetricsStorage;
 import designpattern.u39.storage.MockRedisMetricsStorage;
@@ -14,8 +15,7 @@ public class Demo {
 
   public static void main(String[] args) {
     MetricsStorage storage = new MockRedisMetricsStorage();
-    Aggregator aggregator = new Aggregator();
-    ConsoleReporter consoleReporter = new ConsoleReporter(storage, aggregator, new ConsoleViewer());
+    ConsoleReporter consoleReporter = ReporterFactory.createConsoleReporter(storage);
     consoleReporter.startRepeatedReport(2, 2);
 
 //    EmailReporter emailReporter = new EmailReporter(storage);

@@ -2,7 +2,9 @@ package designpattern.u39;
 
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by HuGuodong on 1/31/20.
@@ -10,7 +12,21 @@ import java.util.List;
 
 public class Aggregator {
 
-  public static RequestStat aggregate(List<RequestInfo> requestInfos, long durationInMillis) {
+  public Map<String, RequestStat> aggregate(Map<String, List<RequestInfo>> requestInfo,
+      long durationInMillis) {
+    Map<String, RequestStat> result = new HashMap<>();
+    for (Map.Entry<String, List<RequestInfo>> entry : requestInfo.entrySet()) {
+      String apiName = entry.getKey();
+      List<RequestInfo> requestInfosPerApi = entry.getValue();
+      // 第2个代码逻辑：根据原始数据，计算得到统计数据；
+      RequestStat requestStat = doAggregate(requestInfosPerApi, durationInMillis);
+      result.put(apiName, requestStat);
+    }
+    return result;
+  }
+
+
+  public RequestStat doAggregate(List<RequestInfo> requestInfos, long durationInMillis) {
     double maxRespTime = Double.MIN_VALUE;
     double minRespTime = Double.MAX_VALUE;
     double avgRespTime = -1;
