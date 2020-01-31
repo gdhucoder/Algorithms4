@@ -2,7 +2,7 @@ package designpattern.u39;
 
 import designpattern.u39.reporter.ConsoleReporter;
 import designpattern.u39.storage.MetricsStorage;
-import designpattern.u39.storage.RedisMetricsStorage;
+import designpattern.u39.storage.MockRedisMetricsStorage;
 
 /**
  * Created by HuGuodong on 1/31/20.
@@ -11,7 +11,7 @@ import designpattern.u39.storage.RedisMetricsStorage;
 public class Demo {
 
   public static void main(String[] args) {
-    MetricsStorage storage = new RedisMetricsStorage();
+    MetricsStorage storage = new MockRedisMetricsStorage();
     ConsoleReporter consoleReporter = new ConsoleReporter(storage);
     consoleReporter.startRepeatedReport(2, 2);
 
