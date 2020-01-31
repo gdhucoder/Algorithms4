@@ -6,7 +6,7 @@ package Ch_1_4;
 
 public class _Stopwatch {
 
-  private final long start;
+  private long start;
 
   public _Stopwatch() {
     start = System.currentTimeMillis();
@@ -15,5 +15,17 @@ public class _Stopwatch {
   public double elapsedTime() {
     long now = System.currentTimeMillis();
     return (now - start) / 1000.0;
+  }
+
+  public long elapsedTimeLong() {
+    return System.currentTimeMillis() - start;
+  }
+
+  public long start() {
+    return start;
+  }
+
+  public void reset() {
+    start = System.currentTimeMillis();
   }
 }

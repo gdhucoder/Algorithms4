@@ -7,7 +7,7 @@ public class TestClient {
 
   public static void main(String[] args) {
     UserController controller = new UserController();
-    int CALL_TIMES = 100000;
+    int CALL_TIMES = 10;
     for (int i = 0; i < CALL_TIMES; i++) {
       controller.login();
       controller.register();
