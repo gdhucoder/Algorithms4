@@ -1,103 +1,106 @@
-# Introduction
+Table of Contents
+=================
 
-## Table of Contents
+* [Table of Contents](#table-of-contents)
+* [Algorithms, 4th Edition SOLUTIONS](#algorithms-4th-edition-solutions)
+  * [Chapter 1: Fundamentals](#chapter-1-fundamentals)
+    * [1\.1 Basic Programming Model](#11-basic-programming-model)
+    * [1\.2 Data Abstraction](#12-data-abstraction)
+    * [1\.3 Bags, Queues and Stacks](#13-bags-queues-and-stacks)
+    * [1\.4 ANALYSIS OF ALGORITHMS](#14-analysis-of-algorithms)
+    * [1\.5 CASE STUDY: UNION\-FIND](#15-case-study-union-find)
+  * [Chapter 2: Sorting](#chapter-2-sorting)
+    * [2\.1 ELEMENTARY SORTS](#21-elementary-sorts)
+  * [Chapter 3: Searching](#chapter-3-searching)
+  * [Chapter 4: Graph](#chapter-4-graph)
+  * [Chapter 5: Strings](#chapter-5-strings)
+  * [Chapter 6: Context](#chapter-6-context)
+  * [Thanks](#thanks)
+  * [How to use gh\-md\-toc](#how-to-use-gh-md-toc)
 
-* [Table of Contents](./#table-of-contents)
-* [Algorithms, 4th Edition SOLUTIONS](./#algorithms-4th-edition-solutions)
-  * [Chapter 1: Fundamentals](./#chapter-1-fundamentals)
-    * [1.1 Basic Programming Model](./#11-basic-programming-model)
-    * [1.2 Data Abstraction](./#12-data-abstraction)
-    * [1.3 Bags, Queues and Stacks](./#13-bags-queues-and-stacks)
-    * [1.4 ANALYSIS OF ALGORITHMS](./#14-analysis-of-algorithms)
-    * [1.5 CASE STUDY: UNION-FIND](./#15-case-study-union-find)
-  * [Chapter 2: Sorting](./#chapter-2-sorting)
-    * [2.1 ELEMENTARY SORTS](./#21-elementary-sorts)
-  * [Chapter 3: Searching](./#chapter-3-searching)
-  * [Chapter 4: Graph](./#chapter-4-graph)
-  * [Chapter 5: Strings](./#chapter-5-strings)
-  * [Chapter 6: Context](./#chapter-6-context)
-  * [Thanks](./#thanks)
-  * [How to use gh-md-toc](./#how-to-use-gh-md-toc)
 
-## Algorithms, 4th Edition SOLUTIONS
 
-Algorithms, 4th Edition SOLUTION\(Java\) [book site](https://algs4.cs.princeton.edu/home/)
+# Algorithms, 4th Edition SOLUTIONS
+
+Algorithms, 4th Edition SOLUTION(Java) [book site](https://algs4.cs.princeton.edu/home/)
 
 essential information that every serious programmer needs to know about algorithms and data structures.
 
-### Chapter 1: Fundamentals
+## Chapter 1: Fundamentals
 
-#### 1.1 Basic Programming Model
+###  1.1 Basic Programming Model
 
 Problems solved:
 
-| [E1~E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1.md) | [E-11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_11.md) | [E-12](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_12.md) | [E-13](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_13.md) | [E-14](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_14.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E-15](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_15.md) | [E-16](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_16.md) | [E-18](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_18.md) | [E-19](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_19.md) | [E-20](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_20.md) |
-| [E-21](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_21.md) | [E-22](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_22.md) | [E-23](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_23.md) | [E-24](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_24.md) | [E-25](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_25.md) |
-| [E-26](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_26.md) | [E-27](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_27.md) | [E-28](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_28.md) | [E-29](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_29.md) | [E-30](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_30.md) |
-| [E-31](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_31.md) | [E-32](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_32.md) | [E-33](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_33.md) | [E-34](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_34.md) | [E-35](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_1/Ex_1_1_35.md) |
+| [E1~E10](./Ch_1_1/Ex_1_1.md)  | [E-11](./Ch_1_1/Ex_1_1_11.md)    | [E-12](./Ch_1_1/Ex_1_1_12.md)    | [E-13](./Ch_1_1/Ex_1_1_13.md)    | [E-14](./Ch_1_1/Ex_1_1_14.md)    |
+| :----: | :----: | :----: | :----: | :----: |
+| [E-15](./Ch_1_1/Ex_1_1_15.md) | [E-16](./Ch_1_1/Ex_1_1_16.md)    | [E-18](./Ch_1_1/Ex_1_1_18.md)    | [E-19](./Ch_1_1/Ex_1_1_19.md)    | [E-20](./Ch_1_1/Ex_1_1_20.md)   |
+| [E-21](./Ch_1_1/Ex_1_1_21.md)   | [E-22](./Ch_1_1/Ex_1_1_22.md)   | [E-23](./Ch_1_1/Ex_1_1_23.md)   | [E-24](./Ch_1_1/Ex_1_1_24.md)   | [E-25](./Ch_1_1/Ex_1_1_25.md)   |
+| [E-26](./Ch_1_1/Ex_1_1_26.md)   | [E-27](./Ch_1_1/Ex_1_1_27.md)   | [E-28](./Ch_1_1/Ex_1_1_28.md)   | [E-29](./Ch_1_1/Ex_1_1_29.md)| [E-30](./Ch_1_1/Ex_1_1_30.md)|
+|[E-31](./Ch_1_1/Ex_1_1_31.md) | [E-32](./Ch_1_1/Ex_1_1_32.md)|[E-33](./Ch_1_1/Ex_1_1_33.md)| [E-34](./Ch_1_1/Ex_1_1_34.md)| [E-35](./Ch_1_1/Ex_1_1_35.md)|
 
-#### 1.2 Data Abstraction
+### 1.2 Data Abstraction
 
-| [E1](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_01.md) | [E2](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_02.md) | [E3](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_03.md) | [E4](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_04.md) | [E5](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_05.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E6](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_06.md) | [E7](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_07.md) | [E8](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_08.md) | [E9](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_09.md) | [E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_10.md) |
-| [E11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_11.md) | [E12](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_12.md) | [E13](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_13.md) | [E14](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_14.md) | [E15](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_15.md) |
-| [E16](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_16.md) | [E17](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_17.md) | [E18](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_18.md) | [E19](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_2/Ex_1_2_19.md) |  |
+|[E1](./Ch_1_2/Ex_1_2_01.md)|[E2](./Ch_1_2/Ex_1_2_02.md)|[E3](./Ch_1_2/Ex_1_2_03.md)|[E4](./Ch_1_2/Ex_1_2_04.md)|[E5](./Ch_1_2/Ex_1_2_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_1_2/Ex_1_2_06.md)|[E7](./Ch_1_2/Ex_1_2_07.md)|[E8](./Ch_1_2/Ex_1_2_08.md)|[E9](./Ch_1_2/Ex_1_2_09.md)|[E10](./Ch_1_2/Ex_1_2_10.md)|
+|[E11](./Ch_1_2/Ex_1_2_11.md)|[E12](./Ch_1_2/Ex_1_2_12.md)|[E13](./Ch_1_2/Ex_1_2_13.md)|[E14](./Ch_1_2/Ex_1_2_14.md)|[E15](./Ch_1_2/Ex_1_2_15.md)|
+|[E16](./Ch_1_2/Ex_1_2_16.md)|[E17](./Ch_1_2/Ex_1_2_17.md)|[E18](./Ch_1_2/Ex_1_2_18.md)|[E19](./Ch_1_2/Ex_1_2_19.md)|      |
 
-#### 1.3 Bags, Queues and Stacks
+### 1.3 Bags, Queues and Stacks
 
-| [E1](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_01.md) | [E2](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_02.md) | [E3](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_03.md) | [E4](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_04.md) | [E5](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_05.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E6](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_06.md) | [E7](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_07.md) | [E8](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_08.md) | [E9](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_09.md) | [E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_10.md) |
-| [E11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_11.md) | [E12](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_12.md) | [E13](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_13.md) | [E14](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_14.md) | [E15](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_15.md) |
-| [E16](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_16.md) | [E17](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_17.md) | [E18](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_18.md) | [E19](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_19.md) | [E20](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_20.md) |
-| [E21](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_21.md) | [E22](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_22.md) | [E23](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_23.md) | [E24](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_24.md) | [E25](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_25.md) |
-| [E26](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_26.md) | [E27](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_27.md) | [E28](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_28.md) | [E29](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_29.md) | [E30](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_30.md) |
-| [E31](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_31.md) | [E32](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_32.md) | [E33](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_33.md) | [E34](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_34.md) | [E35](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_35.md) |
-| [E36](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_36.md) | [E37](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_37.md) | [E38](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_38.md) | [E39](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_39.md) | [E40](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_40.md) |
-| [E41](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_41.md) | [E42](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_42.md) | [E43](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_43.md) | [E44](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_44.md) | [E45](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_45.md) |
-| [E46](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_46.md) | [E47](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_47.md) | [E48](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_48.md) | [E49](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_49.md) | [E50](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_3/Ex_1_3_50.md) |
+|[E1](./Ch_1_3/Ex_1_3_01.md)|[E2](./Ch_1_3/Ex_1_3_02.md)|[E3](./Ch_1_3/Ex_1_3_03.md)|[E4](./Ch_1_3/Ex_1_3_04.md)|[E5](./Ch_1_3/Ex_1_3_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_1_3/Ex_1_3_06.md)|[E7](./Ch_1_3/Ex_1_3_07.md)|[E8](./Ch_1_3/Ex_1_3_08.md)|[E9](./Ch_1_3/Ex_1_3_09.md)|[E10](./Ch_1_3/Ex_1_3_10.md)|
+|[E11](./Ch_1_3/Ex_1_3_11.md)|[E12](./Ch_1_3/Ex_1_3_12.md)|[E13](./Ch_1_3/Ex_1_3_13.md)|[E14](./Ch_1_3/Ex_1_3_14.md)|[E15](./Ch_1_3/Ex_1_3_15.md)|
+|[E16](./Ch_1_3/Ex_1_3_16.md)|[E17](./Ch_1_3/Ex_1_3_17.md)|[E18](./Ch_1_3/Ex_1_3_18.md)|[E19](./Ch_1_3/Ex_1_3_19.md)|[E20](./Ch_1_3/Ex_1_3_20.md)|
+|[E21](./Ch_1_3/Ex_1_3_21.md)|[E22](./Ch_1_3/Ex_1_3_22.md)|[E23](./Ch_1_3/Ex_1_3_23.md)|[E24](./Ch_1_3/Ex_1_3_24.md)|[E25](./Ch_1_3/Ex_1_3_25.md)|
+|[E26](./Ch_1_3/Ex_1_3_26.md)|[E27](./Ch_1_3/Ex_1_3_27.md)|[E28](./Ch_1_3/Ex_1_3_28.md)|[E29](./Ch_1_3/Ex_1_3_29.md)|[E30](./Ch_1_3/Ex_1_3_30.md)|
+|[E31](./Ch_1_3/Ex_1_3_31.md)|[E32](./Ch_1_3/Ex_1_3_32.md)|[E33](./Ch_1_3/Ex_1_3_33.md)|[E34](./Ch_1_3/Ex_1_3_34.md)|[E35](./Ch_1_3/Ex_1_3_35.md)|
+|[E36](./Ch_1_3/Ex_1_3_36.md)|[E37](./Ch_1_3/Ex_1_3_37.md)|[E38](./Ch_1_3/Ex_1_3_38.md)|[E39](./Ch_1_3/Ex_1_3_39.md)|[E40](./Ch_1_3/Ex_1_3_40.md)|
+|[E41](./Ch_1_3/Ex_1_3_41.md)|[E42](./Ch_1_3/Ex_1_3_42.md)|[E43](./Ch_1_3/Ex_1_3_43.md)|[E44](./Ch_1_3/Ex_1_3_44.md)|[E45](./Ch_1_3/Ex_1_3_45.md)|
+|[E46](./Ch_1_3/Ex_1_3_46.md)|[E47](./Ch_1_3/Ex_1_3_47.md)|[E48](./Ch_1_3/Ex_1_3_48.md)|[E49](./Ch_1_3/Ex_1_3_49.md)|[E50](./Ch_1_3/Ex_1_3_50.md)|
 
-#### 1.4 ANALYSIS OF ALGORITHMS
+### 1.4 ANALYSIS OF ALGORITHMS
 
-| [E1](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_01.md) | [E2](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_02.md) | [E3](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_03.md) | [E4](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_04.md) | [E5](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_05.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E6](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_06.md) | [E7](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_07.md) | [E8](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_08.md) | [E9](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_09.md) | [E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_10.md) |
-| [E11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_11.md) | [E12](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_4/Ex_1_4_12.md) | TODO | TODO |  |
+|[E1](./Ch_1_4/Ex_1_4_01.md)|[E2](./Ch_1_4/Ex_1_4_02.md)|[E3](./Ch_1_4/Ex_1_4_03.md)|[E4](./Ch_1_4/Ex_1_4_04.md)|[E5](./Ch_1_4/Ex_1_4_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_1_4/Ex_1_4_06.md)|[E7](./Ch_1_4/Ex_1_4_07.md)|[E8](./Ch_1_4/Ex_1_4_08.md)|[E9](./Ch_1_4/Ex_1_4_09.md)|[E10](./Ch_1_4/Ex_1_4_10.md)|
+|[E11](./Ch_1_4/Ex_1_4_11.md)|[E12](./Ch_1_4/Ex_1_4_12.md)|TODO|TODO|
 
-#### 1.5 CASE STUDY: UNION-FIND
+### 1.5 CASE STUDY: UNION-FIND
 
-| [E1](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_01.md) | [E2](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_02.md) | [E3](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_03.md) | [E4](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_04.md) | [E5](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_05.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E6](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_06.md) | [E7](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_07.md) | [E8](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_08.md) | [E9](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_09.md) | [E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_10.md) |
-| [E11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_1_5/Ex_1_5_11.md) | TODO | TODO | TODO |  |
+|[E1](./Ch_1_5/Ex_1_5_01.md)|[E2](./Ch_1_5/Ex_1_5_02.md)|[E3](./Ch_1_5/Ex_1_5_03.md)|[E4](./Ch_1_5/Ex_1_5_04.md)|[E5](./Ch_1_5/Ex_1_5_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_1_5/Ex_1_5_06.md)|[E7](./Ch_1_5/Ex_1_5_07.md)|[E8](./Ch_1_5/Ex_1_5_08.md)|[E9](./Ch_1_5/Ex_1_5_09.md)|[E10](./Ch_1_5/Ex_1_5_10.md)|
+|[E11](./Ch_1_5/Ex_1_5_11.md)|TODO|TODO|TODO|
 
-### Chapter 2: Sorting
+## Chapter 2: Sorting
 
-#### 2.1 ELEMENTARY SORTS
+### 2.1 ELEMENTARY SORTS
 
-| [E1](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_01.md) | [E2](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_02.md) | [E3](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_03.md) | [E4](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_04.md) | [E5](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_05.md) |
-| :---: | :---: | :---: | :---: | :---: |
-| [E6](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_06.md) | [E7](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_07.md) | [E8](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_08.md) | [E9](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_09.md) | [E10](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_10.md) |
-| [E11](https://github.com/gdhucoder/Algorithms4/tree/abe65e709c04d5ec8b533b7a68b9bd905be1645c/alg4solutiondocs/Ch_2_1/Ex_2_1_11.md) | TODO | TODO | TODO |  |
+|[E1](./Ch_2_1/Ex_2_1_01.md)|[E2](./Ch_2_1/Ex_2_1_02.md)|[E3](./Ch_2_1/Ex_2_1_03.md)|[E4](./Ch_2_1/Ex_2_1_04.md)|[E5](./Ch_2_1/Ex_2_1_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_2_1/Ex_2_1_06.md)|[E7](./Ch_2_1/Ex_2_1_07.md)|[E8](./Ch_2_1/Ex_2_1_08.md)|[E9](./Ch_2_1/Ex_2_1_09.md)|[E10](./Ch_2_1/Ex_2_1_10.md)|
+|[E11](./Ch_2_1/Ex_2_1_11.md)|TODO|TODO|TODO|
 
-### Chapter 3: Searching
+## Chapter 3: Searching
 
-### Chapter 4: Graph
+## Chapter 4: Graph
 
-### Chapter 5: Strings
+## Chapter 5: Strings
 
-### Chapter 6: Context
+## Chapter 6: Context
 
 ![book-cover](https://gitee.com/gdhu/prvpic/raw/master/2019-05-01-010.jpg)
 
-### Important
+## Important
 
-I highly recommend you guys to upgrade your jdk version upto 11 or higher. Or, you maybe encounter some problems when running my code, because I sometimes tried some new features on JDK11 or JDK13.
+I highly recommend you guys to upgrade your jdk version upto 11 or higher.
+Or, you maybe encounter some problems when running my code, because I sometimes 
+tried some new features on JDK11 or JDK13.
 
-### Thanks
+## Thanks
 
 I followed their code style and some implements.
 
@@ -105,9 +108,8 @@ I followed their code style and some implements.
 
 [ikesonwy](https://github.com/ikesnowy/Algorithms-4th-Edition-in-Csharp)
 
-### How to use gh-md-toc
+## How to use gh-md-toc
 
 ./gh-md-toc README.md
 
 [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
-
