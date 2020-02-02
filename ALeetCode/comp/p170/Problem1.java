@@ -7,46 +7,29 @@ public class Problem1 {
 
   static class Solution {
 
-    public String freqAlphabets(String s) {
-      char[] chars = s.toCharArray();
-      String res = "";
-      int lo = 0;
-      int hi = 0;
-      while (lo < s.length() && hi < s.length()) {
-        while (hi < s.length() && chars[hi] != '#') {
-          hi++;
-        }
-//        System.out.println(hi);
-        while (hi - lo > 2) {
-          res += (char) ('a' + (chars[lo] - '0' - 1));
-          lo++;
-        }
-        System.out.println(hi);
-        System.out.println(lo);
-        while (hi == s.length() && hi > lo) {
-          res += (char) ('a' + (chars[lo] - '0' - 1));
-          lo++;
-        }
-        if (hi < s.length() && hi - lo == 2) {
-          int a = (chars[lo] - '0') * 10;
-          lo++;
-          int b = (chars[lo] - '0');
-          res += (char) ('a' + a + b - 1);
-          hi++;
-          lo += 2;
+    public int maximum69Number(int num) {
+      String n = "" + num;
+      char[] nums = n.toCharArray();
+      int max = num;
+      for (int i = 0; i < nums.length; i++) {
+        char temp = nums[i];
+        int number = 0;
+        if (nums[i] == '9') {
+          nums[i] = '6';
+        } else {
+          nums[i] = '9';
         }
 
+        number = Integer.parseInt(new String(nums));
+        max = Math.max(max, number);
+        nums[i] = temp;
       }
-      return res;
+      return max;
     }
   }
 
   public static void main(String[] args) {
     Solution s = new Solution();
-    String str = s.freqAlphabets("123");
-//    assert str.equals("abcdefghijklmnopqrstuvwxyz");
-//    abcdefghijklmnopqrstuvwxyz
-//    abcdefghiklmnopqrstuvwxyz{
-    System.out.println(str);
+    System.out.println(s.maximum69Number(9699));
   }
 }
