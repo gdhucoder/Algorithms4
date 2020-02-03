@@ -18,14 +18,16 @@
 
 package leetcode.editor.cn;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import tools.PrintUtil;
 
-public class LongestIncreasingSubsequence {
+public class _0300_LongestIncreasingSubsequence_DP {
 
   public static void main(String[] args) {
-    Solution solution = new LongestIncreasingSubsequence().new Solution();
+    Solution solution = new _0300_LongestIncreasingSubsequence_DP().new Solution();
+    int[] a = {10, 9, 2, 5, 3, 7, 101};
+    solution.lengthOfLIS(a);
+//    10 9 2 5 3 7 101
+//    1 1 1 2 2 3 4
   }
 
 
@@ -33,20 +35,23 @@ public class LongestIncreasingSubsequence {
   class Solution {
 
     public int lengthOfLIS(int[] nums) {
-      if (nums == null || nums.length == 0)
+      if (nums.length == 0)
         return 0;
-
-      List<Integer> lis = new ArrayList<>();
-
-      for (int i = 0; i < nums.length; i++) {
-        if (nums[i] > lis.get(lis.size() - 1)) {
-          lis.add(nums[i]);
-        } else {
-          int pos = Collections.binarySearch(lis, nums[i]);
-          lis.set(-pos + 1, nums[i]);
+      int[] dp = new int[nums.length];
+      dp[0] = 1;
+      int result = 1;
+      for (int i = 1; i < nums.length; i++) {
+        int max = 0;
+        for (int j = 0; j < i; j++) {
+          if (nums[i] > nums[j])
+            max = Math.max(dp[j], max);
         }
+        dp[i] = max + 1;
+        result = Math.max(result, dp[i]);
       }
-      return lis.size();
+      PrintUtil.show(nums);
+      PrintUtil.show(dp);
+      return result;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
