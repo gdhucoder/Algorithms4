@@ -14,6 +14,10 @@ import org.junit.Test;
 public class Demo {
 
   public static void main(String[] args) {
+//    output
+//    Time Span: [1580732440785, 1580732442785]
+//    {"login":{"maxResponseTime":1223.0,"minResponseTime":23.0,"avgResponseTime":623.0,"p999ResponseTime":1223.0,"p99ResponseTime":1223.0,"count":2,"tps":0},"register":{"maxResponseTime":323.0,"minResponseTime":123.0,"avgResponseTime":223.0,"p999ResponseTime":323.0,"p99ResponseTime":323.0,"count":3,"tps":0}}
+
     MetricsStorage storage = new MockRedisMetricsStorage();
     ConsoleReporter consoleReporter = ReporterFactory.createConsoleReporter(storage);
     consoleReporter.startRepeatedReport(2, 2);
