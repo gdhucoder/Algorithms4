@@ -8,7 +8,7 @@ import edu.princeton.cs.algs4.In;
 public class _AdjListGraphClient {
 
   public static void main(String[] args) {
-    _AdjListGraph g = new _AdjListGraph(new In("algdata/tinyG.txt"));
+    _AdjListGraph g = new _AdjListGraph(new In("algdata/tinyGex2.txt"));
     System.out.println(g);
 //    13 vertices, 13 edges
 //    0:6 2 1 5
