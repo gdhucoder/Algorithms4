@@ -10,14 +10,7 @@ public class Ex_4_1_02 {
 
   public static void main(String[] args) {
     _AdjListGraph G = new _AdjListGraph(new In("algdata/tinyGex2.txt"));
-    StdOut.printf("%d vertices, %d edges\n", G.V(), G.E());
-    for (int v = 0; v < G.V(); v++) {
-      StdOut.print(v + ":");
-      for (int w : G.adj(v)) {
-        StdOut.printf(" " + w);
-      }
-      StdOut.println();
-    }
+    StdOut.println(G);
 //    12 vertices, 16 edges
 //    0: 5 2 6
 //    1: 4 8 11
