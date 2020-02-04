@@ -17,6 +17,7 @@ public class Ex_4_1_03 {
     StdOut.println(g);
     _Graph another = new _Graph(g);
     PrintUtil.printSepLine("copy");
+    another.addEdge(10, 11);
     StdOut.println(another);
 //    -----------------------original-------------------------------
 //    13 vertices, 13 edges
