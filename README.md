@@ -88,6 +88,15 @@ Problems solved:
 
 ## Chapter 4: Graph
 
+### 4.1 Undirected Graph
+
+|[E1](./Ch_4_1/Ex_4_1_01.md)|[E2](./Ch_4_1/Ex_4_1_02.md)|[E3](./Ch_4_1/Ex_4_1_03.md)|[E4](./Ch_4_1/Ex_4_1_04.md)|[E5](./Ch_4_1/Ex_4_1_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_4_1/Ex_4_1_06.md)|[E7](./Ch_4_1/Ex_4_1_07.md)|[E8](./Ch_4_1/Ex_4_1_08.md)|[E9](./Ch_4_1/Ex_4_1_09.md)|[E10](./Ch_4_1/Ex_4_1_10.md)|
+|[E11](./Ch_4_1/Ex_4_1_11.md)|TODO|TODO|TODO|TODO|
+
+### 4.2 Directed Graph
+
 ## Chapter 5: Strings
 
 ## Chapter 6: Context
