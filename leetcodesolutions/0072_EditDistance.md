@@ -1,15 +1,15 @@
 
-# 0072 Edit Distance (hard)
+## 0072 Edit Distance (hard)
 
-## 问题
+### 问题
 
 ![problem](https://gitee.com/gdhu/testtingop/raw/master/2020-02-06_003.jpg)
 
-## 笔记
+### 笔记
 
 ![note](https://gitee.com/gdhu/testtingop/raw/master/2020-02-06_002.jpg)
 
-## 代码
+### 代码
 
 ```java
     public int minDistance(String word1, String word2) {
