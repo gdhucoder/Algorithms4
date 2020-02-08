@@ -18,40 +18,38 @@
 
 package leetcode.editor.cn;
 
-import java.util.ArrayList;
+import edu.princeton.cs.algs4.StdOut;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import tools.PrintUtil;
 
-public class _0300_LongestIncreasingSubsequence_DPandBinarySearch {
+public class _0300_LongestIncreasingSubsequence {
 
   public static void main(String[] args) {
-    Solution solution = new _0300_LongestIncreasingSubsequence_DPandBinarySearch().new Solution();
-    int[] a = {0, 1, 2, 4};
-    int pos = Arrays.binarySearch(a, 3);
-    // -(<i>insertion point</i>) - 1 = - 3 - 1 = -4;
-    System.out.println(pos);// -4
+    Solution solution = new _0300_LongestIncreasingSubsequence().new Solution();
+    int[] a = {10, 9, 2, 5, 3, 7, 101, 18, 1};
+    System.out.println(solution.lengthOfLIS(a));
   }
 
 
   //leetcode submit region begin(Prohibit modification and deletion)
-  class Solution {
+  public class Solution {
 
     public int lengthOfLIS(int[] nums) {
-      if (nums == null || nums.length == 0)
-        return 0;
-
-      List<Integer> lis = new ArrayList<>();
-
-      for (int i = 0; i < nums.length; i++) {
-        if (nums[i] > lis.get(lis.size() - 1)) {
-          lis.add(nums[i]);
-        } else {
-          int pos = Collections.binarySearch(lis, nums[i]);
-          lis.set(-pos + 1, nums[i]);
+      int[] dp = new int[nums.length];
+      int len = 0;
+      for (int num : nums) {
+        int i = Arrays.binarySearch(dp, 0, len, num);
+        StdOut.printf("%2d, ", i);
+        if (i < 0) {
+          i = -(i + 1);
         }
+        dp[i] = num;
+        if (i == len) {
+          len++;
+        }
+        PrintUtil.show(dp);
       }
-      return lis.size();
+      return len;
     }
   }
 //leetcode submit region end(Prohibit modification and deletion)
