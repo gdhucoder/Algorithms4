@@ -28,6 +28,17 @@ public class _0300_LongestIncreasingSubsequence {
     Solution solution = new _0300_LongestIncreasingSubsequence().new Solution();
     int[] a = {10, 9, 2, 5, 3, 7, 101, 18, 1};
     System.out.println(solution.lengthOfLIS(a));
+//    -1, 10 0 0 0 0 0 0 0 0
+//    -1, 9 0 0 0 0 0 0 0 0
+//    -1, 2 0 0 0 0 0 0 0 0
+//    -2, 2 5 0 0 0 0 0 0 0
+//    -2, 2 3 0 0 0 0 0 0 0
+//    -3, 2 3 7 0 0 0 0 0 0
+//    -4, 2 3 7 101 0 0 0 0 0
+//    -4, 2 3 7 18 0 0 0 0 0
+//    -1, 1 3 7 18 0 0 0 0 0
+//    4
+
   }
 
 
