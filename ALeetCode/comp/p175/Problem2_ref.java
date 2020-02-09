@@ -3,29 +3,26 @@ package ALeetCode.comp.p175;
 /**
  * Created by HuGuodong on 12/8/19.
  */
-public class Problem2 {
+public class Problem2_ref {
 
   static class Solution {
 
     public int minSteps(String s, String t) {
       if (s.length() == 0)
         return 0;
-      int[] freq_s = toCharArr(s);
-      int[] freq_t = toCharArr(t);
-      int result = 0;
-      for (int i = 0; i < freq_s.length; i++) {
-        result += Math.abs(freq_s[i] - freq_t[i]);
+      int[] ch = new int[26];
+      for (char c : s.toCharArray()) {
+        ch[c - 'a']++;
       }
-      return result / 2;
-    }
 
-    private int[] toCharArr(String s) {
-      int[] freq = new int[26];
-      char[] chars = s.toCharArray();
-      for (char c : chars) {
-        freq[c - 'a']++;
+      for (char c : t.toCharArray()) {
+        ch[c - 'a']--;
       }
-      return freq;
+      int result = 0;
+      for (int i = 0; i < ch.length; i++) {
+        result += Math.max(0, ch[i]);
+      }
+      return result;
     }
   }
 

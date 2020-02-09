@@ -1,11 +1,10 @@
 package ALeetCode.comp.p175;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.TreeMap;
+import java.util.TreeSet;
 
 /**
  * Created by HuGuodong on 12/8/19.
@@ -14,50 +13,60 @@ public class Problem3 {
 
   static class TweetCounts {
 
-    private Map<String, PriorityQueue<Integer>> recordsMap;
-    private Map<String, Integer> FREQ;
+    Map<String, TreeSet<Long>> map;
 
     public TweetCounts() {
-      recordsMap = new HashMap();
-      FREQ = new HashMap<>();
-      FREQ.put("minute", 60);
-      FREQ.put("hour", 60 * 60);
-      FREQ.put("day", 60 * 60 * 24);
+      map = new HashMap<>();
     }
+
+    int gen = 0;
 
     public void recordTweet(String tweetName, int time) {
-      if (recordsMap.containsKey(tweetName)) {
-        recordsMap.get(tweetName).add(time);
-      } else {
-        PriorityQueue<Integer> que = new PriorityQueue<>();
-        que.add(time);
-        recordsMap.put(tweetName, que);
+      if (!map.containsKey(tweetName)) {
+        map.put(tweetName, new TreeSet<Long>());
       }
+      map.get(tweetName).add((long) time << 32 | gen++);
     }
 
-    public List<Integer> getTweetCountsPerFrequency(String freq,
-        String tweetName,
-        int startTime,
+    public List<Integer> getTweetCountsPerFrequency(String freq, String tweetName, int startTime,
         int endTime) {
+      int va = 0;
+      if (freq.equals("minute"))
+        va = 60;
+      if (freq.equals("hour"))
+        va = 3600;
+      if (freq.equals("day"))
+        va = 86400;
 
-      Map<Integer, Integer> result = new TreeMap<>();
-      int delta = FREQ.get(freq);
-      PriorityQueue<Integer> tweetsTime = recordsMap.get(tweetName);
-      for (int time : tweetsTime) {
-        if (time >= startTime && time <= endTime) {
-          int idx = time / delta;
-          if (result.containsKey(idx)) {
-            result.put(idx, result.get(idx) + 1);
-          }
+      List<Integer> ret = new ArrayList<>();
+      for (int i = 0; i < (endTime - startTime + va) / va; i++) {
+        ret.add(0);
+      }
+      if (map.containsKey(tweetName)) {
+        for (long h : map.get(tweetName).subSet((long) startTime << 32, (long) endTime + 1 << 32)) {
+          h = h >>> 32;
+          int ind = (int) ((h - startTime) / va);
+          ret.set(ind, ret.get(ind) + 1);
         }
       }
-      return Arrays.asList(result.values().toArray(new Integer[0]));
+      return ret;
     }
-
   }
 
-  public static void main(String[] args) {
-    System.out.println();
 
+  /**
+   * Your TweetCounts object will be instantiated and called as such: TweetCounts obj = new
+   * TweetCounts(); obj.recordTweet(tweetName,time); List<Integer> param_2 =
+   * obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime);
+   */
+  public static void main(String[] args) {
+    TweetCounts counts = new TweetCounts();
+    counts.recordTweet("hello", 50);
+    counts.recordTweet("hello", 60);
+    counts.recordTweet("hello", 61);
+    counts.recordTweet("hello", 30);
+    counts.recordTweet("hello", 121);
+    List<Integer> cnts = counts.getTweetCountsPerFrequency("minute", "hello", 0, 60);
+    System.out.println(cnts);
   }
 }
