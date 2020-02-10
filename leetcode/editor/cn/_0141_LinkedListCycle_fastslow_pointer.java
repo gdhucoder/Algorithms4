@@ -40,12 +40,10 @@
 
 package leetcode.editor.cn;
 
-import java.util.HashSet;
-
-public class LinkedListCycle {
+public class _0141_LinkedListCycle_fastslow_pointer {
 
   public static void main(String[] args) {
-    Solution solution = new LinkedListCycle().new Solution();
+    Solution solution = new _0141_LinkedListCycle_fastslow_pointer().new Solution();
   }
 
 //leetcode submit region begin(Prohibit modification and deletion)
@@ -57,12 +55,13 @@ public class LinkedListCycle {
   public class Solution {
 
     public boolean hasCycle(ListNode head) {
-      HashSet<ListNode> nodes = new HashSet<>();
-      while (head != null) {
-        if (!nodes.contains(head)) {
-          nodes.add(head);
-          head = head.next;
-        } else
+      if (head == null || head.next == null)
+        return false;
+      ListNode slow = head, fast = head;
+      while (slow != null && fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow == fast)
           return true;
       }
       return false;
