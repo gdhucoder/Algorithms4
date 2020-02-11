@@ -4,5 +4,5 @@
 
 ## LeetCode Solutions
 
-* [142. Linked List Cycle II](leetcode-solutions/untitled.md)
+* [142-Linked List Cycle II](leetcode-solutions/untitled.md)
 
