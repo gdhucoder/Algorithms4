@@ -13,6 +13,14 @@ public class PrintUtil {
 
   private PrintUtil() {}
 
+  public static void printSepLine(String word) {
+    StdOut.println("-----------------------" + word + "-------------------------------");
+  }
+
+  public static void printSepLine() {
+    StdOut.println("------------------------------------------------------");
+  }
+
   public static void show(Iterable iterable) {
     for (Object o :
         iterable) {
@@ -33,6 +41,13 @@ public class PrintUtil {
   public static void show(int[] a) {
     for (int i = 0; i < a.length; i++) {
       StdOut.printf("%d ", a[i]);
+    }
+    StdOut.println();
+  }
+
+  public static void show(int[] a, boolean equalLength) {
+    for (int i = 0; i < a.length; i++) {
+      StdOut.printf("%3d ", a[i]);
     }
     StdOut.println();
   }

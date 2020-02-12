@@ -35,4 +35,22 @@ public class _AdjListDigraph {
     adj[v].add(w);
     E++;
   }
+
+  public int V() {
+    return V;
+  }
+
+  public int E() {
+    return E;
+  }
+
+  public _AdjListDigraph reverse() {
+    _AdjListDigraph reverse = new _AdjListDigraph(V);
+    for (int v = 0; v < V; v++) {
+      for (int w : adj[v]) {
+        reverse.addEdge(w, v);
+      }
+    }
+    return reverse;
+  }
 }
