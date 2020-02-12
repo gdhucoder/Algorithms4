@@ -40,10 +40,10 @@
 
 package leetcode.editor.cn;
 
-public class RemoveDuplicatesFromSortedArray {
+public class _0026_RemoveDuplicatesFromSortedArray_ {
 
   public static void main(String[] args) {
-    Solution solution = new RemoveDuplicatesFromSortedArray().new Solution();
+    Solution solution = new _0026_RemoveDuplicatesFromSortedArray_().new Solution();
     System.out.println(solution);
   }
 
