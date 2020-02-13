@@ -16,10 +16,10 @@
 
 package leetcode.editor.cn;
 
-public class ContainerWithMostWater {
+public class _0011_ContainerWithMostWater {
 
   public static void main(String[] args) {
-    Solution solution = new ContainerWithMostWater().new Solution();
+    Solution solution = new _0011_ContainerWithMostWater().new Solution();
   }
 
 
