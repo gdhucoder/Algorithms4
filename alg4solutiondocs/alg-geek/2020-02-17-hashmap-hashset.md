@@ -4,7 +4,7 @@
 
 {% tabs %}
 {% tab title="solution1" %}
-```text
+```java
 // use array then sort, compare
 public boolean isAnagram(String s, String t) {
     if (s.length() != t.length()) {
