@@ -20,10 +20,10 @@
 
 package leetcode.editor.cn;
 
-public class ValidAnagram {
+public class _0242_ValidAnagram {
 
   public static void main(String[] args) {
-    Solution solution = new ValidAnagram().new Solution();
+    Solution solution = new _0242_ValidAnagram().new Solution();
   }
 
 
