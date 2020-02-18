@@ -35,24 +35,19 @@ public class ThreeSum {
       Arrays.sort(num);
       List<List<Integer>> res = new LinkedList<>(); // 不需要动态扩容，速度更快
       for (int i = 0; i < num.length - 2; i++) {
-        if (num[i] > 0)// 利用题目已知，排除
-          return res;
-        if (i == 0 || (i > 0 && num[i] != num[i - 1])) { // 判断重复
-          int lo = i + 1, hi = num.length - 1, sum = 0 - num[i];
-          while (lo < hi) {
-            if (num[lo] + num[hi] == sum) {
-              res.add(Arrays.asList(num[i], num[lo], num[hi]));
-              while (lo < hi && num[lo] == num[lo + 1]) // 判断重复
-                lo++;
-              while (lo < hi && num[hi] == num[hi - 1]) // 判断重复
-                hi--;
-              lo++;
-              hi--;
-            } else if (num[lo] + num[hi] < sum)
-              lo++;
-            else
-              hi--;
+        if (num[i] > 0) break;
+        if (i > 0 && num[i] == num[i - 1]) continue;
+        int lo = i + 1, hi = num.length - 1, sum = -num[i];
+        while (lo < hi) {
+          if (sum == num[lo] + num[hi]) {
+            res.add(Arrays.asList(num[i], num[lo], num[hi]));
+            while (lo < hi && num[lo] == num[lo + 1]) lo++;
+            while (lo < hi && num[hi] == num[hi - 1]) hi--;
+            lo++;
+            hi--;
           }
+          else if (sum > num[lo] + num[hi]) lo++;
+          else hi--;
         }
       }
       return res;
@@ -60,6 +55,6 @@ public class ThreeSum {
 
 
   }
-//leetcode submit region end(Prohibit modification and deletion)
+  //leetcode submit region end(Prohibit modification and deletion)
 
 }
