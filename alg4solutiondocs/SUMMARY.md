@@ -8,7 +8,7 @@
 * [142.Linked List Cycle II](leetcode-solutions/142.linked-list-cycle-ii.md)
 * [206. Reverse Linked List](leetcode-solutions/206.-reverse-linked-list.md)
 * [20. Valid Parentheses](leetcode-solutions/20-valid-parentheses.md)
-* [TODO](leetcode-solutions/todo.md)
+* [155. Min Stack](leetcode-solutions/155-min-stack.md)
 
 ## ALG-GEEK
 
