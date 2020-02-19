@@ -11,6 +11,7 @@
 * [155. Min Stack](leetcode-solutions/155-min-stack.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.-binary-tree-inorder-traversal.md)
 * [144. Binary Tree Preorder Traversal](leetcode-solutions/144-binary-tree-preorder-traversal.md)
+* [145.](leetcode-solutions/145..md)
 
 ## ALG-GEEK
 
