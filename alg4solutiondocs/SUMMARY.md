@@ -10,7 +10,7 @@
 * [20. Valid Parentheses](leetcode-solutions/20-valid-parentheses.md)
 * [155. Min Stack](leetcode-solutions/155-min-stack.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.-binary-tree-inorder-traversal.md)
-* [144](leetcode-solutions/144.md)
+* [144. Binary Tree Preorder Traversal](leetcode-solutions/144-binary-tree-preorder-traversal.md)
 
 ## ALG-GEEK
 
