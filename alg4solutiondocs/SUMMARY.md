@@ -9,6 +9,7 @@
 * [206. Reverse Linked List](leetcode-solutions/206.-reverse-linked-list.md)
 * [20. Valid Parentheses](leetcode-solutions/20-valid-parentheses.md)
 * [155. Min Stack](leetcode-solutions/155-min-stack.md)
+* [94. Binary Tree Inorder Traversal](leetcode-solutions/94.-binary-tree-inorder-traversal.md)
 
 ## ALG-GEEK
 
