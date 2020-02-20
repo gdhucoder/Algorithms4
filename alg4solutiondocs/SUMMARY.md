@@ -5,14 +5,14 @@
 ## LeetCode Solutions
 
 * [20. Valid Parentheses](leetcode-solutions/20.md)
-* [84. Largest Rectangle in Histogram](leetcode-solutions/84-largest-rectangle-in-histogram.md)
+* [84. Largest Rectangle in Histogram](leetcode-solutions/84.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.md)
 * [141.Linked List Cycle](leetcode-solutions/141.md)
 * [142.Linked List Cycle II](leetcode-solutions/142.md)
 * [144. Binary Tree Preorder Traversal](leetcode-solutions/144.md)
-* [206. Reverse Linked List](leetcode-solutions/206/README.md)
-  * [145. Binary Tree Postorder Traversal](leetcode-solutions/206/145.md)
-  * [155. Min Stack](leetcode-solutions/206/155.md)
+* [145. Binary Tree Postorder Traversal](leetcode-solutions/145.md)
+* [155. Min Stack](leetcode-solutions/155.md)
+* [206. Reverse Linked List](leetcode-solutions/206.md)
 
 ## ALG-GEEK
 
