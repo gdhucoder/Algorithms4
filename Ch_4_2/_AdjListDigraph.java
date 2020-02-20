@@ -31,6 +31,10 @@ public class _AdjListDigraph {
     }
   }
 
+  public Iterable<Integer> adj(int v) {
+    return adj[v];
+  }
+
   public void addEdge(int v, int w) {
     adj[v].add(w);
     E++;
@@ -52,5 +56,18 @@ public class _AdjListDigraph {
       }
     }
     return reverse;
+  }
+
+  @Override
+  public String toString() {
+    String s = V + " vertices, " + E + " edges\n";
+    for (int v = 0; v < V; v++) {
+      s += v + "->";
+      for (Integer w : adj[v])
+        s += w + "->";
+      s = s.substring(0, s.length() - 2);
+      s += "\n";
+    }
+    return s;
   }
 }
