@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [每日一题](mei-ri-yi-ti.md)
 
 ## LeetCode Solutions
 
@@ -12,7 +13,6 @@
 * [144. Binary Tree Preorder Traversal](leetcode-solutions/144.md)
 * [145. Binary Tree Postorder Traversal](leetcode-solutions/145.md)
 * [155. Min Stack](leetcode-solutions/155.md)
-* [206. Reverse Linked List](leetcode-solutions/206.md)
 
 ## ALG-GEEK
 
