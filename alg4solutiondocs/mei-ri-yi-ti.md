@@ -1,10 +1,14 @@
-# 每日一题
+---
+description: 每日一题
+---
 
-## 列表
+# One LeetCode A Day
 
-| Date | Problem | Type | Similar |
-| :--- | :--- | :--- | :--- |
-| 2020-02-21 | [42. Trapping Rain Water](https://leetcode-cn.com/problems/trapping-rain-water/) | stack, double pointers |  |
+## List
+
+| Date | Problem | Type |
+| :---: | :---: | :---: |
+| 2020-02-21 | [42. Trapping Rain Water](https://leetcode-cn.com/problems/trapping-rain-water/) | stack, double pointers |
 
 
 

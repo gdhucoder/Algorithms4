@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [每日一题](mei-ri-yi-ti.md)
+* [One LeetCode A Day](mei-ri-yi-ti.md)
 
 ## LeetCode Solutions
 
