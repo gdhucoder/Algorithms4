@@ -6,7 +6,7 @@
 ## LeetCode Solutions
 
 * [20. Valid Parentheses](leetcode-solutions/20.md)
-* [42. Trapping Rain Water](leetcode-solutions/42.-trapping-rain-water.md)
+* [42. Trapping Rain Water](leetcode-solutions/42.md)
 * [84. Largest Rectangle in Histogram](leetcode-solutions/84.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.md)
 * [141.Linked List Cycle](leetcode-solutions/141.md)
