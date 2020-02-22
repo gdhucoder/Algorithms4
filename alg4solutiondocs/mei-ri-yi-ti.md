@@ -4,7 +4,7 @@ description: 每日一题
 
 # One LeetCode A Day
 
-## List
+## Problem List
 
 | Date | Problem | Type |
 | :---: | :---: | :---: |
