@@ -34,20 +34,38 @@
 
 package leetcode.editor.cn;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class LowestCommonAncestorOfABinaryTree {
 
   public static void main(String[] args) {
     Solution solution = new LowestCommonAncestorOfABinaryTree().new Solution();
+    String treeExp = "[3,5,1,6,2,0,8,null,null,7,4]";
+    TreeNode root = buildTree(treeExp);
+    solution.lowestCommonAncestor(root, null, null);
+    Map<Integer, Integer> map = new HashMap<>();
+
   }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+  public static TreeNode buildTree(String treeExp) {
+    String str = treeExp;
+    String[] strs = str.replace("[", "").replace("]", "").replaceAll("null", "-1").split(",");
+    TreeNode[] nodes = new TreeNode[strs.length];
+    for (int i = 0; i < strs.length; i++) {
+      TreeNode node = new TreeNode(Integer.valueOf(strs[i]));
+      nodes[i] = node;
+    }
+    for (int i = 0; 2 * i + 2 <= nodes.length; i++) {
+      nodes[i].left = nodes[2 * i + 1];
+      nodes[i].right = nodes[2 * i + 2];
+    }
+
+    System.out.println(nodes[0]);
+    return nodes[0];
+  }
+
+  //leetcode submit region begin(Prohibit modification and deletion)
 
   /**
    * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
@@ -56,38 +74,14 @@ public class LowestCommonAncestorOfABinaryTree {
   class Solution {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-      Map<TreeNode, TreeNode> parents = new HashMap<>();
-      Deque<TreeNode> stack = new ArrayDeque<>();
-      parents.put(root, null);
-      stack.push(root);
-      while (!(parents.containsKey(p) && parents.containsKey(q))) {
-        TreeNode node = stack.pop();
-        if (node.left != null) {
-          parents.put(node.left, node);
-          stack.push(node.left);
-        }
-        if (node.right != null) {
-          parents.put(node.right, node);
-          stack.push(node.right);
-        }
-      }
-      // all p's ancestor
-      Set<TreeNode> ancestor = new HashSet<>();
-      while (p != null) {
-        ancestor.add(p);
-        p = parents.get(p);
-      }
+      if (root == null || root == p || root == q) return root;
 
-      // q's ancestor, the first in p's ancestor is the answer.
-      while (!ancestor.contains(q)) {
-        q = parents.get(q);
-      }
+      TreeNode left = lowestCommonAncestor(root.left, p, q);
+      TreeNode right = lowestCommonAncestor(root.right, p, q);
 
-      return q;
-
-
+      return left == null ? right : right == null ? left : root;
     }
   }
-//leetcode submit region end(Prohibit modification and deletion)
+  //leetcode submit region end(Prohibit modification and deletion)
 
 }
