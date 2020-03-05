@@ -10,7 +10,7 @@
 * [42. Trapping Rain Water](leetcode-solutions/42.md)
 * [84. Largest Rectangle in Histogram](leetcode-solutions/84.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.md)
-* [101. Symmetric Tree](leetcode-solutions/101.-symmetric-tree.md)
+* [101. Symmetric Tree](leetcode-solutions/101.md)
 * [141.Linked List Cycle](leetcode-solutions/141.md)
 * [142.Linked List Cycle II](leetcode-solutions/142.md)
 * [144. Binary Tree Preorder Traversal](leetcode-solutions/144.md)
