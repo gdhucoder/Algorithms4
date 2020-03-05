@@ -16,6 +16,7 @@
 * [144. Binary Tree Preorder Traversal](leetcode-solutions/144.md)
 * [145. Binary Tree Postorder Traversal](leetcode-solutions/145.-binary-tree-postorder-traversal.md)
 * [155. Min Stack](leetcode-solutions/155.-min-stack.md)
+* [257. Binary Tree Paths](leetcode-solutions/257.md)
 * [429. N-ary Tree Level Order Traversal](leetcode-solutions/429.md)
 * [5170](leetcode-solutions/5170.md)
 
