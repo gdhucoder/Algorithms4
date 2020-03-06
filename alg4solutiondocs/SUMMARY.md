@@ -18,6 +18,7 @@
 * [155. Min Stack](leetcode-solutions/155.-min-stack.md)
 * [257. Binary Tree Paths](leetcode-solutions/257.md)
 * [429. N-ary Tree Level Order Traversal](leetcode-solutions/429.md)
+* [690. Employee Importance](leetcode-solutions/690.md)
 * [5170](leetcode-solutions/5170.md)
 
 ## ALG-GEEK
