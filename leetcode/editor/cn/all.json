@@ -490,7 +490,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "45",
-    "status": "",
+    "status": "ac",
     "title": "跳跃游戏 II",
     "titleSlug": "jump-game-ii"
   },
@@ -809,7 +809,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "74",
-    "status": "",
+    "status": "ac",
     "title": "搜索二维矩阵",
     "titleSlug": "search-a-2d-matrix"
   },
@@ -1095,7 +1095,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "100",
-    "status": "",
+    "status": "ac",
     "title": "相同的树",
     "titleSlug": "same-tree"
   },
@@ -1106,7 +1106,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "101",
-    "status": "",
+    "status": "ac",
     "title": "对称二叉树",
     "titleSlug": "symmetric-tree"
   },
@@ -1183,7 +1183,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "108",
-    "status": "",
+    "status": "ac",
     "title": "将有序数组转换为二叉搜索树",
     "titleSlug": "convert-sorted-array-to-binary-search-tree"
   },
@@ -1227,7 +1227,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "112",
-    "status": "",
+    "status": "ac",
     "title": "路径总和",
     "titleSlug": "path-sum"
   },
@@ -2822,7 +2822,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "257",
-    "status": "",
+    "status": "ac",
     "title": "二叉树的所有路径",
     "titleSlug": "binary-tree-paths"
   },
@@ -4406,7 +4406,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "401",
-    "status": "",
+    "status": "ac",
     "title": "二进制手表",
     "titleSlug": "binary-watch"
   },
@@ -6144,7 +6144,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "774",
-    "status": "",
+    "status": "ac",
     "title": "N叉树的最大深度",
     "titleSlug": "maximum-depth-of-n-ary-tree"
   },
@@ -7585,7 +7585,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "690",
-    "status": "",
+    "status": "ac",
     "title": "员工的重要性",
     "titleSlug": "employee-importance"
   },
@@ -8058,7 +8058,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "733",
-    "status": "",
+    "status": "ac",
     "title": "图像渲染",
     "titleSlug": "flood-fill"
   },
@@ -9097,14 +9097,14 @@
     "titleSlug": "making-a-large-island"
   },
   {
-    "formTitle": "[828]独特字符串",
+    "formTitle": "[828]统计子串中的唯一字符",
     "frontendQuestionId": "828",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
     "questionId": "855",
     "status": "",
-    "title": "独特字符串",
+    "title": "统计子串中的唯一字符",
     "titleSlug": "count-unique-characters-of-all-substrings-of-a-given-string"
   },
   {
@@ -12568,7 +12568,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1250",
-    "status": "",
+    "status": "ac",
     "title": "最长公共子序列",
     "titleSlug": "longest-common-subsequence"
   },
@@ -14520,25 +14520,25 @@
     "titleSlug": "minimum-distance-to-type-a-word-using-two-fingers"
   },
   {
-    "formTitle": "[1321]Restaurant Growth",
+    "formTitle": "[1321]餐馆营业额变化增长",
     "frontendQuestionId": "1321",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1452",
     "status": "",
-    "title": "Restaurant Growth",
+    "title": "餐馆营业额变化增长",
     "titleSlug": "restaurant-growth"
   },
   {
-    "formTitle": "[1322]Ads Performance",
+    "formTitle": "[1322]广告效果",
     "frontendQuestionId": "1322",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "1453",
     "status": "",
-    "title": "Ads Performance",
+    "title": "广告效果",
     "titleSlug": "ads-performance"
   },
   {
@@ -14586,14 +14586,14 @@
     "titleSlug": "minimum-number-of-taps-to-open-to-water-a-garden"
   },
   {
-    "formTitle": "[1327]List the Products Ordered in a Period",
+    "formTitle": "[1327]列出指定时间段内所有的下单产品",
     "frontendQuestionId": "1327",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "1462",
     "status": "",
-    "title": "List the Products Ordered in a Period",
+    "title": "列出指定时间段内所有的下单产品",
     "titleSlug": "list-the-products-ordered-in-a-period"
   },
   {
@@ -14685,14 +14685,14 @@
     "titleSlug": "minimum-difficulty-of-a-job-schedule"
   },
   {
-    "formTitle": "[1336]Number of Transactions per Visit",
+    "formTitle": "[1336]每次访问的交易次数",
     "frontendQuestionId": "1336",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
     "questionId": "1467",
     "status": "",
-    "title": "Number of Transactions per Visit",
+    "title": "每次访问的交易次数",
     "titleSlug": "number-of-transactions-per-visit"
   },
   {
@@ -14839,14 +14839,14 @@
     "titleSlug": "maximum-students-taking-exam"
   },
   {
-    "formTitle": "[1350]Students With Invalid Departments",
+    "formTitle": "[1350]院系无效的学生",
     "frontendQuestionId": "1350",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "1481",
     "status": "",
-    "title": "Students With Invalid Departments",
+    "title": "院系无效的学生",
     "titleSlug": "students-with-invalid-departments"
   },
   {
@@ -14894,14 +14894,14 @@
     "titleSlug": "construct-target-array-with-multiple-sums"
   },
   {
-    "formTitle": "[1355]Activity Participants",
+    "formTitle": "[1355]活动参与者",
     "frontendQuestionId": "1355",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1494",
     "status": "",
-    "title": "Activity Participants",
+    "title": "活动参与者",
     "titleSlug": "activity-participants"
   },
   {
@@ -14993,15 +14993,158 @@
     "titleSlug": "largest-multiple-of-three"
   },
   {
-    "formTitle": "[1364]Number of Trusted Contacts of a Customer",
+    "formTitle": "[1364]顾客的可信联系人数量",
     "frontendQuestionId": "1364",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1495",
     "status": "",
-    "title": "Number of Trusted Contacts of a Customer",
+    "title": "顾客的可信联系人数量",
     "titleSlug": "number-of-trusted-contacts-of-a-customer"
+  },
+  {
+    "formTitle": "[1365]有多少小于当前数字的数字",
+    "frontendQuestionId": "1365",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1482",
+    "status": "ac",
+    "title": "有多少小于当前数字的数字",
+    "titleSlug": "how-many-numbers-are-smaller-than-the-current-number"
+  },
+  {
+    "formTitle": "[1366]通过投票对团队排名",
+    "frontendQuestionId": "1366",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1483",
+    "status": "ac",
+    "title": "通过投票对团队排名",
+    "titleSlug": "rank-teams-by-votes"
+  },
+  {
+    "formTitle": "[1367]二叉树中的列表",
+    "frontendQuestionId": "1367",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1484",
+    "status": "ac",
+    "title": "二叉树中的列表",
+    "titleSlug": "linked-list-in-binary-tree"
+  },
+  {
+    "formTitle": "[1368]使网格图至少有一条有效路径的最小代价",
+    "frontendQuestionId": "1368",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1485",
+    "status": "",
+    "title": "使网格图至少有一条有效路径的最小代价",
+    "titleSlug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid"
+  },
+  {
+    "formTitle": "[1369]获取最近第二次的活动",
+    "frontendQuestionId": "1369",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1504",
+    "status": "",
+    "title": "获取最近第二次的活动",
+    "titleSlug": "get-the-second-most-recent-activity"
+  },
+  {
+    "formTitle": "[1370]上升下降字符串",
+    "frontendQuestionId": "1370",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1472",
+    "status": "ac",
+    "title": "上升下降字符串",
+    "titleSlug": "increasing-decreasing-string"
+  },
+  {
+    "formTitle": "[1371]每个元音包含偶数次的最长子字符串",
+    "frontendQuestionId": "1371",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1473",
+    "status": "",
+    "title": "每个元音包含偶数次的最长子字符串",
+    "titleSlug": "find-the-longest-substring-containing-vowels-in-even-counts"
+  },
+  {
+    "formTitle": "[1372]二叉树中的最长交错路径",
+    "frontendQuestionId": "1372",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1474",
+    "status": "ac",
+    "title": "二叉树中的最长交错路径",
+    "titleSlug": "longest-zigzag-path-in-a-binary-tree"
+  },
+  {
+    "formTitle": "[1373]二叉搜索子树的最大键值和",
+    "frontendQuestionId": "1373",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1475",
+    "status": "ac",
+    "title": "二叉搜索子树的最大键值和",
+    "titleSlug": "maximum-sum-bst-in-binary-tree"
+  },
+  {
+    "formTitle": "[1374]生成每种字符都是奇数个的字符串",
+    "frontendQuestionId": "1374",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1490",
+    "status": "ac",
+    "title": "生成每种字符都是奇数个的字符串",
+    "titleSlug": "generate-a-string-with-characters-that-have-odd-counts"
+  },
+  {
+    "formTitle": "[1375]灯泡开关 III",
+    "frontendQuestionId": "1375",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1491",
+    "status": "notac",
+    "title": "灯泡开关 III",
+    "titleSlug": "bulb-switcher-iii"
+  },
+  {
+    "formTitle": "[1376]通知所有员工所需的时间",
+    "frontendQuestionId": "1376",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1492",
+    "status": "notac",
+    "title": "通知所有员工所需的时间",
+    "titleSlug": "time-needed-to-inform-all-employees"
+  },
+  {
+    "formTitle": "[1377]T 秒后青蛙的位置",
+    "frontendQuestionId": "1377",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1493",
+    "status": "",
+    "title": "T 秒后青蛙的位置",
+    "titleSlug": "frog-position-after-t-seconds"
   },
   {
     "formTitle": "[LCP 1]猜数字",
@@ -15155,7 +15298,7 @@
     "questionId": "100162",
     "status": "",
     "title": "字符串轮转",
-    "titleSlug": "flipped-string-lcci"
+    "titleSlug": "string-rotation-lcci"
   },
   {
     "formTitle": "[面试题 02.01]移除重复节点",
@@ -15249,12 +15392,12 @@
     "formTitle": "[面试题 03.01]三合一",
     "frontendQuestionId": "面试题 03.01",
     "leaf": true,
-    "level": 2,
+    "level": 1,
     "nodeType": "def",
     "questionId": "100172",
     "status": "",
     "title": "三合一",
-    "titleSlug": "triple-in-one-lcci"
+    "titleSlug": "three-in-one-lcci"
   },
   {
     "formTitle": "[面试题 03.02]栈的最小值",
@@ -15320,7 +15463,7 @@
     "questionId": "100171",
     "status": "",
     "title": "节点间通路",
-    "titleSlug": "inter-node-access-lcci"
+    "titleSlug": "route-between-nodes-lcci"
   },
   {
     "formTitle": "[面试题 04.02]最小高度树",
@@ -15975,7 +16118,7 @@
     "formTitle": "[面试题 16.25]LRU缓存",
     "frontendQuestionId": "面试题 16.25",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
     "questionId": "1000026",
     "status": "",
@@ -16046,7 +16189,7 @@
     "questionId": "1000035",
     "status": "",
     "title": "婴儿名字",
-    "titleSlug": "truly-most-popular-lcci"
+    "titleSlug": "baby-names-lcci"
   },
   {
     "formTitle": "[面试题 17.08]马戏团人塔",
@@ -16057,7 +16200,7 @@
     "questionId": "1000036",
     "status": "",
     "title": "马戏团人塔",
-    "titleSlug": "best-sequence-at-index-lcci"
+    "titleSlug": "circus-tower-lcci"
   },
   {
     "formTitle": "[面试题 17.09]第 k 个数",
