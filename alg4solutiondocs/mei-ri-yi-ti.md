@@ -16,6 +16,12 @@ description: 每日一题
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:center">2020-03-09</td>
+      <td style="text-align:center"><a href="leetcode-solutions/401.md">401. Binary Watch</a>
+      </td>
+      <td style="text-align:center">backtracking</td>
+    </tr>
+    <tr>
       <td style="text-align:center">2020-03-08</td>
       <td style="text-align:center"><a href="leetcode-solutions/559.md">559. Maximum Depth of N-ary Tree</a>
       </td>
