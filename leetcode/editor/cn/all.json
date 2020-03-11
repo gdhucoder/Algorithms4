@@ -8619,7 +8619,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "800",
-    "status": "",
+    "status": "ac",
     "title": "字母大小写全排列",
     "titleSlug": "letter-case-permutation"
   },
