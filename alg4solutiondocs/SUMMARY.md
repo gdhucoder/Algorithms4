@@ -7,6 +7,7 @@
 
 * [20. Valid Parentheses](leetcode-solutions/20.md)
 * [21. Merge Two Sorted Lists](leetcode-solutions/21.md)
+* [39. Combination Sum](leetcode-solutions/39.md)
 * [42. Trapping Rain Water](leetcode-solutions/42.md)
 * [84. Largest Rectangle in Histogram](leetcode-solutions/84.md)
 * [94. Binary Tree Inorder Traversal](leetcode-solutions/94.md)
