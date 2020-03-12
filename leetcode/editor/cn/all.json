@@ -996,7 +996,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "91",
-    "status": "",
+    "status": "ac",
     "title": "解码方法",
     "titleSlug": "decode-ways"
   },
@@ -1018,7 +1018,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "93",
-    "status": "",
+    "status": "ac",
     "title": "复原IP地址",
     "titleSlug": "restore-ip-addresses"
   },
@@ -15145,6 +15145,28 @@
     "status": "",
     "title": "T 秒后青蛙的位置",
     "titleSlug": "frog-position-after-t-seconds"
+  },
+  {
+    "formTitle": "[1378]Replace Employee ID With The Unique Identifier",
+    "frontendQuestionId": "1378",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1509",
+    "status": "",
+    "title": "Replace Employee ID With The Unique Identifier",
+    "titleSlug": "replace-employee-id-with-the-unique-identifier"
+  },
+  {
+    "formTitle": "[1379]Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+    "frontendQuestionId": "1379",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1498",
+    "status": "",
+    "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+    "titleSlug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree"
   },
   {
     "formTitle": "[LCP 1]猜数字",
