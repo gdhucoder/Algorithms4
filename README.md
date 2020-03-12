@@ -97,6 +97,10 @@ Problems solved:
 
 ### 4.2 Directed Graph
 
+|[E1](./Ch_4_2/Ex_4_2_01.md)|[E2](./Ch_4_2/Ex_4_2_02.md)|[E3](./Ch_4_2/Ex_4_2_03.md)|[E4](./Ch_4_2/Ex_4_2_04.md)|[E5](./Ch_4_2/Ex_4_2_05.md)|
+| :----: | :----: | :----: | :----: | :----: |
+|[E6](./Ch_4_2/Ex_4_2_06.md)|[E7](./Ch_4_2/Ex_4_2_07.md)|[E8](./Ch_4_2/Ex_4_2_08.md)|[E9](./Ch_4_2/Ex_4_2_09.md)|[E10](./Ch_4_2/Ex_4_2_10.md)|
+
 ## Chapter 5: Strings
 
 ## Chapter 6: Context
