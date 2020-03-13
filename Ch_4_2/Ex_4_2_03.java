@@ -109,6 +109,15 @@ public class Ex_4_2_03 {
       }
     }
 
+    public boolean hasEdge(int v, int w) {
+
+      for (Integer vv : adj(v)) {
+        if (vv == w) return true;
+      }
+
+      return false;
+    }
+
     @Override
     public String toString() {
       String s = V + " vertices, " + E + " edges\n";
