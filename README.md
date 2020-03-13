@@ -109,7 +109,7 @@ Problems solved:
 
 ## Important
 
-I highly recommend you guys to upgrade your jdk version upto 11 or higher.
+I highly recommend you guys to upgrade your jdk version up to 11 or higher.
 Or, you maybe encounter some problems when running my code, because I sometimes 
 tried some new features on JDK11 or JDK13.
 
