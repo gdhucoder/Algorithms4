@@ -424,7 +424,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "39",
-    "status": "notac",
+    "status": "ac",
     "title": "组合总和",
     "titleSlug": "combination-sum"
   },
@@ -1436,7 +1436,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "131",
-    "status": "",
+    "status": "ac",
     "title": "分割回文串",
     "titleSlug": "palindrome-partitioning"
   },
