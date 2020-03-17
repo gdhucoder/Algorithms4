@@ -974,7 +974,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "89",
-    "status": "",
+    "status": "ac",
     "title": "格雷编码",
     "titleSlug": "gray-code"
   },
@@ -3922,7 +3922,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "357",
-    "status": "",
+    "status": "ac",
     "title": "计算各个位数不同的数字个数",
     "titleSlug": "count-numbers-with-unique-digits"
   },
@@ -10379,7 +10379,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "981",
-    "status": "",
+    "status": "ac",
     "title": "删列造序",
     "titleSlug": "delete-columns-to-make-sorted"
   },
@@ -11050,7 +11050,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1047",
-    "status": "",
+    "status": "notac",
     "title": "K 次取反后最大化的数组和",
     "titleSlug": "maximize-sum-of-array-after-k-negations"
   },
@@ -15147,26 +15147,70 @@
     "titleSlug": "frog-position-after-t-seconds"
   },
   {
-    "formTitle": "[1378]Replace Employee ID With The Unique Identifier",
+    "formTitle": "[1378]使用唯一标识码替换员工ID",
     "frontendQuestionId": "1378",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "1509",
     "status": "",
-    "title": "Replace Employee ID With The Unique Identifier",
+    "title": "使用唯一标识码替换员工ID",
     "titleSlug": "replace-employee-id-with-the-unique-identifier"
   },
   {
-    "formTitle": "[1379]Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+    "formTitle": "[1379]找出克隆二叉树中的相同节点",
     "frontendQuestionId": "1379",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1498",
     "status": "",
-    "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+    "title": "找出克隆二叉树中的相同节点",
     "titleSlug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree"
+  },
+  {
+    "formTitle": "[1380]矩阵中的幸运数",
+    "frontendQuestionId": "1380",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1496",
+    "status": "ac",
+    "title": "矩阵中的幸运数",
+    "titleSlug": "lucky-numbers-in-a-matrix"
+  },
+  {
+    "formTitle": "[1381]设计一个支持增量操作的栈",
+    "frontendQuestionId": "1381",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1497",
+    "status": "ac",
+    "title": "设计一个支持增量操作的栈",
+    "titleSlug": "design-a-stack-with-increment-operation"
+  },
+  {
+    "formTitle": "[1382]将二叉搜索树变平衡",
+    "frontendQuestionId": "1382",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1285",
+    "status": "",
+    "title": "将二叉搜索树变平衡",
+    "titleSlug": "balance-a-binary-search-tree"
+  },
+  {
+    "formTitle": "[1383]最大的团队表现值",
+    "frontendQuestionId": "1383",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1499",
+    "status": "notac",
+    "title": "最大的团队表现值",
+    "titleSlug": "maximum-performance-of-a-team"
   },
   {
     "formTitle": "[LCP 1]猜数字",
