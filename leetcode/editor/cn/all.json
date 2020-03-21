@@ -11050,7 +11050,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1047",
-    "status": "notac",
+    "status": "ac",
     "title": "K 次取反后最大化的数组和",
     "titleSlug": "maximize-sum-of-array-after-k-negations"
   },
@@ -11314,7 +11314,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1095",
-    "status": "",
+    "status": "ac",
     "title": "两地调度",
     "titleSlug": "two-city-scheduling"
   },
@@ -11501,7 +11501,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1127",
-    "status": "",
+    "status": "ac",
     "title": "最后一块石头的重量",
     "titleSlug": "last-stone-weight"
   },
@@ -13382,7 +13382,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1329",
-    "status": "",
+    "status": "ac",
     "title": "玩筹码",
     "titleSlug": "play-with-chips"
   },
@@ -15211,6 +15211,17 @@
     "status": "notac",
     "title": "最大的团队表现值",
     "titleSlug": "maximum-performance-of-a-team"
+  },
+  {
+    "formTitle": "[1384]按年度列出销售总额",
+    "frontendQuestionId": "1384",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1518",
+    "status": "",
+    "title": "按年度列出销售总额",
+    "titleSlug": "total-sales-amount-by-year"
   },
   {
     "formTitle": "[LCP 1]猜数字",
