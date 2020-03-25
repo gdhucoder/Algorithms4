@@ -1469,7 +1469,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "134",
-    "status": "",
+    "status": "ac",
     "title": "加油站",
     "titleSlug": "gas-station"
   },
@@ -1661,14 +1661,14 @@
     "titleSlug": "reverse-words-in-a-string"
   },
   {
-    "formTitle": "[152]乘积最大子序列",
+    "formTitle": "[152]乘积最大子数组",
     "frontendQuestionId": "152",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "152",
     "status": "ac",
-    "title": "乘积最大子序列",
+    "title": "乘积最大子数组",
     "titleSlug": "maximum-product-subarray"
   },
   {
@@ -2173,7 +2173,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "198",
-    "status": "",
+    "status": "ac",
     "title": "打家劫舍",
     "titleSlug": "house-robber"
   },
@@ -3328,7 +3328,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "303",
-    "status": "",
+    "status": "ac",
     "title": "区域和检索 - 数组不可变",
     "titleSlug": "range-sum-query-immutable"
   },
@@ -4131,7 +4131,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "376",
-    "status": "",
+    "status": "ac",
     "title": "摆动序列",
     "titleSlug": "wiggle-subsequence"
   },
@@ -8201,7 +8201,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "747",
-    "status": "",
+    "status": "ac",
     "title": "使用最小花费爬楼梯",
     "titleSlug": "min-cost-climbing-stairs"
   },
@@ -15222,6 +15222,94 @@
     "status": "",
     "title": "按年度列出销售总额",
     "titleSlug": "total-sales-amount-by-year"
+  },
+  {
+    "formTitle": "[1385]两个数组间的距离值",
+    "frontendQuestionId": "1385",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1486",
+    "status": "",
+    "title": "两个数组间的距离值",
+    "titleSlug": "find-the-distance-value-between-two-arrays"
+  },
+  {
+    "formTitle": "[1386]安排电影院座位",
+    "frontendQuestionId": "1386",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1487",
+    "status": "",
+    "title": "安排电影院座位",
+    "titleSlug": "cinema-seat-allocation"
+  },
+  {
+    "formTitle": "[1387]将整数按权重排序",
+    "frontendQuestionId": "1387",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1488",
+    "status": "",
+    "title": "将整数按权重排序",
+    "titleSlug": "sort-integers-by-the-power-value"
+  },
+  {
+    "formTitle": "[1388]3n 块披萨",
+    "frontendQuestionId": "1388",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1489",
+    "status": "",
+    "title": "3n 块披萨",
+    "titleSlug": "pizza-with-3n-slices"
+  },
+  {
+    "formTitle": "[1389]按既定顺序创建目标数组",
+    "frontendQuestionId": "1389",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1505",
+    "status": "ac",
+    "title": "按既定顺序创建目标数组",
+    "titleSlug": "create-target-array-in-the-given-order"
+  },
+  {
+    "formTitle": "[1390]四因数",
+    "frontendQuestionId": "1390",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1284",
+    "status": "ac",
+    "title": "四因数",
+    "titleSlug": "four-divisors"
+  },
+  {
+    "formTitle": "[1391]检查网格中是否存在有效路径",
+    "frontendQuestionId": "1391",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1507",
+    "status": "notac",
+    "title": "检查网格中是否存在有效路径",
+    "titleSlug": "check-if-there-is-a-valid-path-in-a-grid"
+  },
+  {
+    "formTitle": "[1392]最长快乐前缀",
+    "frontendQuestionId": "1392",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1508",
+    "status": "",
+    "title": "最长快乐前缀",
+    "titleSlug": "longest-happy-prefix"
   },
   {
     "formTitle": "[LCP 1]猜数字",
