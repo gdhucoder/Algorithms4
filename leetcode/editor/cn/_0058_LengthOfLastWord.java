@@ -32,11 +32,11 @@ public class _0058_LengthOfLastWord {
       return len > 0 ? a[len - 1].length() : 0;
     }
 
-    public int lengthOfLastWord2(String s) {
+    public int lengthOfLastWord(String s) {
       if (s.length() == 0) return 0;
       int len = 0, tail = s.length() - 1;
-      while (tail > 0 && s.charAt(tail) == ' ') tail--;
-      while (tail > 0 && s.charAt(tail) != ' ') {
+      while (tail >= 0 && s.charAt(tail) == ' ') tail--;
+      while (tail >= 0 && s.charAt(tail) != ' ') {
         len++;
         tail--;
       }
