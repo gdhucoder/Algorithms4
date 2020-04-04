@@ -83,7 +83,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "8",
-    "status": "notac",
+    "status": "ac",
     "title": "字符串转换整数 (atoi)",
     "titleSlug": "string-to-integer-atoi"
   },
@@ -4252,7 +4252,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "387",
-    "status": "",
+    "status": "ac",
     "title": "字符串中的第一个唯一字符",
     "titleSlug": "first-unique-character-in-a-string"
   },
@@ -15312,14 +15312,14 @@
     "titleSlug": "longest-happy-prefix"
   },
   {
-    "formTitle": "[1393]Capital Gain/Loss",
+    "formTitle": "[1393]股票的资本损益",
     "frontendQuestionId": "1393",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1523",
     "status": "",
-    "title": "Capital Gain/Loss",
+    "title": "股票的资本损益",
     "titleSlug": "capital-gainloss"
   },
   {
@@ -15365,6 +15365,17 @@
     "status": "notac",
     "title": "找到所有好字符串",
     "titleSlug": "find-all-good-strings"
+  },
+  {
+    "formTitle": "[1398]Customers Who Bought Products A and B but Not C",
+    "frontendQuestionId": "1398",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1536",
+    "status": "",
+    "title": "Customers Who Bought Products A and B but Not C",
+    "titleSlug": "customers-who-bought-products-a-and-b-but-not-c"
   },
   {
     "formTitle": "[LCP 1]猜数字",
