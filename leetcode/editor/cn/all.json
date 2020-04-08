@@ -1656,7 +1656,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "151",
-    "status": "",
+    "status": "ac",
     "title": "翻转字符串里的单词",
     "titleSlug": "reverse-words-in-a-string"
   },
@@ -2250,7 +2250,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "205",
-    "status": "",
+    "status": "ac",
     "title": "同构字符串",
     "titleSlug": "isomorphic-strings"
   },
@@ -5946,7 +5946,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "541",
-    "status": "",
+    "status": "ac",
     "title": "反转字符串 II",
     "titleSlug": "reverse-string-ii"
   },
@@ -6122,7 +6122,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "557",
-    "status": "",
+    "status": "ac",
     "title": "反转字符串中的单词 III",
     "titleSlug": "reverse-words-in-a-string-iii"
   },
@@ -7475,7 +7475,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "680",
-    "status": "",
+    "status": "ac",
     "title": "验证回文字符串 Ⅱ",
     "titleSlug": "valid-palindrome-ii"
   },
@@ -10082,7 +10082,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "953",
-    "status": "",
+    "status": "ac",
     "title": "仅仅反转字母",
     "titleSlug": "reverse-only-letters"
   },
@@ -15376,6 +15376,94 @@
     "status": "",
     "title": "Customers Who Bought Products A and B but Not C",
     "titleSlug": "customers-who-bought-products-a-and-b-but-not-c"
+  },
+  {
+    "formTitle": "[1399]统计最大组的数目",
+    "frontendQuestionId": "1399",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1500",
+    "status": "",
+    "title": "统计最大组的数目",
+    "titleSlug": "count-largest-group"
+  },
+  {
+    "formTitle": "[1400]构造 K 个回文字符串",
+    "frontendQuestionId": "1400",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1502",
+    "status": "",
+    "title": "构造 K 个回文字符串",
+    "titleSlug": "construct-k-palindrome-strings"
+  },
+  {
+    "formTitle": "[1401]圆和矩形是否有重叠",
+    "frontendQuestionId": "1401",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1501",
+    "status": "",
+    "title": "圆和矩形是否有重叠",
+    "titleSlug": "circle-and-rectangle-overlapping"
+  },
+  {
+    "formTitle": "[1402]做菜顺序",
+    "frontendQuestionId": "1402",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1503",
+    "status": "",
+    "title": "做菜顺序",
+    "titleSlug": "reducing-dishes"
+  },
+  {
+    "formTitle": "[1403]非递增顺序的最小子序列",
+    "frontendQuestionId": "1403",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1519",
+    "status": "ac",
+    "title": "非递增顺序的最小子序列",
+    "titleSlug": "minimum-subsequence-in-non-increasing-order"
+  },
+  {
+    "formTitle": "[1404]将二进制表示减到 1 的步骤数",
+    "frontendQuestionId": "1404",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1520",
+    "status": "ac",
+    "title": "将二进制表示减到 1 的步骤数",
+    "titleSlug": "number-of-steps-to-reduce-a-number-in-binary-representation-to-one"
+  },
+  {
+    "formTitle": "[1405]最长快乐字符串",
+    "frontendQuestionId": "1405",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1304",
+    "status": "ac",
+    "title": "最长快乐字符串",
+    "titleSlug": "longest-happy-string"
+  },
+  {
+    "formTitle": "[1406]石子游戏 III",
+    "frontendQuestionId": "1406",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1522",
+    "status": "",
+    "title": "石子游戏 III",
+    "titleSlug": "stone-game-iii"
   },
   {
     "formTitle": "[LCP 1]猜数字",
