@@ -4813,7 +4813,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "438",
-    "status": "",
+    "status": "ac",
     "title": "找到字符串中所有字母异位词",
     "titleSlug": "find-all-anagrams-in-a-string"
   },
@@ -10819,7 +10819,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1026",
-    "status": "",
+    "status": "ac",
     "title": "不含 AAA 或 BBB 的字符串",
     "titleSlug": "string-without-aaa-or-bbb"
   },
@@ -10926,7 +10926,7 @@
     "formTitle": "[994]腐烂的橘子",
     "frontendQuestionId": "994",
     "leaf": true,
-    "level": 1,
+    "level": 2,
     "nodeType": "def",
     "questionId": "1036",
     "status": "",
@@ -15367,14 +15367,14 @@
     "titleSlug": "find-all-good-strings"
   },
   {
-    "formTitle": "[1398]Customers Who Bought Products A and B but Not C",
+    "formTitle": "[1398]购买了产品A和产品B却没有购买产品C的顾客",
     "frontendQuestionId": "1398",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1536",
     "status": "",
-    "title": "Customers Who Bought Products A and B but Not C",
+    "title": "购买了产品A和产品B却没有购买产品C的顾客",
     "titleSlug": "customers-who-bought-products-a-and-b-but-not-c"
   },
   {
@@ -15464,6 +15464,61 @@
     "status": "",
     "title": "石子游戏 III",
     "titleSlug": "stone-game-iii"
+  },
+  {
+    "formTitle": "[1407]Top Travellers",
+    "frontendQuestionId": "1407",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1541",
+    "status": "",
+    "title": "Top Travellers",
+    "titleSlug": "top-travellers"
+  },
+  {
+    "formTitle": "[1410]HTML 实体解析器",
+    "frontendQuestionId": "1410",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1526",
+    "status": "ac",
+    "title": "HTML 实体解析器",
+    "titleSlug": "html-entity-parser"
+  },
+  {
+    "formTitle": "[5380]数组中的字符串匹配",
+    "frontendQuestionId": "5380",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1524",
+    "status": "ac",
+    "title": "数组中的字符串匹配",
+    "titleSlug": "string-matching-in-an-array"
+  },
+  {
+    "formTitle": "[5381]查询带键的排列",
+    "frontendQuestionId": "5381",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1525",
+    "status": "ac",
+    "title": "查询带键的排列",
+    "titleSlug": "queries-on-a-permutation-with-key"
+  },
+  {
+    "formTitle": "[5383]给 N x 3 网格图涂色的方案数",
+    "frontendQuestionId": "5383",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1527",
+    "status": "",
+    "title": "给 N x 3 网格图涂色的方案数",
+    "titleSlug": "number-of-ways-to-paint-n-x-3-grid"
   },
   {
     "formTitle": "[LCP 1]猜数字",
