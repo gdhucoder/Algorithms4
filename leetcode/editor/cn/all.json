@@ -12249,7 +12249,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1203",
-    "status": "",
+    "status": "ac",
     "title": "按序打印",
     "titleSlug": "print-in-order"
   },
@@ -14350,7 +14350,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1427",
-    "status": "",
+    "status": "ac",
     "title": "两棵二叉搜索树中的所有元素",
     "titleSlug": "all-elements-in-two-binary-search-trees"
   },
@@ -15477,6 +15477,28 @@
     "titleSlug": "top-travellers"
   },
   {
+    "formTitle": "[1408]数组中的字符串匹配",
+    "frontendQuestionId": "1408",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1524",
+    "status": "ac",
+    "title": "数组中的字符串匹配",
+    "titleSlug": "string-matching-in-an-array"
+  },
+  {
+    "formTitle": "[1409]查询带键的排列",
+    "frontendQuestionId": "1409",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1525",
+    "status": "ac",
+    "title": "查询带键的排列",
+    "titleSlug": "queries-on-a-permutation-with-key"
+  },
+  {
     "formTitle": "[1410]HTML 实体解析器",
     "frontendQuestionId": "1410",
     "leaf": true,
@@ -15488,30 +15510,8 @@
     "titleSlug": "html-entity-parser"
   },
   {
-    "formTitle": "[5380]数组中的字符串匹配",
-    "frontendQuestionId": "5380",
-    "leaf": true,
-    "level": 1,
-    "nodeType": "def",
-    "questionId": "1524",
-    "status": "ac",
-    "title": "数组中的字符串匹配",
-    "titleSlug": "string-matching-in-an-array"
-  },
-  {
-    "formTitle": "[5381]查询带键的排列",
-    "frontendQuestionId": "5381",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "1525",
-    "status": "ac",
-    "title": "查询带键的排列",
-    "titleSlug": "queries-on-a-permutation-with-key"
-  },
-  {
-    "formTitle": "[5383]给 N x 3 网格图涂色的方案数",
-    "frontendQuestionId": "5383",
+    "formTitle": "[1411]给 N x 3 网格图涂色的方案数",
+    "frontendQuestionId": "1411",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
