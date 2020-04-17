@@ -22,10 +22,10 @@
 
 package leetcode.editor.cn;
 
-public class JumpGame {
+public class _0055_JumpGame {
 
   public static void main(String[] args) {
-    Solution solution = new JumpGame().new Solution();
+    Solution solution = new _0055_JumpGame().new Solution();
     int[] a = {9, 4, 2, 1, 0, 2, 0};
     System.out.println(solution.canJump(a));
   }
