@@ -1,4 +1,6 @@
 
+[GoogleDoc](https://docs.google.com/spreadsheets/d/1E5xJUzIQPJHybkj_WVa_c7v-tjNJEBPJwnJQcvwXMsk/edit?usp=sharing)
+
 2020-04-24
 MST
 
