@@ -20,42 +20,46 @@
 //输出: -1 
 // Related Topics 数组 二分查找
 
+
 package leetcode.editor.cn;
 
 public class SearchInRotatedSortedArray {
 
-  public static void main(String[] args) {
-    Solution solution = new SearchInRotatedSortedArray().new Solution();
-    int[] a = {4, 5, 6, 7, 0, 1, 2};
-    System.out.println(solution.search(a, 1));
-  }
-
-
-  //leetcode submit region begin(Prohibit modification and deletion)
-  class Solution {
-
-    public int search(int[] a, int target) {
-      int left = 0, right = a.length - 1;
-      while (left < right) {
-        int mid = left + ((right - left) >> 1);
-        if (target == a[mid]) {
-          return mid;
-        }
-        else if (a[mid] > target) {
-          right = mid - 1;
-        }
-        else if (a[mid] < target) {
-          if (a[left] > target) {
-            right = mid - 11;
-          }
-          else {
-            left = mid + 1;
-          }
-        }
-      }
-      return -1;
+    public static void main(String[] args) {
+        Solution solution = new SearchInRotatedSortedArray().new Solution();
     }
-  }
-  //leetcode submit region end(Prohibit modification and deletion)
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+
+        public int search(int[] a, int target) {
+            int left = 0, right = a.length - 1;
+            while (left <= right) {
+                int mid = left + ((right - left) >> 1);
+                if (target == a[mid]) {
+                    return mid;
+                }
+                else if (a[left] <= a[mid]) {
+                    if (a[left] <= target && target <= a[mid]) {
+                        right = mid - 1;
+                    }
+                    else {
+                        left = mid + 1;
+                    }
+                }
+                else {
+                    if (a[mid] <= target && target <= a[right]) {
+                        left = mid + 1;
+                    }
+                    else {
+                        right = mid - 1;
+                    }
+                }
+
+            }
+            return -1;
+        }
+    }
+    //leetcode submit region end(Prohibit modification and deletion)
 
 }
