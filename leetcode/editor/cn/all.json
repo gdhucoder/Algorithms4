@@ -13135,7 +13135,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "1185",
-    "status": "",
+    "status": "ac",
     "title": "山脉数组中查找目标值",
     "titleSlug": "find-in-mountain-array"
   },
@@ -19291,7 +19291,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "100320",
-    "status": "",
+    "status": "ac",
     "title": "数组中数字出现的次数",
     "titleSlug": "shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof"
   },
