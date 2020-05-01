@@ -2419,7 +2419,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "202",
-    "status": "",
+    "status": "ac",
     "title": "快乐数",
     "titleSlug": "happy-number"
   },
@@ -17097,7 +17097,7 @@
     "questionId": "1286",
     "status": "",
     "title": "带限制的子序列和",
-    "titleSlug": "constrained-subset-sum"
+    "titleSlug": "constrained-subsequence-sum"
   },
   {
     "articleLive": 2,

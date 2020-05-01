@@ -7082,6 +7082,26 @@
         "__typename": "AppliedTranslationNode"
       },
       {
+        "questionId": "1528",
+        "title": "\u62e5\u6709\u6700\u591a\u7cd6\u679c\u7684\u5b69\u5b50",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1529",
+        "title": "\u6539\u53d8\u4e00\u4e2a\u6574\u6570\u80fd\u5f97\u5230\u7684\u6700\u5927\u5dee\u503c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1530",
+        "title": "\u68c0\u67e5\u4e00\u4e2a\u5b57\u7b26\u4e32\u662f\u5426\u53ef\u4ee5\u6253\u7834\u53e6\u4e00\u4e2a\u5b57\u7b26\u4e32",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1531",
+        "title": "\u6bcf\u4e2a\u4eba\u6234\u4e0d\u540c\u5e3d\u5b50\u7684\u65b9\u6848\u6570",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
         "questionId": "1532",
         "title": "\u91cd\u65b0\u683c\u5f0f\u5316\u5b57\u7b26\u4e32",
         "__typename": "AppliedTranslationNode"
@@ -7124,6 +7144,26 @@
       {
         "questionId": "1541",
         "title": "\u6392\u540d\u9760\u524d\u7684\u65c5\u884c\u8005",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1547",
+        "title": "\u65c5\u884c\u7ec8\u70b9\u7ad9",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1548",
+        "title": "\u81f3\u5c11\u76f8\u9694 k \u4e2a\u5143\u7d20",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1549",
+        "title": "\u7edd\u5bf9\u5dee\u4e0d\u8d85\u8fc7\u9650\u5236\u7684\u6700\u957f\u8fde\u7eed\u5b50\u6570\u7ec4",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1550",
+        "title": "\u6709\u5e8f\u77e9\u9635\u4e2d\u7684\u7b2c k \u4e2a\u6700\u5c0f\u6570\u7ec4\u548c",
         "__typename": "AppliedTranslationNode"
       },
       {

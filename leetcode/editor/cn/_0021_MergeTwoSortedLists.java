@@ -9,13 +9,13 @@
 
 package leetcode.editor.cn;
 
-public class MergeTwoSortedLists {
+public class _0021_MergeTwoSortedLists {
 
   public static void main(String[] args) {
-    Solution solution = new MergeTwoSortedLists().new Solution();
+    Solution solution = new _0021_MergeTwoSortedLists().new Solution();
   }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+  //leetcode submit region begin(Prohibit modification and deletion)
 
   /**
    * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode(int
@@ -28,7 +28,7 @@ public class MergeTwoSortedLists {
     }
 
     public ListNode mergeRecursion(ListNode l1, ListNode l2) {
-      if (l1 == null) {
+      if (l1 == null) { // corner
         return l2;
       }
       if (l2 == null) {
