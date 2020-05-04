@@ -2,19 +2,15 @@ package Ch_4_3;
 
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
 
 /**
- * Created by HuGuodong on 2018/12/23.
+ * Created by HuGuodong on 5/5/20.
  */
-
 public class _EdgeWeightedGraph {
 
   private final int V; // number of vertices
-  private int E; // number of edges
+  private int E;
   private Bag<_Edge>[] adj; // adjacency lists
-
-  private static final String NEWLINE = System.getProperty("line.separator");
 
   public _EdgeWeightedGraph(int V) {
     this.V = V;
@@ -37,6 +33,13 @@ public class _EdgeWeightedGraph {
     }
   }
 
+  public void addEdge(_Edge e) {
+    int v = e.either(), w = e.other(v);
+    adj[v].add(e);
+    adj[w].add(e);
+    E++;
+  }
+
   public int V() {
     return V;
   }
@@ -45,50 +48,44 @@ public class _EdgeWeightedGraph {
     return E;
   }
 
-  public void addEdge(_Edge e) {
-    int v = e.either();
-    int w = e.other(v);
-    adj[v].add(e);
-    adj[w].add(e);
-    E++;
-  }
-
   public Iterable<_Edge> adj(int v) {
     return adj[v];
   }
 
-  // put all edges in a Bag
   public Iterable<_Edge> edges() {
-    Bag<_Edge> edges = new Bag<>();
+    Bag<_Edge> b = new Bag<>();
     for (int v = 0; v < V; v++) {
       for (_Edge e : adj[v]) {
-        if (e.other(v) > v) {
-          edges.add(e);
-        }
+        if (e.other(v) > v) b.add(e);
       }
     }
-    return edges;
+    return b;
   }
 
   @Override
   public String toString() {
-    StringBuilder s = new StringBuilder();
-    s.append(V + " " + E + NEWLINE);
+    String s = V + " vertices, " + E + " edges\n";
     for (int v = 0; v < V; v++) {
-      s.append(v + ": ");
-      for (_Edge e : adj[v]) {
-        s.append(e + " ");
+      s += v + ": ";
+      for (_Edge e : adj(v)) {
+        s += e.toString();
       }
-      s.append(NEWLINE);
+      s += "\n";
     }
-    return s.toString();
+    return s;
   }
 
   public static void main(String[] args) {
-    String[] files = {"tinyEWG.txt", "mediumEWG.txt", "largeEWG.txt"};
-    _EdgeWeightedGraph weightedGraph = new _EdgeWeightedGraph(new In(files[1]));
-
-    StdOut.println(weightedGraph);
-
+    _EdgeWeightedGraph g = new _EdgeWeightedGraph(new In("algdata/tinyEWD.txt"));
+    System.out.println(g);
+    //    8 vertices, 15 edges
+    //    0: 6-0 0.58 	0-2 0.26 	0-4 0.38
+    //    1: 1-3 0.29 	5-1 0.32
+    //    2: 6-2 0.40 	2-7 0.34 	0-2 0.26
+    //    3: 3-6 0.52 	1-3 0.29 	7-3 0.39
+    //    4: 6-4 0.93 	0-4 0.38 	4-7 0.37 	5-4 0.35 	4-5 0.35
+    //    5: 5-1 0.32 	7-5 0.28 	5-7 0.28 	5-4 0.35 	4-5 0.35
+    //    6: 6-4 0.93 	6-0 0.58 	3-6 0.52 	6-2 0.40
+    //    7: 2-7 0.34 	7-3 0.39 	7-5 0.28 	5-7 0.28 	4-7 0.37
   }
 }

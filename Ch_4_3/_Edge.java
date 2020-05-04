@@ -1,14 +1,13 @@
 package Ch_4_3;
 
 /**
- * Created by HuGuodong on 2018/12/23.
+ * Created by HuGuodong on 5/5/20.
  */
-
 public class _Edge implements Comparable<_Edge> {
 
-  private final int v; // one vertex
-  private final int w; // the other
-  private final double weight; // edge weight
+  private final int v;
+  private final int w;
+  private final double weight;
 
   public _Edge(int v, int w, double weight) {
     this.v = v;
@@ -25,25 +24,18 @@ public class _Edge implements Comparable<_Edge> {
   }
 
   public int other(int vertex) {
-    if (vertex == v) {
-      return w;
-    } else if (vertex == w) {
-      return v;
-    }else {
-      throw new RuntimeException("Inconsistent Edge!");
-    }
+    if (vertex == v) return w;
+    else if (vertex == w) return v;
+    else throw new RuntimeException("Inconsistent edge");
   }
 
 
   @Override
-  public int compareTo(_Edge that) {
-
-    return this.weight() > that.weight() ? 1 :
-        this.weight() == that.weight() ? 0 : -1;
+  public int compareTo(_Edge o) {
+    return Double.compare(this.weight, o.weight);
   }
 
-  @Override
   public String toString() {
-    return String.format("%d-%d %.2f", v, w, weight);
+    return String.format("%d-%d %.2f \t", v, w, weight);
   }
 }
