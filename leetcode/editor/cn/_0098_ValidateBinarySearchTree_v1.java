@@ -31,21 +31,15 @@
 // 
 // Related Topics 树 深度优先搜索
 
+
 package leetcode.editor.cn;
 
-
-import java.util.Stack;
-
-public class ValidateBinarySearchTree {
-
-  public static final String[] IPs = new String[]{"xxx", "xxx"};
+public class _0098_ValidateBinarySearchTree_v1 {
 
   public static void main(String[] args) {
-    Solution solution = new ValidateBinarySearchTree().new Solution();
-    IPs[0] = "1";
+    Solution solution = new _0098_ValidateBinarySearchTree_v1().new Solution();
   }
-
-//leetcode submit region begin(Prohibit modification and deletion)
+  //leetcode submit region begin(Prohibit modification and deletion)
 
   /**
    * Definition for a binary tree node. public class TreeNode { int val; TreeNode left; TreeNode
@@ -53,26 +47,16 @@ public class ValidateBinarySearchTree {
    */
   class Solution {
 
-
     public boolean isValidBST(TreeNode root) {
-      if (root == null)
-        return true;
-      Stack<TreeNode> stack = new Stack<>();
-      TreeNode pre = null;
-      while (root != null || !stack.isEmpty()) {
-        while (root != null) {
-          stack.push(root);
-          root = root.left;
-        }
-        root = stack.pop();
-        if (pre != null && pre.val >= root.val)
-          return false;
-        pre = root;
-        root = root.right;
-      }
-      return true;
+      return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private boolean helper(TreeNode node, long min, long max) {
+      if (node == null) return true;
+      if (node.val <= min || node.val >= max) return false;
+      return helper(node.left, min, node.val) && helper(node.right, node.val, max);
     }
   }
-//leetcode submit region end(Prohibit modification and deletion)
+  //leetcode submit region end(Prohibit modification and deletion)
 
 }
