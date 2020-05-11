@@ -26,35 +26,25 @@
 // 
 // Related Topics 数学 二分查找
 
+
 package leetcode.editor.cn;
 
-public class PowxN {
+public class _0050_PowxN_v2 {
 
   public static void main(String[] args) {
-    Solution solution = new PowxN().new Solution();
-    System.out.println(solution.myPow(2, 4));
+    Solution solution = new _0050_PowxN_v2().new Solution();
   }
-
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
 
     public double myPow(double x, int n) {
-      if (n == 0) {
-        return 1;
-      }
-      if (n < 0) {
-        x = 1 / x;
-        // deal with overflow Integer.MIN_VALUE
-        // -2... +1
-        return x * myPow(x, -(n + 1));
-      }
-      return n % 2 == 0 ? myPow(x * x, n / 2) :
-          x * myPow(x * x, n / 2);
+      if (n == 0) return 1;
+      if (n == 1) return x;
+      if (n < 0) return 1 / x * myPow(1 / x, -(n + 1));
+      return n % 2 == 0 ? myPow(x * x, n / 2) : x * myPow(x * x, n / 2);
     }
-
-
   }
-//leetcode submit region end(Prohibit modification and deletion)
+  //leetcode submit region end(Prohibit modification and deletion)
 
 }
