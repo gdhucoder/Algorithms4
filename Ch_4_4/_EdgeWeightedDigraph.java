@@ -1,6 +1,7 @@
 package Ch_4_4;
 
 import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
 
 /**
  * Created by HuGuodong on 5/12/20.
@@ -20,6 +21,18 @@ public class _EdgeWeightedDigraph {
     }
   }
 
+  public _EdgeWeightedDigraph(In in) {
+    this(in.readInt());
+    int E = in.readInt();
+    for (int i = 0; i < E; i++) {
+      int v = in.readInt();
+      int w = in.readInt();
+      double weight = in.readDouble();
+      _DirectedEdge e = new _DirectedEdge(v, w, weight);
+      addEdge(e);
+    }
+  }
+
   public int V() {
     return this.V;
   }
@@ -35,5 +48,15 @@ public class _EdgeWeightedDigraph {
 
   public Iterable<_DirectedEdge> adj(int v) {
     return adj[v];
+  }
+
+  public Iterable<_DirectedEdge> edges() {
+    Bag<_DirectedEdge> bag = new Bag<>();
+    for (int v = 0; v < V; v++) {
+      for (_DirectedEdge e : adj[v]) {
+        bag.add(e);
+      }
+    }
+    return bag;
   }
 }
