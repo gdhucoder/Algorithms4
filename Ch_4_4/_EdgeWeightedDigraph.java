@@ -59,4 +59,17 @@ public class _EdgeWeightedDigraph {
     }
     return bag;
   }
+
+  @Override
+  public String toString() {
+    StringBuilder s = new StringBuilder(V + " vertices, " + E + " edges\n");
+    for (int v = 0; v < V; v++) {
+      s.append(v).append(": ");
+      for (_DirectedEdge e : adj(v)) {
+        s.append(e.toString()).append("  ");
+      }
+      s.append("\n");
+    }
+    return s.toString();
+  }
 }

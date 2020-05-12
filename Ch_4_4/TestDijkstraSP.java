@@ -10,6 +10,7 @@ public class TestDijkstraSP {
 
   public static void main(String[] args) {
     _EdgeWeightedDigraph G = new _EdgeWeightedDigraph(new In("algdata/tinyEWD.txt"));
+    StdOut.println(G);
     int s = 0;
     _DijkstraSP sp = new _DijkstraSP(G, s);
     for (int t = 0; t < G.V(); t++) {

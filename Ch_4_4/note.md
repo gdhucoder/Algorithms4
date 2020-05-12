@@ -13,9 +13,11 @@ edge relaxation
 if the length to w is larger than the sum of length to `v` plus weight of `v` to `w`,
 then `relax`: change `distTo[w] = distTo[v] + e.weight()` and `edgeTo[w] = e`.
 
+![2020-05-12_003.jpg](https://gitee.com/gdhu/testtingop/raw/master/2020-05-12_003.jpg)
 
+![2020-05-12_004.jpg](https://gitee.com/gdhu/testtingop/raw/master/2020-05-12_004.jpg)
 
-
+![2020-05-12_006.jpg](https://gitee.com/gdhu/testtingop/raw/master/2020-05-12_006.jpg)
 
 
 
