@@ -295,7 +295,7 @@
     "level": 3,
     "nodeType": "def",
     "questionId": "25",
-    "status": "",
+    "status": "ac",
     "title": "K 个一组翻转链表",
     "titleSlug": "reverse-nodes-in-k-group"
   },
@@ -1627,7 +1627,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "136",
-    "status": "",
+    "status": "ac",
     "title": "只出现一次的数字",
     "titleSlug": "single-number"
   },
@@ -6715,7 +6715,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "560",
-    "status": "",
+    "status": "ac",
     "title": "和为K的子数组",
     "titleSlug": "subarray-sum-equals-k"
   },
@@ -16933,14 +16933,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[1412]Find the Quiet Students in All Exams",
+    "formTitle": "[1412]查找成绩处于中游的的学生",
     "frontendQuestionId": "1412",
     "leaf": true,
     "level": 3,
     "nodeType": "def",
     "questionId": "1546",
     "status": "",
-    "title": "Find the Quiet Students in All Exams",
+    "title": "查找成绩处于中游的的学生",
     "titleSlug": "find-the-quiet-students-in-all-exams"
   },
   {
@@ -17041,14 +17041,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[1421]NPV Queries",
+    "formTitle": "[1421]净现值查询",
     "frontendQuestionId": "1421",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1551",
     "status": "",
-    "title": "NPV Queries",
+    "title": "净现值查询",
     "titleSlug": "npv-queries"
   },
   {
@@ -17326,6 +17326,18 @@
     "status": "",
     "title": "切披萨的方案数",
     "titleSlug": "number-of-ways-of-cutting-a-pizza"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1445]Apples & Oranges",
+    "frontendQuestionId": "1445",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1578",
+    "status": "",
+    "title": "Apples & Oranges",
+    "titleSlug": "apples-oranges"
   },
   {
     "articleLive": 2,
