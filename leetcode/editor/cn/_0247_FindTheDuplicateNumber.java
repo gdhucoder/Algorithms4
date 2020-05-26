@@ -24,38 +24,37 @@
 
 package leetcode.editor.cn;
 
-public class FindTheDuplicateNumber {
+public class _0247_FindTheDuplicateNumber {
 
   public static void main(String[] args) {
-    Solution solution = new FindTheDuplicateNumber().new Solution();
+    Solution solution = new _0247_FindTheDuplicateNumber().new Solution();
     int[] a = {2, 1, 4, 3, 2};
     solution.findDuplicate(a);
   }
 
 
   //leetcode submit region begin(Prohibit modification and deletion)
-  class Solution {
+  public class Solution {
 
     public int findDuplicate(int[] nums) {
-      int[] a = nums;
-      int idx = 0;
-      while (idx < a.length) {
-        int exchPos = a[idx] - 1;
-        if (idx != exchPos) {
-          if (a[exchPos] == a[idx])
-            return a[idx];
-          int temp = a[exchPos];
-          a[exchPos] = a[idx];
-          a[idx] = temp;
-        } else {
-          idx++;
-        }
-
+      int left = 0, right = nums.length - 1;
+      while (left < right) {
+        int mid = left + (right - left) / 2;
+        System.out.println(mid);
+        int count = numBelow(nums, mid);
+        if (count > mid) right = mid;
+        else left = mid + 1;
+        System.out.printf("%d, %d, %d\n", count, left, right);
       }
-      //PrintUtil.show(a);
-      return 0;
+      return left;
+    }
+
+    public int numBelow(int[] nums, int target) {
+      int result = 0;
+      for (int num : nums) if (num <= target) result++;
+      return result;
     }
   }
-//leetcode submit region end(Prohibit modification and deletion)
+  //leetcode submit region end(Prohibit modification and deletion)
 
 }
