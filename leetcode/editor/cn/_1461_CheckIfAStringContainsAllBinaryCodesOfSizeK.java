@@ -84,10 +84,9 @@ public class _1461_CheckIfAStringContainsAllBinaryCodesOfSizeK {
 
     public boolean hasAllCodes2(String s, int k) {
       Set<String> seen = new HashSet<>();
-      StringBuilder sb = new StringBuilder(s);
       int len = s.length();
       for (int i = 0; i <= len - k; i++) {
-        String sub = sb.substring(i, i + k);
+        String sub = s.substring(i, i + k);
         seen.add(sub);
       }
       return seen.size() == 1 << k;
