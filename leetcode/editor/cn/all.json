@@ -2095,7 +2095,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "175",
-    "status": "",
+    "status": "ac",
     "title": "组合两个表",
     "titleSlug": "combine-two-tables"
   },
@@ -16951,7 +16951,7 @@
     "level": 1,
     "nodeType": "def",
     "questionId": "1514",
-    "status": "",
+    "status": "ac",
     "title": "逐步求和得到正数的最小值",
     "titleSlug": "minimum-value-to-get-positive-step-by-step-sum"
   },
@@ -16963,7 +16963,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1515",
-    "status": "",
+    "status": "ac",
     "title": "和为 K 的最少斐波那契数字数目",
     "titleSlug": "find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k"
   },
@@ -17113,14 +17113,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[1427]Perform String Shifts",
+    "formTitle": "[1427]字符串的左右移",
     "frontendQuestionId": "1427",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "1345",
     "status": "",
-    "title": "Perform String Shifts",
+    "title": "字符串的左右移",
     "titleSlug": "perform-string-shifts"
   },
   {
@@ -17179,7 +17179,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1529",
-    "status": "",
+    "status": "ac",
     "title": "改变一个整数能得到的最大差值",
     "titleSlug": "max-difference-you-can-get-from-changing-an-integer"
   },
@@ -17359,7 +17359,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1543",
-    "status": "",
+    "status": "ac",
     "title": "最简分数",
     "titleSlug": "simplified-fractions"
   },
@@ -17371,7 +17371,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1544",
-    "status": "",
+    "status": "ac",
     "title": "统计二叉树中好节点的数目",
     "titleSlug": "count-good-nodes-in-binary-tree"
   },
@@ -17527,7 +17527,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1557",
-    "status": "",
+    "status": "ac",
     "title": "检查一个字符串是否包含所有长度为 K 的二进制子串",
     "titleSlug": "check-if-a-string-contains-all-binary-codes-of-size-k"
   },
@@ -17539,7 +17539,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "1558",
-    "status": "",
+    "status": "ac",
     "title": "课程安排 IV",
     "titleSlug": "course-schedule-iv"
   },
@@ -17602,6 +17602,90 @@
     "status": "",
     "title": "两个盒子中球的颜色数相同的概率",
     "titleSlug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1468]计算税后工资",
+    "frontendQuestionId": "1468",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1608",
+    "status": "",
+    "title": "计算税后工资",
+    "titleSlug": "calculate-salaries"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1469]Find All The Lonely Nodes",
+    "frontendQuestionId": "1469",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1609",
+    "status": "",
+    "title": "Find All The Lonely Nodes",
+    "titleSlug": "find-all-the-lonely-nodes"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1470]重新排列数组",
+    "frontendQuestionId": "1470",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1580",
+    "status": "ac",
+    "title": "重新排列数组",
+    "titleSlug": "shuffle-the-array"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1471]数组中的 k 个最强值",
+    "frontendQuestionId": "1471",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1581",
+    "status": "ac",
+    "title": "数组中的 k 个最强值",
+    "titleSlug": "the-k-strongest-values-in-an-array"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1472]设计浏览器历史记录",
+    "frontendQuestionId": "1472",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1582",
+    "status": "ac",
+    "title": "设计浏览器历史记录",
+    "titleSlug": "design-browser-history"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1473]给房子涂色 III",
+    "frontendQuestionId": "1473",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1583",
+    "status": "",
+    "title": "给房子涂色 III",
+    "titleSlug": "paint-house-iii"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1474]Delete N Nodes After M Nodes of a Linked List",
+    "frontendQuestionId": "1474",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1618",
+    "status": "",
+    "title": "Delete N Nodes After M Nodes of a Linked List",
+    "titleSlug": "delete-n-nodes-after-m-nodes-of-a-linked-list"
   },
   {
     "articleLive": 2,
