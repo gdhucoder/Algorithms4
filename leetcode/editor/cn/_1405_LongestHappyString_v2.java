@@ -46,10 +46,10 @@ package leetcode.editor.cn;
 
 import java.util.Arrays;
 
-public class LongestHappyString {
+public class _1405_LongestHappyString_v2 {
 
   public static void main(String[] args) {
-    Solution solution = new LongestHappyString().new Solution();
+    Solution solution = new _1405_LongestHappyString_v2().new Solution();
   }
 
   //leetcode submit region begin(Prohibit modification and deletion)
