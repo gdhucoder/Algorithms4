@@ -15,12 +15,13 @@ public class _Cycle {
     }
   }
 
-  private void dfs(_AdjListGraph G, int u, int v) {
+  private void dfs(_AdjListGraph G, int v, int u) {
     marked[u] = true;
-    for (int w : G.adj(u)) {
+    for (int w : G.adj(v)) {
       if (!marked[w]) {
-        dfs(G, w, u);
-      } else if (w != u) {
+        dfs(G, w, v);
+      }
+      else if (w != u) {
         hasCycle = true;
       }
     }
