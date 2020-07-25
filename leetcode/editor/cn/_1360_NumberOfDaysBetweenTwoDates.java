@@ -37,8 +37,8 @@ public class _1360_NumberOfDaysBetweenTwoDates {
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
 
-    private int[] month = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    private int[] daysInYear = {365, 366};
+    private final int[] month = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    private final int[] daysInYear = {365, 366};
 
     public int daysBetweenDates(String date1, String date2) {
       return Math.abs(days(date1) - days(date2));
@@ -46,8 +46,8 @@ public class _1360_NumberOfDaysBetweenTwoDates {
 
     private int days(String date) {
       String[] dates = date.split("-");
-      int year = Integer.valueOf(dates[0]), mon = Integer.valueOf(dates[1]), day = Integer
-          .valueOf(dates[2]);
+      int year = Integer.parseInt(dates[0]), mon = Integer.parseInt(dates[1]), day = Integer
+          .parseInt(dates[2]);
       int isLeap = leap(year);
       int sum = 0;
       for (int i = 1971; i < year; i++) {
