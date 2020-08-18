@@ -62,9 +62,9 @@ public class _0172_ExcelSheetColumnNumber {
       init();
       char[] chs = s.toCharArray();
       int res = 0;
-      for (int i = 0; i < chs.length; i++) {
+      for (char ch : chs) {
         res *= 26;
-        res += map.get(chs[i]);
+        res += map.get(ch);
       }
       return res;
     }
