@@ -18,6 +18,7 @@
 * [145. Binary Tree Postorder Traversal](leetcode-solutions/145.-binary-tree-postorder-traversal.md)
 * [155. Min Stack](leetcode-solutions/155.-min-stack.md)
 * [257. Binary Tree Paths](leetcode-solutions/257.md)
+* [349.Intersection of Two Arrays](leetcode-solutions/349.intersection-of-two-arrays.md)
 * [401. Binary Watch](leetcode-solutions/401.md)
 * [429. N-ary Tree Level Order Traversal](leetcode-solutions/429.md)
 * [559. Maximum Depth of N-ary Tree](leetcode-solutions/559.md)
