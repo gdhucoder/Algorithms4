@@ -20,6 +20,7 @@
 * [155. Min Stack](leetcode-solutions/155.-min-stack.md)
 * [257. Binary Tree Paths](leetcode-solutions/257.md)
 * [349.Intersection of Two Arrays](leetcode-solutions/349.intersection-of-two-arrays.md)
+* [383. Ransom Note](leetcode-solutions/383.-ransom-note.md)
 * [401. Binary Watch](leetcode-solutions/401.md)
 * [429. N-ary Tree Level Order Traversal](leetcode-solutions/429.md)
 * [589](leetcode-solutions/589.md)
