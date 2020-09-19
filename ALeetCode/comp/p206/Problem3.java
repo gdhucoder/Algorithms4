@@ -12,5 +12,6 @@ public class Problem3 {
   public static void main(String[] args) {
     System.out.println();
     Solution s = new Solution();
+    System.out.println("v" + (100 > 1000 ? 99.8 : 1));
   }
 }
