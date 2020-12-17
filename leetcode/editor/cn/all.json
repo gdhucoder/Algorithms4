@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[860]柠檬水找零",
-    "frontendQuestionId": "860",
+    "formTitle": "[649]Dota2 参议院",
+    "frontendQuestionId": "649",
     "leaf": true,
-    "level": 1,
+    "level": 2,
     "nodeType": "def",
-    "questionId": "890",
-    "status": "ac",
-    "title": "柠檬水找零",
-    "titleSlug": "lemonade-change"
+    "questionId": "649",
+    "status": "",
+    "title": "Dota2 参议院",
+    "titleSlug": "dota2-senate"
   },
   {
     "articleLive": 2,
@@ -4483,7 +4483,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "373",
-    "status": "",
+    "status": "ac",
     "title": "查找和最小的K对数字",
     "titleSlug": "find-k-pairs-with-smallest-sums"
   },
@@ -4543,7 +4543,7 @@
     "level": 2,
     "nodeType": "def",
     "questionId": "378",
-    "status": "",
+    "status": "ac",
     "title": "有序矩阵中第K小的元素",
     "titleSlug": "kth-smallest-element-in-a-sorted-matrix"
   },
@@ -7789,18 +7789,6 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[649]Dota2 参议院",
-    "frontendQuestionId": "649",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "649",
-    "status": "",
-    "title": "Dota2 参议院",
-    "titleSlug": "dota2-senate"
-  },
-  {
-    "articleLive": 2,
     "formTitle": "[650]只有两个键的键盘",
     "frontendQuestionId": "650",
     "leaf": true,
@@ -10318,6 +10306,18 @@
     "status": "",
     "title": "亲密字符串",
     "titleSlug": "buddy-strings"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[860]柠檬水找零",
+    "frontendQuestionId": "860",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "890",
+    "status": "ac",
+    "title": "柠檬水找零",
+    "titleSlug": "lemonade-change"
   },
   {
     "articleLive": 2,

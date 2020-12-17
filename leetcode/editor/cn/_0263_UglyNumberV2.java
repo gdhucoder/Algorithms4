@@ -28,7 +28,7 @@
 // 输入不会超过 32 位有符号整数的范围: [−231, 231 − 1]。 
 // 
 // Related Topics 数学 
-// 👍 147 👎 0
+// 👍 164 👎 0
 
 
 package leetcode.editor.cn;
@@ -36,31 +36,19 @@ package leetcode.editor.cn;
 import java.util.Arrays;
 import java.util.List;
 
-public class _0263_UglyNumber {
+public class _0263_UglyNumberV2 {
 
   public static void main(String[] args) {
-    Solution solution = new _0263_UglyNumber().new Solution();
-    System.out.println(solution.isUgly(8));
-    System.out.println(solution.isUgly(1690));
-    solution.test();
+    Solution solution = new _0263_UglyNumberV2().new Solution();
+    System.out.println(solution.isUgly(1));
   }
 
   //leetcode submit region begin(Prohibit modification and deletion)
   class Solution {
 
-    private List<Integer> nums = Arrays.asList(2, 3, 5);
-
     public boolean isUgly(int num) {
+      if (num == 0) return false;
       return isUg(num);
-    }
-
-
-    public void test() {
-      for (int i = 1, j = 1; i < 1690; i++) {
-        if (isUg(i)) {
-          System.out.printf("%3d %4d\n", j++, i);
-        }
-      }
     }
 
     private boolean isUg(int num) {
