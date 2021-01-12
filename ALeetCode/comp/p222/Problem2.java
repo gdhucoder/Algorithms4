@@ -1,8 +1,5 @@
 package ALeetCode.comp.p222;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by HuGuodong on 12/8/19.
  */
