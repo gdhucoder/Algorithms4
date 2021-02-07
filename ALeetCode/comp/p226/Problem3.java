@@ -1,7 +1,5 @@
 package ALeetCode.comp.p226;
 
-import tools.PrintUtil;
-
 /**
  * Created by HuGuodong on 12/8/19.
  */

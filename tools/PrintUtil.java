@@ -45,6 +45,13 @@ public class PrintUtil {
     StdOut.println();
   }
 
+  public static void show(boolean[] a) {
+    for (int i = 0; i < a.length; i++) {
+      StdOut.printf("%s ", a[i]);
+    }
+    StdOut.println();
+  }
+
   public static void show(int[] a, boolean equalLength) {
     for (int i = 0; i < a.length; i++) {
       StdOut.printf("%3d ", a[i]);
