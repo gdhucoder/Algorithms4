@@ -1,15 +1,16 @@
-package ALeetCode.comp.pd02;
+package ALeetCode.comp.p230;
 
 /**
  * Created by HuGuodong on 12/8/19.
  */
-public class Problem1 {
+public class Problem4 {
 
   static class Solution {
 
   }
 
   public static void main(String[] args) {
+
     Solution s = new Solution();
     System.out.println();
   }
