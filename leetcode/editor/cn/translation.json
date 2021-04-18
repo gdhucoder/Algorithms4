@@ -38,7 +38,7 @@
       },
       {
         "questionId": "26",
-        "title": "\u5220\u9664\u6392\u5e8f\u6570\u7ec4\u4e2d\u7684\u91cd\u590d\u9879",
+        "title": "\u5220\u9664\u6709\u5e8f\u6570\u7ec4\u4e2d\u7684\u91cd\u590d\u9879",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -1178,7 +1178,7 @@
       },
       {
         "questionId": "129",
-        "title": "\u6c42\u6839\u5230\u53f6\u5b50\u8282\u70b9\u6570\u5b57\u4e4b\u548c",
+        "title": "\u6c42\u6839\u8282\u70b9\u5230\u53f6\u8282\u70b9\u6570\u5b57\u4e4b\u548c",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -1953,7 +1953,7 @@
       },
       {
         "questionId": "724",
-        "title": "\u5bfb\u627e\u6570\u7ec4\u7684\u4e2d\u5fc3\u7d22\u5f15",
+        "title": "\u5bfb\u627e\u6570\u7ec4\u7684\u4e2d\u5fc3\u4e0b\u6807",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -2058,7 +2058,7 @@
       },
       {
         "questionId": "457",
-        "title": "\u73af\u5f62\u6570\u7ec4\u5faa\u73af",
+        "title": "\u73af\u5f62\u6570\u7ec4\u662f\u5426\u5b58\u5728\u5faa\u73af",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -2788,12 +2788,12 @@
       },
       {
         "questionId": "775",
-        "title": "N\u53c9\u6811\u7684\u524d\u5e8f\u904d\u5386",
+        "title": "N \u53c9\u6811\u7684\u524d\u5e8f\u904d\u5386",
         "__typename": "AppliedTranslationNode"
       },
       {
         "questionId": "776",
-        "title": "N\u53c9\u6811\u7684\u540e\u5e8f\u904d\u5386",
+        "title": "N \u53c9\u6811\u7684\u540e\u5e8f\u904d\u5386",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -4708,7 +4708,7 @@
       },
       {
         "questionId": "285",
-        "title": "\u4e8c\u53c9\u641c\u7d22\u6811\u4e2d\u7684\u987a\u5e8f\u540e\u7ee7",
+        "title": "\u4e8c\u53c9\u641c\u7d22\u6811\u4e2d\u7684\u4e2d\u5e8f\u540e\u7ee7",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -4988,7 +4988,7 @@
       },
       {
         "questionId": "582",
-        "title": "\u6740\u6b7b\u8fdb\u7a0b",
+        "title": "\u6740\u6389\u8fdb\u7a0b",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -8593,7 +8593,7 @@
       },
       {
         "questionId": "1536",
-        "title": "\u8d2d\u4e70\u4e86\u4ea7\u54c1A\u548c\u4ea7\u54c1B\u5374\u6ca1\u6709\u8d2d\u4e70\u4ea7\u54c1C\u7684\u987e\u5ba2",
+        "title": "\u8d2d\u4e70\u4e86\u4ea7\u54c1 A \u548c\u4ea7\u54c1 B \u5374\u6ca1\u6709\u8d2d\u4e70\u4ea7\u54c1 C \u7684\u987e\u5ba2",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -9593,7 +9593,7 @@
       },
       {
         "questionId": "1000135",
-        "title": "\u5957\u5708\u6d3b\u52a8 II",
+        "title": "\u79ef\u5206\u62bd\u5956\u6d3b\u52a8",
         "__typename": "AppliedTranslationNode"
       },
       {
@@ -11004,6 +11004,166 @@
       {
         "questionId": "1900",
         "title": "\u6700\u63a5\u8fd1\u76ee\u6807\u4ef7\u683c\u7684\u751c\u70b9\u6210\u672c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1908",
+        "title": "\u53ef\u56de\u6536\u4e14\u4f4e\u8102\u7684\u4ea7\u54c1",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1926",
+        "title": "\u6bcf\u5bb6\u5546\u5e97\u7684\u4ea7\u54c1\u4ef7\u683c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1909",
+        "title": "\u80fd\u770b\u5230\u6d77\u666f\u7684\u5efa\u7b51\u7269",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1903",
+        "title": "\u8bbe\u8ba1\u6700\u8fd1\u4f7f\u7528\uff08MRU\uff09\u961f\u5217",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1919",
+        "title": "\u6309\u53d7\u6b22\u8fce\u7a0b\u5ea6\u6392\u5217\u529f\u80fd",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1891",
+        "title": "\u7edf\u8ba1\u70b9\u5bf9\u7684\u6570\u76ee",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1888",
+        "title": "\u627e\u5230\u6700\u8fd1\u7684\u6709\u76f8\u540c X \u6216 Y \u5750\u6807\u7684\u70b9",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1889",
+        "title": "\u5224\u65ad\u4e00\u4e2a\u6570\u5b57\u662f\u5426\u53ef\u4ee5\u8868\u793a\u6210\u4e09\u7684\u5e42\u7684\u548c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1890",
+        "title": "\u6240\u6709\u5b50\u5b57\u7b26\u4e32\u7f8e\u4e3d\u503c\u4e4b\u548c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1910",
+        "title": "\u68c0\u67e5\u4e8c\u8fdb\u5236\u5b57\u7b26\u4e32\u5b57\u6bb5",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1911",
+        "title": "\u6784\u6210\u7279\u5b9a\u548c\u9700\u8981\u6dfb\u52a0\u7684\u6700\u5c11\u5143\u7d20",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1913",
+        "title": "\u4f7f\u6240\u6709\u533a\u95f4\u7684\u5f02\u6216\u7ed3\u679c\u4e3a\u96f6",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1912",
+        "title": "\u4ece\u7b2c\u4e00\u4e2a\u8282\u70b9\u51fa\u53d1\u5230\u6700\u540e\u4e00\u4e2a\u8282\u70b9\u7684\u53d7\u9650\u8def\u5f84\u6570",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000204",
+        "title": "\u5b8c\u5168\u80cc\u5305\u95ee\u9898",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1918",
+        "title": "\u597d\u5b50\u6570\u7ec4\u7684\u6700\u5927\u5206\u6570",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1917",
+        "title": "\u6700\u5927\u5e73\u5747\u901a\u8fc7\u7387",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1915",
+        "title": "\u4ec5\u6267\u884c\u4e00\u6b21\u5b57\u7b26\u4e32\u4ea4\u6362\u80fd\u5426\u4f7f\u4e24\u4e2a\u5b57\u7b26\u4e32\u76f8\u7b49",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1916",
+        "title": "\u627e\u51fa\u661f\u578b\u56fe\u7684\u4e2d\u5fc3\u8282\u70b9",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000205",
+        "title": "\u6700\u8fd1\u7684\u8ddd\u79bb",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000206",
+        "title": "5-sum",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000207",
+        "title": "\u5e8f\u5217\u8ddd\u79bb",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000208",
+        "title": "\u7f16\u8f91\u8ddd\u79bb II",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000209",
+        "title": "\u6700\u591a\u7684\u786c\u5e01\u6570\u91cf",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1000210",
+        "title": "\u6700\u5c11\u7684\u786c\u5e01\u79cd\u7c7b",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1904",
+        "title": "\u5b57\u7b26\u4e32\u4e2d\u7b2c\u4e8c\u5927\u7684\u6570\u5b57",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1905",
+        "title": "\u8bbe\u8ba1\u4e00\u4e2a\u9a8c\u8bc1\u7cfb\u7edf",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1906",
+        "title": "N \u6b21\u64cd\u4f5c\u540e\u7684\u6700\u5927\u5206\u6570\u548c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1930",
+        "title": "\u4f60\u80fd\u6784\u9020\u51fa\u8fde\u7eed\u503c\u7684\u6700\u5927\u6570\u76ee",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1928",
+        "title": "\u79ef\u538b\u8ba2\u5355\u4e2d\u7684\u8ba2\u5355\u603b\u6570",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1929",
+        "title": "\u6709\u754c\u6570\u7ec4\u4e2d\u6307\u5b9a\u4e0b\u6807\u5904\u7684\u6700\u5927\u503c",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1907",
+        "title": "\u7edf\u8ba1\u5f02\u6216\u503c\u5728\u8303\u56f4\u5185\u7684\u6570\u5bf9\u6709\u591a\u5c11",
+        "__typename": "AppliedTranslationNode"
+      },
+      {
+        "questionId": "1927",
+        "title": "\u6700\u5927\u5347\u5e8f\u5b50\u6570\u7ec4\u548c",
         "__typename": "AppliedTranslationNode"
       }
     ]
