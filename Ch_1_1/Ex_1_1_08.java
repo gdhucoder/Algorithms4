@@ -19,7 +19,7 @@ public class Ex_1_1_08 {
     // b char 类型 转换为 98， c 转换为99
     System.out.println('b'+'c');
 
-    // e : 'a' char to int , 97, 97+4=111, 111 to char = e
+    // e : 'a' char to int , 97, 97+4=101, 101 to char = e
     System.out.println((char)('a'+4));
   }
 }
