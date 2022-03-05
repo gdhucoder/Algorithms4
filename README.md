@@ -11,6 +11,7 @@ Table of Contents
     * [1\.5 CASE STUDY: UNION\-FIND](#15-case-study-union-find)
   * [Chapter 2: Sorting](#chapter-2-sorting)
     * [2\.1 ELEMENTARY SORTS](#21-elementary-sorts)
+    * [2\.2 MERGE SORT](#22-merge-sort)
   * [Chapter 3: Searching](#chapter-3-searching)
   * [Chapter 4: Graph](#chapter-4-graph)
   * [Chapter 5: Strings](#chapter-5-strings)
@@ -83,6 +84,13 @@ Problems solved:
 | :----: | :----: | :----: | :----: | :----: |
 |[E6](./Ch_2_1/Ex_2_1_06.md)|[E7](./Ch_2_1/Ex_2_1_07.md)|[E8](./Ch_2_1/Ex_2_1_08.md)|[E9](./Ch_2_1/Ex_2_1_09.md)|[E10](./Ch_2_1/Ex_2_1_10.md)|
 |[E11](./Ch_2_1/Ex_2_1_11.md)|TODO|TODO|TODO|TODO|
+
+### 2.2 MERGE SORT
+
+|[E1](./Ch_2_2/Ex_2_2_01.md)|[E2](./Ch_2_2/Ex_2_2_02.md)|TODO|TODO|TODO|
+| :----: | :----: | :----: | :----: | :----: |
+|[TODO|TODO|TODO|TODO|TODO|
+|[TODO|TODO|TODO|TODO|TODO|
 
 ## Chapter 3: Searching
 
