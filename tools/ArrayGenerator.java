@@ -1,12 +1,10 @@
 package tools;
 
-import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Random;
-import org.junit.Test;
 
 /**
  * Created by HuGuodong on 2018/10/24.
@@ -103,7 +101,8 @@ public class ArrayGenerator {
     for (int i = 0; i < a.length; i++) {
       if (hi == lo) {
         a[i] = lo;
-      } else {
+      }
+      else {
         a[i] = random.nextInt(hi - lo + 1) + lo;
       }
     }
@@ -260,6 +259,14 @@ public class ArrayGenerator {
       a[i] = keys[StdRandom.uniform(count)];
     }
     return a;
+  }
+
+  public static Character[] toCharacterArray(char[] a) {
+    Character[] res = new Character[a.length];
+    for (int i = 0; i < a.length; i++) {
+      res[i] = a[i];
+    }
+    return res;
   }
 
 
