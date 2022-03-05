@@ -79,6 +79,24 @@ public class PrintUtil {
     StdOut.println();
   }
 
+  public static void show(Object[] a, int startInclude, int endInclude, boolean inline) {
+    for (int i = 0; i < a.length; i++) {
+      Object o = a[i];
+      if (i < startInclude) {
+        StdOut.print("  ");
+      }
+      else if (i >= startInclude && i <= endInclude) {
+        StdOut.print(o == null ? "null " : o + " ");
+      }
+      else {
+        StdOut.print("  ");
+      }
+    }
+    if (!inline) {
+      StdOut.println();
+    }
+  }
+
   public static void show(Integer[][] a) {
     for (Object[] o : a) {
       for (Object oo : a) {
